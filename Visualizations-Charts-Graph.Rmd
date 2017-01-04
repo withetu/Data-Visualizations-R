@@ -1,0 +1,86 @@
+---
+title: "R Notebook"
+output:
+  html_notebook: default
+  pdf_document: default
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+#https://www.r-bloggers.com/7-visualizations-you-should-learn-in-r/
+
+
+#There are four basic presentation types:
+#Comparison
+#Composition
+#Distribution
+#Relationship
+
+#To determine which amongst these is best suited for your data, I suggest you should answer a few questions like,
+#How many variables do you want to show in a single chart?
+#How many data points will you display for each variable?
+#Will you display values over a period of time, or among items or groups?
+
+#In your day-to-day activities, you’ll come across the below listed 7 charts most of the time.
+#Scatter Plot
+#Histogram
+#Bar & Stack Bar Chart
+#Box Plot
+#Area Chart
+#Heat Map
+#Correlogram
+
+#1. Scatter Plot
+#When to use: Scatter Plot is used to see the relationship between two continuous variables
+train<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\Big Mart Dataset.csv")
+library(ggplot2)
+ggplot(train, aes(Item_Visibility, Item_MRP))+
+  geom_point()+
+  scale_x_continuous("Item Visibility", breaks = seq(0,0.35,0.05))+
+  scale_y_continuous("Item MRP", breaks = seq(0,270, by=30))+
+  theme_bw()
+#R code with an addition of category: Item_Type
+ggplot(train, aes(Item_Visibility, Item_MRP))+
+  geom_point(aes(color = Item_Type))+
+  scale_x_continuous("Item Vsibility", breaks = seq(0,0.35,0.05))+
+  scale_y_continuous("Item MRP", breaks = seq(0,270, by=30))+
+  theme_bw()+
+  labs(title="ScatterPlot")
+#We can even make it more visually clear by creating separate scatter plots for each separate Item_Type as shown below.
+#R code for separate category wise chart:
+ggplot(train, aes(Item_Visibility, Item_MRP))+
+  geom_point(aes(color = Item_Type))+
+  scale_x_continuous("Item Visibility", breaks = seq(0,0.35,0.05))+
+  scale_y_continuous("Item MRP", breaks = seq(0,270, by=30))+
+  theme_bw()+
+  labs(title="Scatterplot")+
+  facet_wrap(~Item_Type) #Here, facet_wrap works superb & wraps Item_Type in rectangular layout.
+#my own biuld example
+train5<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\data.csv")
+ggplot(train5, aes(US_Dollar_Value, Tonnes))+
+  geom_point(aes(color = Export_Country))+
+  scale_x_continuous("US Dollar Value", breaks = seq(163130919,263130919,1000000))+
+  scale_y_continuous("Tonnes", breaks = seq(18445,118445, by=100000))+
+  theme_bw()+
+  labs(title="Scatterplot")+
+  facet_wrap(~Export_Country)
+
+#2. Histogram
+#When to use: Histogram is used to plot continuous variable. It breaks the data into bins and shows frequency distribution of these bins. We can always change the bin size and see the effect it has on visualization.
+ggplot(train, aes(Item_MRP))+
+  geom_histogram(binwidth = 2)+
+  scale_x_continuous("Item MRP", breaks = seq(0, 270, by=30))+
+  scale_y_continuous("Counts", breaks = seq(0,200, by=20))+
+  labs(title="Histogram")
+
+
+
+
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
