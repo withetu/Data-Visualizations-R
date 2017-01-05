@@ -33,7 +33,8 @@ Try executing this chunk by clicking the *Run* button within the chunk or by pla
 #Heat Map
 #Correlogram
 
-#1. Scatter Plot
+
+##1. Scatter Plot
 #When to use: Scatter Plot is used to see the relationship between two continuous variables
 train<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\Big Mart Dataset.csv")
 library(ggplot2)
@@ -68,13 +69,82 @@ ggplot(train5, aes(US_Dollar_Value, Tonnes))+
   labs(title="Scatterplot")+
   facet_wrap(~Export_Country)
 
-#2. Histogram
+
+##2. Histogram
 #When to use: Histogram is used to plot continuous variable. It breaks the data into bins and shows frequency distribution of these bins. We can always change the bin size and see the effect it has on visualization.
 ggplot(train, aes(Item_MRP))+
-  geom_histogram(binwidth = 2)+
+  geom_histogram(fill="cyan",binwidth = 2)+
   scale_x_continuous("Item MRP", breaks = seq(0, 270, by=30))+
   scale_y_continuous("Counts", breaks = seq(0,200, by=20))+
   labs(title="Histogram")
+
+
+##3. Bar & Stack Bar Chart
+#When to use: Bar charts are recommended when you want to plot a categorical variable or a combination of continuous and categorical variable.
+#From our dataset, if we want to know number of marts established in particular year, then bar chart would be most suitable option, use variable Establishment Year as shown below.
+ggplot(train, aes(Outlet_Establishment_Year))+
+  geom_bar(fill="gold")+
+  theme_dark()+
+  scale_x_continuous("Establishment Year", breaks = seq(1985, 2010))+
+  scale_y_continuous("Count", breaks = seq(0,1500, 150))+
+  coord_flip()+
+  labs(title="Bar Chart")+
+  theme_gray()
+
+##Vertical Bar Chart
+#As a variation, you can remove coord_flip() parameter to get the above bar chart vertically.
+ggplot(train, aes(Outlet_Establishment_Year))+
+  geom_bar(fill="gold")+
+  theme_dark()+
+  scale_x_continuous("Establishment Year", breaks = seq(1985, 2010))+
+  scale_y_continuous("Count", breaks = seq(0,1500, 150))+
+  labs(title="Bar Chart")+
+  theme_gray()
+#To know item weights (continuous variable) on basis of Outlet Type (categorical variable) on single bar chart, use following code:
+ggplot(train, aes(Item_Type, Item_Weight))+
+  geom_bar(stat = "identity", fill="gold")+
+  scale_x_discrete("Outlet Type")+
+  scale_y_continuous("Item Weight", breaks = seq(0, 15000, by=500))+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))+
+  labs(title="Bar Chart")
+
+##Stacked Bar Chart
+#Stacked bar chart is an advanced version of bar chart, used for visualizing a combination of caregorical variables.
+#From our dataset, if we want to know the count of outlets on basis of categorical variables like its type (Outlet Type) and location (Outlet Location Type) both, stack chart will visualize the scenario in most useful manner.
+ggplot(train, aes(Outlet_Location_Type, fill = Outlet_Type))+
+  geom_bar()+
+  labs(title="Stacked Bar Chart", x="Outlet Location Type", y="Count of Outlets")
+
+
+##4. Box Plot
+#When to use: Box plots are used to plot a combination of categorical and continuous variables. This plot is useful for visualizing the spread of the data and detect outliers. It shows five statistically significant numbers - the minimum, the 25th percentile, the median, the 75th percentile and the maximum.
+#From our dataset, if we want to identify each outlet’s detailed item sales including minimum, maximum & median numbers, box plot can be helpful. In addition, it also gives values of outliers of item sales for each outlet as shown in below chart.
+ggplot(train, aes(Outlet_Identifier, Item_Outlet_Sales))+
+  geom_boxplot(fill="gold")+
+  scale_y_continuous("Item Outlet Sales", breaks = seq(0,15000, by=500))+
+  labs(title="Box Plot", x="Outlet Identifier")
+#The black points are outliers. Outlier detection and removal is an essential step of successful data exploration.
+
+
+##5. Area Chart
+#When to use: Area chart is used to show continuity across a variavle or dataset. It is very much same as line chart and is commonly used for time series plots. Alternatively, it is also used to plot continuous variables and analyze the underlying needs.
+#From our dataset, when we want to analyze the trend of item outlet sales, area chart can be plotted as shown below. It shows count of outlets on basis of sales.
+ggplot(train, aes(Item_Outlet_Sales))+
+  geom_area(stat = "bin", bins=30, fill="gold")+
+  scale_x_continuous(breaks=seq(0, 11000,1000))+
+  labs(title="Area Chart", x="Item Outlet Sales", y="Count")
+
+
+##6. Heat Map
+#When to use: Heat Map uses intensity (density) of colors to display relationship between two or three or many variables in a two dimensional image. It allows you to explore two dimensions as the axis and the third dimension by intensity of color.
+#From our dataset, if we want to know cost of each item on every outlet, we can plot heatmap as shown below using three variables Item MRP, Outlet Identifier & Item Type from our mart dataset.
+ggplot(train, aes(Outlet_Identifier, Item_Type))+
+  geom_raster(aes(fill=Item_MRP))+
+  labs(title="Heat Map", x="Outlet Identifier", y="Item Type")+
+  scale_fill_continuous(name="Item MRP")
+
+
+##7. Correlogram
 
 
 
