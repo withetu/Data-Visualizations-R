@@ -145,7 +145,16 @@ ggplot(train, aes(Outlet_Identifier, Item_Type))+
 
 
 ##7. Correlogram
+#When to use: Correlogram is used to test the co-relation among the variable available in the data set. The cells of the matrix can be shaded or colored to show the co-relation value.
+#Darker the color, higher the co-relation between variables. Positive co-relations are displayed in blue and negative correlations in red color. Color intensity is proportional to the co-relation value.
+#From our dataset, let’s check co-relation between Item cost, weight, visibility along with Outlet establishment year and Outlet sales from below plot.
+#In our example, we can see that Item cost & Outlet sales are positively correlated while Item weight & its visibility are negatively correlated.
+if(!require(corrgram)){
+  install.packages("corrgram")
+}
+library(corrgram)
 
+corrgram(train, order=NULL, panel = panel.shade, text.panel = panel.txt, main="Correlogram")
 
 
 
