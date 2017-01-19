@@ -69,6 +69,9 @@ ggplot(train5, aes(US_Dollar_Value, Tonnes))+
   labs(title="Scatterplot")+
   facet_wrap(~Export_Country)
 
+#------Save GGPLOT------
+ggsave("barchart.pdf", width=11, height=7)
+ggsave("barchart.png", width=11, height=7)
 
 ##2. Histogram
 #When to use: Histogram is used to plot continuous variable. It breaks the data into bins and shows frequency distribution of these bins. We can always change the bin size and see the effect it has on visualization.
@@ -77,6 +80,8 @@ ggplot(train, aes(Item_MRP))+
   scale_x_continuous("Item MRP", breaks = seq(0, 270, by=30))+
   scale_y_continuous("Counts", breaks = seq(0,200, by=20))+
   labs(title="Histogram")
+
+
 
 
 ##3. Bar & Stack Bar Chart
@@ -90,6 +95,21 @@ ggplot(train, aes(Outlet_Establishment_Year))+
   coord_flip()+
   labs(title="Bar Chart")+
   theme_gray()
+
+
+#------AlCircle------
+usdv<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\usd.csv")
+usdv
+
+ggplot(usdv, aes(Year_Month))+
+  geom_bar(fill="gold")+
+  theme_dark()
+  scale_x_discrete("Year Month", breaks=seq(2014, 2017))+
+  scale_y_continuous("USD Value", breaks = seq(0,248921102, by=100000000))+
+  coord_flip()+
+  labs(title="Bar Chart")+
+   theme_gray()
+
 
 ##Vertical Bar Chart
 #As a variation, you can remove coord_flip() parameter to get the above bar chart vertically.
@@ -108,12 +128,39 @@ ggplot(train, aes(Item_Type, Item_Weight))+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5))+
   labs(title="Bar Chart")
 
+
+#------AlCircle------
+usdv<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\usd.csv")
+usdv
+train
+
+ggplot(usdv, aes(Year_Month, USD))+
+  geom_bar(stat = "identity", fill="gold")+
+  scale_x_discrete("Year Month")+
+  scale_y_continuous("USD Value", breaks = seq(0,248921102, by=100000000))+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))+
+  labs(title="Bar Chart")
+
+#------Save GGPLOT------
+ggsave("barchart.pdf", width=11, height=7)
+ggsave("barchart.png", width=11, height=7)
+
+
+#------usdv%>%
+#------  ggplot(aes(Year_Month, fill=Year_Month))+
+#------  geom_bar()+
+#------  theme(legend.position = "none")
+
+
 ##Stacked Bar Chart
 #Stacked bar chart is an advanced version of bar chart, used for visualizing a combination of caregorical variables.
 #From our dataset, if we want to know the count of outlets on basis of categorical variables like its type (Outlet Type) and location (Outlet Location Type) both, stack chart will visualize the scenario in most useful manner.
 ggplot(train, aes(Outlet_Location_Type, fill = Outlet_Type))+
   geom_bar()+
   labs(title="Stacked Bar Chart", x="Outlet Location Type", y="Count of Outlets")
+
+#------AlCircle------
+ggplot(usdv, aes())
 
 
 ##4. Box Plot
