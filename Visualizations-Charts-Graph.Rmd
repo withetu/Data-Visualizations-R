@@ -59,6 +59,19 @@ ggplot(train, aes(Item_Visibility, Item_MRP))+
   theme_bw()+
   labs(title="Scatterplot")+
   facet_wrap(~Item_Type) #Here, facet_wrap works superb & wraps Item_Type in rectangular layout.
+ggplot(export1, aes(US_Dollar_Value, Tonnes))+
+  geom_point(aes(color=Export_Continent))+
+  scale_x_continuous("USD Value", breaks = seq(4891,263130919,10000000))+
+  scale_y_continuous("Tonnes", breaks = seq(1.961,118445.421, by=10000))+
+  theme_bw()+
+  labs(title="Scatterplot")+
+  facet_wrap(~Item_Type)
+ggsave("barchart.png", width=11, height=7)
+  
+  
+
+
+
 #my own biuld example
 train5<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\data.csv")
 ggplot(train5, aes(US_Dollar_Value, Tonnes))+
@@ -140,6 +153,25 @@ ggplot(usdv, aes(Year_Month, USD))+
   scale_y_continuous("USD Value", breaks = seq(0,248921102, by=100000000))+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5))+
   labs(title="Bar Chart")
+
+#------not worked-----
+ggplot(usdv, aes(Year_Month, fill=cut))+
+  geom_freqpoly(aes(group=cut, colour=cut))
+
+
+#------not worked-----
+ggplot(usdv, aes(Year_Month, fill=cut))+
+  geom_bar(position = "dodge")
+
+ggplot(usdv, aes(x=factor(Year_Month), y=USD, fill=factor(Year_Month)))+
+  geom_bar(stat = "identity", color="black", position = "dodge")
+ggsave("barchart.pdf", width=11, height=7)
+
+
+export1<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\export.csv")
+export1
+ggplot(export1, aes(x=factor(Export_Continent), y=US_Dollar_Value, fill=factor(Export_Continent)))+
+  geom_bar(stat = "identity", color="black", position = "dodge")
 
 #------Save GGPLOT------
 ggsave("barchart.pdf", width=11, height=7)
