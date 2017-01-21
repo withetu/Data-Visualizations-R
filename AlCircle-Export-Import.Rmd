@@ -1,0 +1,91 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+library(ggplot2)
+train5<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\data.csv")
+usdv<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\usd.csv")
+
+ggplot(train5, aes(x=Tonnes, y=factor(US_Dollar_Value), fill=Export_Continent))+
+  geom_bar(stat = "identity", position = position_dodge())
+
+#my own biuld example
+ggplot(train5, aes(US_Dollar_Value, Tonnes))+
+  geom_point(aes(color = Export_Country))+
+  scale_x_continuous("US Dollar Value", breaks = seq(163130919,263130919,1000000))+
+  scale_y_continuous("Tonnes", breaks = seq(18445,118445, by=100000))+
+  theme_bw()+
+  labs(title="Scatterplot")+
+  facet_wrap(~Export_Country)
+
+ggplot(train5, aes(US_Dollar_Value, Tonnes))+
+  geom_point(aes(color=Export_Continent))+
+  scale_x_continuous("USD Value", breaks = seq(4891,263130919,30000000))+
+  scale_y_continuous("Tonnes", breaks = seq(1.961,118445.421, by=10000))+
+  theme_bw()+
+  labs(title="Scatterplot")+
+  facet_wrap(~Export_Country)
+
+ggplot(train5, aes(US_Dollar_Value, Tonnes))+
+  geom_point(aes(color=Export_Country))+
+  scale_x_continuous("USD Value", breaks = seq(4891,263130919,30000000))+
+  scale_y_continuous("Tonnes", breaks = seq(1.961,118445.421, by=10000))+
+  theme_bw()+
+  labs(title="Scatterplot: Import Country Spain, Year 2015")+
+  facet_wrap(~Export_Country)
+
+ggsave("barchart.png", width=11, height=7)
+
+
+#------AlCircle------
+ggplot(usdv, aes(Year_Month))+
+  geom_bar(fill="gold")+
+  theme_dark()
+  scale_x_discrete("Year Month", breaks=seq(2014, 2017))+
+  scale_y_continuous("USD Value", breaks = seq(0,248921102, by=100000000))+
+  coord_flip()+
+  labs(title="Bar Chart")+
+  theme_gray()
+  
+
+#------AlCircle------
+ggplot(usdv, aes(Year_Month, USD))+
+  geom_bar(stat = "identity", fill="gold")+
+  scale_x_discrete("Year Month")+
+  scale_y_continuous("USD Value", breaks = seq(0,248921102, by=100000000))+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))+
+  labs(title="Bar Chart")
+
+#------not worked-----
+ggplot(usdv, aes(Year_Month, fill=cut))+
+  geom_freqpoly(aes(group=cut, colour=cut))
+
+
+#------not worked-----
+ggplot(usdv, aes(Year_Month, fill=cut))+
+  geom_bar(position = "dodge")
+
+ggplot(usdv, aes(x=factor(Year_Month), y=USD, fill=factor(Year_Month)))+
+  geom_bar(stat = "identity", color="black", position = "dodge")
+ggsave("barchart.pdf", width=11, height=7)
+
+
+export1<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\export.csv")
+export1
+ggplot(export1, aes(x=factor(Export_Continent), y=US_Dollar_Value, fill=factor(Export_Continent)))+
+  geom_bar(stat = "identity", color="black", position = "dodge")
+
+
+
+
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).

@@ -59,32 +59,13 @@ ggplot(train, aes(Item_Visibility, Item_MRP))+
   theme_bw()+
   labs(title="Scatterplot")+
   facet_wrap(~Item_Type) #Here, facet_wrap works superb & wraps Item_Type in rectangular layout.
-ggplot(export1, aes(US_Dollar_Value, Tonnes))+
-  geom_point(aes(color=Export_Continent))+
-  scale_x_continuous("USD Value", breaks = seq(4891,263130919,10000000))+
-  scale_y_continuous("Tonnes", breaks = seq(1.961,118445.421, by=10000))+
-  theme_bw()+
-  labs(title="Scatterplot")+
-  facet_wrap(~Item_Type)
-ggsave("barchart.png", width=11, height=7)
-  
-  
 
-
-
-#my own biuld example
-train5<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\data.csv")
-ggplot(train5, aes(US_Dollar_Value, Tonnes))+
-  geom_point(aes(color = Export_Country))+
-  scale_x_continuous("US Dollar Value", breaks = seq(163130919,263130919,1000000))+
-  scale_y_continuous("Tonnes", breaks = seq(18445,118445, by=100000))+
-  theme_bw()+
-  labs(title="Scatterplot")+
-  facet_wrap(~Export_Country)
 
 #------Save GGPLOT------
 ggsave("barchart.pdf", width=11, height=7)
 ggsave("barchart.png", width=11, height=7)
+
+
 
 ##2. Histogram
 #When to use: Histogram is used to plot continuous variable. It breaks the data into bins and shows frequency distribution of these bins. We can always change the bin size and see the effect it has on visualization.
@@ -109,21 +90,6 @@ ggplot(train, aes(Outlet_Establishment_Year))+
   labs(title="Bar Chart")+
   theme_gray()
 
-
-#------AlCircle------
-usdv<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\usd.csv")
-usdv
-
-ggplot(usdv, aes(Year_Month))+
-  geom_bar(fill="gold")+
-  theme_dark()
-  scale_x_discrete("Year Month", breaks=seq(2014, 2017))+
-  scale_y_continuous("USD Value", breaks = seq(0,248921102, by=100000000))+
-  coord_flip()+
-  labs(title="Bar Chart")+
-   theme_gray()
-
-
 ##Vertical Bar Chart
 #As a variation, you can remove coord_flip() parameter to get the above bar chart vertically.
 ggplot(train, aes(Outlet_Establishment_Year))+
@@ -142,46 +108,12 @@ ggplot(train, aes(Item_Type, Item_Weight))+
   labs(title="Bar Chart")
 
 
-#------AlCircle------
-usdv<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\usd.csv")
-usdv
-train
 
-ggplot(usdv, aes(Year_Month, USD))+
-  geom_bar(stat = "identity", fill="gold")+
-  scale_x_discrete("Year Month")+
-  scale_y_continuous("USD Value", breaks = seq(0,248921102, by=100000000))+
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))+
-  labs(title="Bar Chart")
-
-#------not worked-----
-ggplot(usdv, aes(Year_Month, fill=cut))+
-  geom_freqpoly(aes(group=cut, colour=cut))
-
-
-#------not worked-----
-ggplot(usdv, aes(Year_Month, fill=cut))+
-  geom_bar(position = "dodge")
-
-ggplot(usdv, aes(x=factor(Year_Month), y=USD, fill=factor(Year_Month)))+
-  geom_bar(stat = "identity", color="black", position = "dodge")
-ggsave("barchart.pdf", width=11, height=7)
-
-
-export1<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\export.csv")
-export1
-ggplot(export1, aes(x=factor(Export_Continent), y=US_Dollar_Value, fill=factor(Export_Continent)))+
-  geom_bar(stat = "identity", color="black", position = "dodge")
 
 #------Save GGPLOT------
 ggsave("barchart.pdf", width=11, height=7)
 ggsave("barchart.png", width=11, height=7)
 
-
-#------usdv%>%
-#------  ggplot(aes(Year_Month, fill=Year_Month))+
-#------  geom_bar()+
-#------  theme(legend.position = "none")
 
 
 ##Stacked Bar Chart
@@ -191,8 +123,6 @@ ggplot(train, aes(Outlet_Location_Type, fill = Outlet_Type))+
   geom_bar()+
   labs(title="Stacked Bar Chart", x="Outlet Location Type", y="Count of Outlets")
 
-#------AlCircle------
-ggplot(usdv, aes())
 
 
 ##4. Box Plot

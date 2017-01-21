@@ -1,4 +1,4 @@
-Import Country,Import Continent,Import Subcontinent,Export_Country,Export Continent,Export Subcontinent,Data Type,Year,Commodity Description,Commodity Code,US_Dollar_Value,Tonnes,Group,Sub-Group,Cargo,Seabourne,Tonne Mile,Tonne Days
+Import Country,Import Continent,Import Subcontinent,Export_Country,Export_Continent,Export Subcontinent,Data Type,Year,Commodity Description,Commodity Code,US_Dollar_Value,Tonnes,Group,Sub-Group,Cargo,Seabourne,Tonne Mile,Tonne Days
 Spain,Europe,Western Europe,USA,North America,North America,Actual,2015,Aluminium,7601,987914,502.486,Construction,Construction,Dry,Yes,1912461.716,7281.79893
 Spain,Europe,Western Europe,Venezuela,Latin America,South America,Actual,2015,Aluminium,7601,3099902,1791.105,Construction,Construction,Dry,Yes,7845039.9,29060.02967
 Spain,Europe,Western Europe,Turkey,Asia,Middle East,Actual,2015,Aluminium,7601,9807116,4177.098,Construction,Construction,Dry,Yes,8091038.826,36960.75905
