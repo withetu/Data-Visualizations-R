@@ -36,6 +36,7 @@ Try executing this chunk by clicking the *Run* button within the chunk or by pla
 
 ##1. Scatter Plot
 #When to use: Scatter Plot is used to see the relationship between two continuous variables
+#Scatter Plot- This essantially provides information about the minimum value, 1st quartile, median, 3rd quartile and the maximum
 train<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\Big Mart Dataset.csv")
 library(ggplot2)
 ggplot(train, aes(Item_Visibility, Item_MRP))+

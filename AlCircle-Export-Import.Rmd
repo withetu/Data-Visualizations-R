@@ -12,6 +12,14 @@ library(ggplot2)
 train5<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\data.csv")
 usdv<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\usd.csv")
 
+summary(train5$US_Dollar_Value)
+boxplot(train5$US_Dollar_Value~train5$Tonnes, col="purple")
+hist(train5$Tonnes, col="gold")
+rug(train5$Tonnes)
+barplot(table(train5$Export_Continent), col = "wheat", main="Number Of Continent by Export")
+with(train5, plot(Export_Continent, Tonnes, col = "gold"))
+
+
 ggplot(train5, aes(x=Tonnes, y=factor(US_Dollar_Value), fill=Export_Continent))+
   geom_bar(stat = "identity", position = position_dodge())
 
@@ -41,6 +49,7 @@ ggplot(train5, aes(US_Dollar_Value, Tonnes))+
   facet_wrap(~Export_Country)
 
 ggsave("barchart.png", width=11, height=7)
+
 
 
 #------AlCircle------
