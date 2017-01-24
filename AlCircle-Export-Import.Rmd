@@ -19,6 +19,26 @@ rug(train5$Tonnes)
 barplot(table(train5$Export_Continent), col = "wheat", main="Number Of Continent by Export")
 with(train5, plot(Export_Continent, Tonnes, col = "gold"))
 
+str(train5)
+table(train5$Export_Continent)
+library(caTools)
+set.seed(1000)
+split=sample.split(train5$Year, SplitRatio = 0.7)
+Train=train5[split==TRUE,]
+Test=train5[split==FALSE,]
+Train
+Test
+nrow(Train)
+nrow(Test)
+library(rpart)
+library(rpart.plot)
+dec=rpart(Export_Continent~.,data=Train)
+dec
+par(mar = rep(2, 4))
+prp(dec)
+
+
+
 
 ggplot(train5, aes(x=Tonnes, y=factor(US_Dollar_Value), fill=Export_Continent))+
   geom_bar(stat = "identity", position = position_dodge())
