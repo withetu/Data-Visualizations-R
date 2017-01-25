@@ -11,6 +11,7 @@ Try executing this chunk by clicking the *Run* button within the chunk or by pla
 library(ggplot2)
 train5<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\data.csv")
 usdv<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\usd.csv")
+japan<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\japan.csv")
 
 summary(train5$US_Dollar_Value)
 boxplot(train5$US_Dollar_Value~train5$Tonnes, col="purple")
@@ -36,6 +37,29 @@ dec=rpart(Export_Continent~.,data=Train)
 dec
 par(mar = rep(2, 4))
 prp(dec)
+
+#------Japan Export-Import------
+summary(japan)
+summary(japan$Export_Country)
+summary(japan$USD_Value)
+summary(japan$Tonnes)
+boxplot(japan$Data_Type~japan$USD_Value, col="purple")
+hist(japan$Tonnes, col="gold")
+rug(japan$Tonnes)
+barplot(table(japan$Export_Country), col="wheat", main = "Number of Export Country")
+barplot(table(japan$Import_Country), col="wheat", main = "Number of Import Country")
+with(japan, plot(Data_Type, Tonnes, col="gold"))
+with(japan, plot(Country_Type, Tonnes, col="gold"))
+
+str(japan)
+table(japan$Export_Country)
+library(caTools)
+set.seed(1000)
+split=sample.split(japan$Country_Type, SplitRatio = 0.7)
+jTrain=japan[split==TRUE,]
+jTest=japan[split==FALSE,]
+jTrain
+jTest
 
 
 

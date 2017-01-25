@@ -1,0 +1,347 @@
+Country,Country_Type,Commodity,Year,Month,Export_Country,Import_Country,USD_Value,Tonnes,Data_Type
+Japan,Import,Scrap,2016,Jan,Australia,Na,"7,19,393.00",555.05,Actual
+Japan,Import,Scrap,2016,Feb,Australia,Na,"1,51,171.00",134.45,Actual
+Japan,Import,Scrap,2016,Mar,Australia,Na,"1,03,209.00",94.72,Actual
+Japan,Import,Scrap,2016,Apr,Australia,Na,"1,18,731.00",108.07,Actual
+Japan,Import,Scrap,2016,May,Australia,Na,"1,75,614.00",155.06,Actual
+Japan,Import,Scrap,2016,Jun,Australia,Na,"1,74,506.00",135.73,Actual
+Japan,Import,Scrap,2016,Jul,Australia,Na,"1,62,342.00",143.33,Actual
+Japan,Import,Scrap,2016,Aug,Australia,Na,"1,78,520.00",114.47,Actual
+Japan,Import,Scrap,2016,Sep,Australia,Na,"1,09,262.00",79.64,Actual
+Japan,Import,Scrap,2016,Oct,Australia,Na,"2,01,058.00",167.06,Actual
+Japan,Import,Scrap,2016,Nov,Australia,Na,"3,36,883.14",249.24,Estimate
+Japan,Import,Scrap,2016,Dec,Australia,Na,"3,28,631.63",245.71,Estimate
+Japan,Import,Scrap,2016,Jan,Brazil,Na,"58,343.00",21.68,Actual
+Japan,Import,Scrap,2016,May,Brazil,Na,"51,805.00",20.04,Actual
+Japan,Import,Scrap,2016,Nov,Brazil,Na,"43,624.37",3.16,Estimate
+Japan,Import,Scrap,2016,Dec,Brazil,Na,"43,906.28",3.26,Estimate
+Japan,Import,Scrap,2016,Jan,Canada,Na,"69,560.00",25.91,Actual
+Japan,Import,Scrap,2016,Jan,China,Na,"6,32,360.00",284.36,Actual
+Japan,Import,Scrap,2016,Feb,China,Na,"4,89,660.00",309.79,Actual
+Japan,Import,Scrap,2016,Mar,China,Na,"4,66,397.00",253.80,Actual
+Japan,Import,Scrap,2016,Apr,China,Na,"4,63,057.00",264.73,Actual
+Japan,Import,Scrap,2016,May,China,Na,"6,14,864.00",263.62,Actual
+Japan,Import,Scrap,2016,Jun,China,Na,"5,22,353.00",262.38,Actual
+Japan,Import,Scrap,2016,Jul,China,Na,"6,50,235.00",269.14,Actual
+Japan,Import,Scrap,2016,Aug,China,Na,"6,71,036.00",276.19,Actual
+Japan,Import,Scrap,2016,Sep,China,Na,"5,96,858.00",247.34,Actual
+Japan,Import,Scrap,2016,Oct,China,Na,"3,74,290.00",168.64,Actual
+Japan,Import,Scrap,2016,Nov,China,Na,"6,23,886.23",309.79,Estimate
+Japan,Import,Scrap,2016,Dec,China,Na,"6,34,439.75",315.14,Estimate
+Japan,Import,Scrap,2016,Apr,Dominican Rep.,Na,"52,982.00",21.96,Actual
+Japan,Import,Scrap,2016,Jun,Dominican Rep.,Na,"47,776.00",18.68,Actual
+Japan,Import,Scrap,2016,Feb,Ecuador,Na,"55,245.00",22.69,Actual
+Japan,Import,Scrap,2016,May,Ecuador,Na,"64,100.00",24.78,Actual
+Japan,Import,Scrap,2016,Nov,Ecuador,Na,"69,634.29",5.19,Estimate
+Japan,Import,Scrap,2016,Dec,Ecuador,Na,"69,930.54",5.31,Estimate
+Japan,Import,Scrap,2016,Apr,Guatemala,Na,"44,242.00",18.33,Actual
+Japan,Import,Scrap,2016,Oct,Honduras,Na,"49,990.00",19.97,Actual
+Japan,Import,Scrap,2016,Nov,Honduras,Na,"17,538.42",9.27,Estimate
+Japan,Import,Scrap,2016,Dec,Honduras,Na,"16,247.12",8.59,Estimate
+Japan,Import,Scrap,2016,Jan,Hong Kong,Na,"60,515.00",43.48,Actual
+Japan,Import,Scrap,2016,Feb,Hong Kong,Na,"60,111.00",43.43,Actual
+Japan,Import,Scrap,2016,Mar,Hong Kong,Na,"1,23,896.00",86.24,Actual
+Japan,Import,Scrap,2016,Apr,Hong Kong,Na,"1,94,712.00",130.09,Actual
+Japan,Import,Scrap,2016,May,Hong Kong,Na,"2,47,719.00",171.10,Actual
+Japan,Import,Scrap,2016,Jun,Hong Kong,Na,"1,25,593.00",83.89,Actual
+Japan,Import,Scrap,2016,Jul,Hong Kong,Na,"1,41,529.00",97.03,Actual
+Japan,Import,Scrap,2016,Aug,Hong Kong,Na,"67,486.00",43.55,Actual
+Japan,Import,Scrap,2016,Nov,Hong Kong,Na,"23,901.06",16.17,Estimate
+Japan,Import,Scrap,2016,Dec,Hong Kong,Na,"5,850.86",6.54,Estimate
+Japan,Import,Scrap,2016,Jan,Indonesia,Na,"1,72,027.00",43.67,Actual
+Japan,Import,Scrap,2016,Feb,Indonesia,Na,"1,67,637.00",40.61,Actual
+Japan,Import,Scrap,2016,Mar,Indonesia,Na,"2,23,240.00",29.40,Actual
+Japan,Import,Scrap,2016,Apr,Indonesia,Na,"35,166.00",31.22,Actual
+Japan,Import,Scrap,2016,May,Indonesia,Na,"1,86,562.00",59.43,Actual
+Japan,Import,Scrap,2016,Jun,Indonesia,Na,"1,48,827.00",32.66,Actual
+Japan,Import,Scrap,2016,Jul,Indonesia,Na,"1,66,209.00",37.37,Actual
+Japan,Import,Scrap,2016,Aug,Indonesia,Na,"1,53,467.00",37.28,Actual
+Japan,Import,Scrap,2016,Sep,Indonesia,Na,"1,53,756.00",51.54,Actual
+Japan,Import,Scrap,2016,Oct,Indonesia,Na,"1,67,212.00",40.56,Actual
+Japan,Import,Scrap,2016,Nov,Indonesia,Na,"2,42,072.18",39.10,Estimate
+Japan,Import,Scrap,2016,Dec,Indonesia,Na,"2,43,043.05",37.57,Estimate
+Japan,Import,Scrap,2016,Jan,Israel,Na,"5,34,813.00",422.78,Actual
+Japan,Import,Scrap,2016,Feb,Israel,Na,"3,83,958.00",378.49,Actual
+Japan,Import,Scrap,2016,Mar,Israel,Na,"1,83,743.00",186.80,Actual
+Japan,Import,Scrap,2016,Apr,Israel,Na,"3,23,701.00",324.11,Actual
+Japan,Import,Scrap,2016,May,Israel,Na,"77,698.00",82.20,Actual
+Japan,Import,Scrap,2016,Jun,Israel,Na,"3,63,317.00",346.65,Actual
+Japan,Import,Scrap,2016,Jul,Israel,Na,"1,58,053.00",150.90,Actual
+Japan,Import,Scrap,2016,Aug,Israel,Na,"1,98,557.00",189.34,Actual
+Japan,Import,Scrap,2016,Sep,Israel,Na,"1,01,984.00",100.74,Actual
+Japan,Import,Scrap,2016,Oct,Israel,Na,"1,68,849.00",165.57,Actual
+Japan,Import,Scrap,2016,Nov,Israel,Na,"1,52,912.88",178.00,Estimate
+Japan,Import,Scrap,2016,Dec,Israel,Na,"1,40,430.92",172.70,Estimate
+Japan,Import,Scrap,2016,Jan,Italy,Na,"67,058.00",23.67,Actual
+Japan,Import,Scrap,2016,Jan,Lebanon,Na,"24,404.00",19.96,Actual
+Japan,Import,Scrap,2016,Jan,Malaysia,Na,"5,68,735.00",270.98,Actual
+Japan,Import,Scrap,2016,Feb,Malaysia,Na,"4,71,065.00",227.01,Actual
+Japan,Import,Scrap,2016,Mar,Malaysia,Na,"5,58,693.00",274.49,Actual
+Japan,Import,Scrap,2016,Apr,Malaysia,Na,"4,66,995.00",229.86,Actual
+Japan,Import,Scrap,2016,May,Malaysia,Na,"3,48,284.00",167.29,Actual
+Japan,Import,Scrap,2016,Jun,Malaysia,Na,"8,00,735.00",403.68,Actual
+Japan,Import,Scrap,2016,Jul,Malaysia,Na,"7,65,670.00",439.09,Actual
+Japan,Import,Scrap,2016,Aug,Malaysia,Na,"4,79,313.00",234.66,Actual
+Japan,Import,Scrap,2016,Sep,Malaysia,Na,"2,85,795.00",135.89,Actual
+Japan,Import,Scrap,2016,Oct,Malaysia,Na,"9,49,561.00",470.68,Actual
+Japan,Import,Scrap,2016,Nov,Malaysia,Na,"5,75,454.23",282.23,Estimate
+Japan,Import,Scrap,2016,Dec,Malaysia,Na,"5,59,511.00",274.72,Estimate
+Japan,Import,Scrap,2016,Jan,Mexico,Na,"33,854.00",21.03,Actual
+Japan,Import,Scrap,2016,Feb,Mexico,Na,"36,242.00",22.68,Actual
+Japan,Import,Scrap,2016,Mar,Mexico,Na,"36,853.00",22.69,Actual
+Japan,Import,Scrap,2016,Jun,Mexico,Na,"35,889.00",22.63,Actual
+Japan,Import,Scrap,2016,Jul,Mexico,Na,"37,241.00",22.76,Actual
+Japan,Import,Scrap,2016,Aug,Mexico,Na,"52,930.00",47.40,Actual
+Japan,Import,Scrap,2016,Sep,Mexico,Na,"53,116.00",20.79,Actual
+Japan,Import,Scrap,2016,Oct,Mexico,Na,"1,02,696.00",67.95,Actual
+Japan,Import,Scrap,2016,Nov,Mexico,Na,"42,730.55",22.43,Estimate
+Japan,Import,Scrap,2016,Dec,Mexico,Na,"41,528.54",21.98,Estimate
+Japan,Import,Scrap,2016,Mar,Netherlands,Na,"31,317.00",24.44,Actual
+Japan,Import,Scrap,2016,Apr,Netherlands,Na,"56,619.00",38.54,Actual
+Japan,Import,Scrap,2016,Jan,New Caledonia,Na,"5,030.00",14.06,Actual
+Japan,Import,Scrap,2016,Mar,New Caledonia,Na,"3,122.00",11.08,Actual
+Japan,Import,Scrap,2016,Jul,New Caledonia,Na,"2,895.00",13.74,Actual
+Japan,Import,Scrap,2016,Nov,New Caledonia,Na,"5,034.08",5.09,Estimate
+Japan,Import,Scrap,2016,Dec,New Caledonia,Na,"5,079.61",5.25,Estimate
+Japan,Import,Scrap,2016,Jan,New Zealand,Na,"1,29,661.00",100.35,Actual
+Japan,Import,Scrap,2016,Feb,New Zealand,Na,"37,788.00",19.64,Actual
+Japan,Import,Scrap,2016,Mar,New Zealand,Na,"97,505.00",75.20,Actual
+Japan,Import,Scrap,2016,May,New Zealand,Na,"27,846.00",26.24,Actual
+Japan,Import,Scrap,2016,Jul,New Zealand,Na,"30,095.00",27.61,Actual
+Japan,Import,Scrap,2016,Aug,New Zealand,Na,"15,435.00",14.21,Actual
+Japan,Import,Scrap,2016,Sep,New Zealand,Na,"56,058.00",43.48,Actual
+Japan,Import,Scrap,2016,Oct,New Zealand,Na,"15,199.00",14.81,Actual
+Japan,Import,Scrap,2016,Nov,New Zealand,Na,"38,998.24",24.85,Estimate
+Japan,Import,Scrap,2016,Dec,New Zealand,Na,"35,822.94",23.55,Estimate
+Japan,Import,Scrap,2016,Jan,Philippines,Na,"1,95,924.00",153.97,Actual
+Japan,Import,Scrap,2016,Feb,Philippines,Na,"1,17,745.00",90.88,Actual
+Japan,Import,Scrap,2016,Mar,Philippines,Na,"1,81,948.00",151.54,Actual
+Japan,Import,Scrap,2016,Apr,Philippines,Na,"99,015.00",74.94,Actual
+Japan,Import,Scrap,2016,May,Philippines,Na,"2,97,433.00",234.93,Actual
+Japan,Import,Scrap,2016,Jun,Philippines,Na,"1,03,818.00",55.74,Actual
+Japan,Import,Scrap,2016,Jul,Philippines,Na,"1,81,319.00",138.83,Actual
+Japan,Import,Scrap,2016,Aug,Philippines,Na,"2,49,749.00",167.00,Actual
+Japan,Import,Scrap,2016,Sep,Philippines,Na,"82,592.00",63.22,Actual
+Japan,Import,Scrap,2016,Oct,Philippines,Na,"2,10,074.00",136.52,Actual
+Japan,Import,Scrap,2016,Nov,Philippines,Na,"1,78,556.39",130.05,Estimate
+Japan,Import,Scrap,2016,Dec,Philippines,Na,"1,78,782.28",130.76,Estimate
+Japan,Import,Scrap,2016,Aug,Saudi Arabia,Na,"1,35,475.00",94.67,Actual
+Japan,Import,Scrap,2016,Oct,Saudi Arabia,Na,"1,11,317.00",75.23,Actual
+Japan,Import,Scrap,2016,Nov,Saudi Arabia,Na,"1,66,078.24",35.36,Estimate
+Japan,Import,Scrap,2016,Dec,Saudi Arabia,Na,"1,60,382.76",32.63,Estimate
+Japan,Import,Scrap,2016,Jan,Singapore,Na,"97,700.00",70.62,Actual
+Japan,Import,Scrap,2016,Mar,Singapore,Na,"33,979.00",22.80,Actual
+Japan,Import,Scrap,2016,Apr,Singapore,Na,"28,492.00",19.23,Actual
+Japan,Import,Scrap,2016,May,Singapore,Na,"37,107.00",26.51,Actual
+Japan,Import,Scrap,2016,Jun,Singapore,Na,"41,027.00",24.49,Actual
+Japan,Import,Scrap,2016,Jul,Singapore,Na,"37,828.00",25.00,Actual
+Japan,Import,Scrap,2016,Aug,Singapore,Na,"69,451.00",45.43,Actual
+Japan,Import,Scrap,2016,Sep,Singapore,Na,"37,804.00",25.00,Actual
+Japan,Import,Scrap,2016,Oct,Singapore,Na,"61,828.00",42.64,Actual
+Japan,Import,Scrap,2016,Nov,Singapore,Na,"63,272.49",38.02,Estimate
+Japan,Import,Scrap,2016,Dec,Singapore,Na,"52,007.87",32.29,Estimate
+Japan,Import,Scrap,2016,May,South Africa,Na,"52,153.00",36.12,Actual
+Japan,Import,Scrap,2016,Jun,South Africa,Na,"62,602.00",40.06,Actual
+Japan,Import,Scrap,2016,Jul,South Africa,Na,"54,736.00",40.12,Actual
+Japan,Import,Scrap,2016,Aug,South Africa,Na,"57,334.00",40.02,Actual
+Japan,Import,Scrap,2016,Sep,South Africa,Na,"83,308.00",58.04,Actual
+Japan,Import,Scrap,2016,Oct,South Africa,Na,"81,573.00",60.00,Actual
+Japan,Import,Scrap,2016,Nov,South Africa,Na,"61,578.47",29.22,Estimate
+Japan,Import,Scrap,2016,Dec,South Africa,Na,"60,004.69",28.60,Estimate
+Japan,Import,Scrap,2016,Feb,South Korea,Na,"1,96,137.00",125.82,Actual
+Japan,Import,Scrap,2016,Jun,South Korea,Na,"6,854.00",18.83,Actual
+Japan,Import,Scrap,2016,Oct,South Korea,Na,"35,619.00",38.31,Actual
+Japan,Import,Scrap,2016,Nov,South Korea,Na,"54,254.74",15.65,Estimate
+Japan,Import,Scrap,2016,Dec,South Korea,Na,"53,614.95",15.55,Estimate
+Japan,Import,Scrap,2016,Jan,Taiwan,Na,"5,77,129.00",398.85,Actual
+Japan,Import,Scrap,2016,Feb,Taiwan,Na,"1,89,333.00",128.66,Actual
+Japan,Import,Scrap,2016,Mar,Taiwan,Na,"7,34,485.00",496.28,Actual
+Japan,Import,Scrap,2016,Apr,Taiwan,Na,"1,90,838.00",117.20,Actual
+Japan,Import,Scrap,2016,May,Taiwan,Na,"6,69,089.00",441.02,Actual
+Japan,Import,Scrap,2016,Jun,Taiwan,Na,"7,27,289.00",450.94,Actual
+Japan,Import,Scrap,2016,Jul,Taiwan,Na,"8,07,171.00",505.40,Actual
+Japan,Import,Scrap,2016,Aug,Taiwan,Na,"6,45,539.00",407.56,Actual
+Japan,Import,Scrap,2016,Sep,Taiwan,Na,"4,13,028.00",189.40,Actual
+Japan,Import,Scrap,2016,Oct,Taiwan,Na,"2,20,554.00",131.12,Actual
+Japan,Import,Scrap,2016,Nov,Taiwan,Na,"5,62,471.07",362.50,Estimate
+Japan,Import,Scrap,2016,Dec,Taiwan,Na,"5,56,533.83",361.05,Estimate
+Japan,Import,Scrap,2016,Jan,Thailand,Na,"2,84,477.00",183.48,Actual
+Japan,Import,Scrap,2016,Feb,Thailand,Na,"2,91,386.00",189.40,Actual
+Japan,Import,Scrap,2016,Mar,Thailand,Na,"1,51,330.00",121.31,Actual
+Japan,Import,Scrap,2016,Apr,Thailand,Na,"3,01,157.00",219.79,Actual
+Japan,Import,Scrap,2016,May,Thailand,Na,"1,96,281.00",145.15,Actual
+Japan,Import,Scrap,2016,Jun,Thailand,Na,"3,05,995.00",211.18,Actual
+Japan,Import,Scrap,2016,Jul,Thailand,Na,"2,29,332.00",167.76,Actual
+Japan,Import,Scrap,2016,Aug,Thailand,Na,"1,14,185.00",83.07,Actual
+Japan,Import,Scrap,2016,Sep,Thailand,Na,"1,67,106.00",115.78,Actual
+Japan,Import,Scrap,2016,Oct,Thailand,Na,"2,08,436.00",154.57,Actual
+Japan,Import,Scrap,2016,Nov,Thailand,Na,"3,43,363.87",234.04,Estimate
+Japan,Import,Scrap,2016,Dec,Thailand,Na,"3,16,109.92",221.90,Estimate
+Japan,Import,Scrap,2016,Jan,United Arab Emirates,Na,"89,560.00",64.66,Actual
+Japan,Import,Scrap,2016,Feb,United Arab Emirates,Na,"87,724.00",66.86,Actual
+Japan,Import,Scrap,2016,Jun,United Arab Emirates,Na,"87,855.00",34.61,Actual
+Japan,Import,Scrap,2016,Aug,United Arab Emirates,Na,"44,349.00",17.08,Actual
+Japan,Import,Scrap,2016,Sep,United Arab Emirates,Na,"50,252.00",19.08,Actual
+Japan,Import,Scrap,2016,Nov,United Arab Emirates,Na,"34,171.82",17.64,Estimate
+Japan,Import,Scrap,2016,Dec,United Arab Emirates,Na,"31,655.86",16.34,Estimate
+Japan,Import,Scrap,2016,Jan,United Kingdom,Na,"2,97,098.00",264.33,Actual
+Japan,Import,Scrap,2016,Feb,United Kingdom,Na,"2,25,593.00",198.56,Actual
+Japan,Import,Scrap,2016,Mar,United Kingdom,Na,"3,36,939.00",300.08,Actual
+Japan,Import,Scrap,2016,Apr,United Kingdom,Na,"2,45,520.00",217.66,Actual
+Japan,Import,Scrap,2016,May,United Kingdom,Na,"3,04,567.00",280.60,Actual
+Japan,Import,Scrap,2016,Jun,United Kingdom,Na,"54,137.00",51.00,Actual
+Japan,Import,Scrap,2016,Nov,United Kingdom,Na,"1,66,273.38",114.52,Estimate
+Japan,Import,Scrap,2016,Dec,United Kingdom,Na,"1,43,019.81",101.19,Estimate
+Japan,Import,Scrap,2016,Jan,USA,Na,"31,46,993.00",1789.39,Actual
+Japan,Import,Scrap,2016,Feb,USA,Na,"19,54,843.00",1171.32,Actual
+Japan,Import,Scrap,2016,Mar,USA,Na,"21,24,806.00",1426.57,Actual
+Japan,Import,Scrap,2016,Apr,USA,Na,"18,76,774.00",1077.41,Actual
+Japan,Import,Scrap,2016,May,USA,Na,"17,70,360.00",1055.18,Actual
+Japan,Import,Scrap,2016,Jun,USA,Na,"20,43,201.00",1035.90,Actual
+Japan,Import,Scrap,2016,Jul,USA,Na,"23,11,475.00",1380.25,Actual
+Japan,Import,Scrap,2016,Aug,USA,Na,"30,99,239.00",1709.50,Actual
+Japan,Import,Scrap,2016,Sep,USA,Na,"22,63,338.00",1358.14,Actual
+Japan,Import,Scrap,2016,Oct,USA,Na,"19,21,767.00",1096.86,Actual
+Japan,Import,Scrap,2016,Nov,USA,Na,"19,05,434.96",1244.63,Estimate
+Japan,Import,Scrap,2016,Dec,USA,Na,"18,38,415.95",1219.29,Estimate
+Japan,Import,Scrap,2016,Jun,Venezuela,Na,"65,920.00",24.50,Actual
+Japan,Import,Scrap,2016,Jul,Venezuela,Na,"68,826.00",26.34,Actual
+Japan,Import,Scrap,2016,Nov,Venezuela,Na,"76,362.99",4.81,Estimate
+Japan,Import,Scrap,2016,Dec,Venezuela,Na,"76,848.93",4.99,Estimate
+Japan,Import,Scrap,2016,Jan,Viet Nam,Na,"25,908.00",30.99,Actual
+Japan,Import,Scrap,2016,Feb,Viet Nam,Na,"24,077.00",29.30,Actual
+Japan,Import,Scrap,2016,Mar,Viet Nam,Na,"21,942.00",25.08,Actual
+Japan,Import,Scrap,2016,Apr,Viet Nam,Na,"27,018.00",29.64,Actual
+Japan,Import,Scrap,2016,May,Viet Nam,Na,"12,121.00",11.34,Actual
+Japan,Import,Scrap,2016,Jun,Viet Nam,Na,"24,466.00",24.91,Actual
+Japan,Import,Scrap,2016,Jul,Viet Nam,Na,"15,927.00",21.60,Actual
+Japan,Import,Scrap,2016,Aug,Viet Nam,Na,"12,077.00",11.76,Actual
+Japan,Import,Scrap,2016,Sep,Viet Nam,Na,"7,455.00",5.30,Actual
+Japan,Import,Scrap,2016,Oct,Viet Nam,Na,"37,074.00",42.25,Actual
+Japan,Import,Scrap,2016,Nov,Viet Nam,Na,"5,494.94",15.09,Estimate
+Japan,Import,Scrap,2016,Dec,Viet Nam,Na,-353.5339,11.45,Estimate
+Japan,Export,Scrap,2016,Jan,Na,China,"32,24,989.00",3738.26,Actual
+Japan,Export,Scrap,2016,Feb,Na,China,"56,26,023.00",6632.29,Actual
+Japan,Export,Scrap,2016,Mar,Na,China,"59,60,016.00",6190.80,Actual
+Japan,Export,Scrap,2016,Apr,Na,China,"73,32,456.00",7620.18,Actual
+Japan,Export,Scrap,2016,May,Na,China,"55,08,570.00",6316.36,Actual
+Japan,Export,Scrap,2016,Jun,Na,China,"69,43,344.00",6551.03,Actual
+Japan,Export,Scrap,2016,Jul,Na,China,"63,04,128.00",6686.66,Actual
+Japan,Export,Scrap,2016,Aug,Na,China,"47,67,512.00",5144.40,Actual
+Japan,Export,Scrap,2016,Sep,Na,China,"64,58,353.00",7203.95,Actual
+Japan,Export,Scrap,2016,Oct,Na,China,"76,85,209.00",8867.01,Actual
+Japan,Export,Scrap,2016,Nov,Na,China,"55,21,246.03",6596.01,Estimate
+Japan,Export,Scrap,2016,Dec,Na,China,"54,52,940.17",6605.14,Estimate
+Japan,Export,Scrap,2016,Jan,Na,Germany,434,3.08,Actual
+Japan,Export,Scrap,2016,Feb,Na,Germany,"67,279.00",98.30,Actual
+Japan,Export,Scrap,2016,Mar,Na,Germany,999,6.30,Actual
+Japan,Export,Scrap,2016,Apr,Na,Germany,"1,837.00",1.50,Actual
+Japan,Export,Scrap,2016,May,Na,Germany,679,4.40,Actual
+Japan,Export,Scrap,2016,Jun,Na,Germany,842,7.00,Actual
+Japan,Export,Scrap,2016,Jul,Na,Germany,"1,57,102.00",64.20,Actual
+Japan,Export,Scrap,2016,Aug,Na,Germany,"1,177.00",8.50,Actual
+Japan,Export,Scrap,2016,Sep,Na,Germany,"26,954.94",21.91,Estimate
+Japan,Export,Scrap,2016,Oct,Na,Germany,"27,920.88",22.64,Estimate
+Japan,Export,Scrap,2016,Nov,Na,Germany,"28,886.82",23.37,Estimate
+Japan,Export,Scrap,2016,Dec,Na,Germany,"29,852.76",24.09,Estimate
+Japan,Export,Scrap,2016,Jan,Na,Hong Kong,"2,06,600.00",210.36,Actual
+Japan,Export,Scrap,2016,Feb,Na,Hong Kong,"2,90,856.00",263.16,Actual
+Japan,Export,Scrap,2016,Mar,Na,Hong Kong,"1,42,680.00",284.49,Actual
+Japan,Export,Scrap,2016,Apr,Na,Hong Kong,"2,71,620.00",339.84,Actual
+Japan,Export,Scrap,2016,May,Na,Hong Kong,"2,32,563.00",230.24,Actual
+Japan,Export,Scrap,2016,Jun,Na,Hong Kong,"2,75,595.00",339.33,Actual
+Japan,Export,Scrap,2016,Jul,Na,Hong Kong,"5,90,112.00",572.97,Actual
+Japan,Export,Scrap,2016,Aug,Na,Hong Kong,"2,91,441.00",314.54,Actual
+Japan,Export,Scrap,2016,Sep,Na,Hong Kong,"2,82,234.00",249.08,Actual
+Japan,Export,Scrap,2016,Oct,Na,Hong Kong,"3,24,839.00",265.79,Actual
+Japan,Export,Scrap,2016,Nov,Na,Hong Kong,"73,359.16",129.27,Estimate
+Japan,Export,Scrap,2016,Dec,Na,Hong Kong,"44,120.16",100.14,Estimate
+Japan,Export,Scrap,2016,Mar,Na,India,"1,60,253.00",104.26,Actual
+Japan,Export,Scrap,2016,Apr,Na,India,"41,022.00",26.60,Actual
+Japan,Export,Scrap,2016,May,Na,India,"3,04,398.00",215.54,Actual
+Japan,Export,Scrap,2016,Jun,Na,India,"2,23,980.00",165.00,Actual
+Japan,Export,Scrap,2016,Aug,Na,India,"1,31,783.00",91.00,Actual
+Japan,Export,Scrap,2016,Oct,Na,India,"1,18,023.60",50.37,Estimate
+Japan,Export,Scrap,2016,Nov,Na,India,"1,18,074.84",50.66,Estimate
+Japan,Export,Scrap,2016,Dec,Na,India,"1,18,126.08",50.96,Estimate
+Japan,Export,Scrap,2016,Jan,Na,Indonesia,"2,09,922.00",171.54,Actual
+Japan,Export,Scrap,2016,Feb,Na,Indonesia,"2,20,666.00",185.38,Actual
+Japan,Export,Scrap,2016,Mar,Na,Indonesia,"1,82,841.00",163.97,Actual
+Japan,Export,Scrap,2016,Apr,Na,Indonesia,"2,76,958.00",232.65,Actual
+Japan,Export,Scrap,2016,May,Na,Indonesia,"1,78,264.00",147.40,Actual
+Japan,Export,Scrap,2016,Sep,Na,Indonesia,"1,40,494.00",109.17,Actual
+Japan,Export,Scrap,2016,Nov,Na,Indonesia,"1,34,855.46",84.62,Estimate
+Japan,Export,Scrap,2016,Dec,Na,Indonesia,"1,32,380.47",83.93,Estimate
+Japan,Export,Scrap,2016,Jan,Na,Malaysia,"11,60,322.00",1749.63,Actual
+Japan,Export,Scrap,2016,Feb,Na,Malaysia,"11,69,749.00",1874.00,Actual
+Japan,Export,Scrap,2016,Mar,Na,Malaysia,"12,21,727.00",1757.15,Actual
+Japan,Export,Scrap,2016,Apr,Na,Malaysia,"18,63,382.00",2547.79,Actual
+Japan,Export,Scrap,2016,May,Na,Malaysia,"18,28,772.00",2726.15,Actual
+Japan,Export,Scrap,2016,Jun,Na,Malaysia,"13,77,027.55",2153.16,Estimate
+Japan,Export,Scrap,2016,Jul,Na,Malaysia,"13,80,033.03",2171.26,Estimate
+Japan,Export,Scrap,2016,Aug,Na,Malaysia,"13,83,038.51",2189.36,Estimate
+Japan,Export,Scrap,2016,Sep,Na,Malaysia,"13,86,044.00",2207.47,Estimate
+Japan,Export,Scrap,2016,Oct,Na,Malaysia,"13,89,049.48",2225.57,Estimate
+Japan,Export,Scrap,2016,Nov,Na,Malaysia,"13,92,054.96",2243.68,Estimate
+Japan,Export,Scrap,2016,Dec,Na,Malaysia,"13,95,060.44",2261.78,Estimate
+Japan,Export,Scrap,2016,Jan,Na,Pakistan,"3,736.00",5.00,Actual
+Japan,Export,Scrap,2016,Feb,Na,Pakistan,,9.50,Actual
+Japan,Export,Scrap,2016,Mar,Na,Pakistan,"6,741.00",14.00,Actual
+Japan,Export,Scrap,2016,Jun,Na,Pakistan,"5,733.00",13.00,Actual
+Japan,Export,Scrap,2016,Jul,Na,Pakistan,"7,687.00",13.00,Actual
+Japan,Export,Scrap,2016,Aug,Na,Pakistan,"2,939.74",3.64,Estimate
+Japan,Export,Scrap,2016,Sep,Na,Pakistan,"2,713.26",3.33,Estimate
+Japan,Export,Scrap,2016,Oct,Na,Pakistan,"2,486.77",3.02,Estimate
+Japan,Export,Scrap,2016,Nov,Na,Pakistan,"2,260.29",2.71,Estimate
+Japan,Export,Scrap,2016,Dec,Na,Pakistan,"2,033.80",2.40,Estimate
+Japan,Export,Scrap,2016,May,Na,Russian Federation,"63,697.00",63.84,Actual
+Japan,Export,Scrap,2016,Sep,Na,Russian Federation,"69,026.00",62.68,Actual
+Japan,Export,Scrap,2016,Oct,Na,Russian Federation,"1,13,715.00",104.57,Actual
+Japan,Export,Scrap,2016,Jan,Na,South Korea,"3,01,57,249.28",6616.65,Estimate
+Japan,Export,Scrap,2016,Feb,Na,South Korea,"3,12,16,665.89",6969.06,Estimate
+Japan,Export,Scrap,2016,Mar,Na,South Korea,"3,22,76,082.49",7159.87,Estimate
+Japan,Export,Scrap,2016,Apr,Na,South Korea,"3,33,35,499.10",6907.94,Estimate
+Japan,Export,Scrap,2016,May,Na,South Korea,"3,43,94,915.70",6902.32,Estimate
+Japan,Export,Scrap,2016,Jun,Na,South Korea,"3,54,54,332.31",7083.04,Estimate
+Japan,Export,Scrap,2016,Jul,Na,South Korea,"3,65,13,748.92",7379.19,Estimate
+Japan,Export,Scrap,2016,Aug,Na,South Korea,"3,75,73,165.52",5949.30,Estimate
+Japan,Export,Scrap,2016,Sep,Na,South Korea,"3,86,32,582.13",7375.44,Estimate
+Japan,Export,Scrap,2016,Oct,Na,South Korea,"3,96,91,998.73",7654.00,Estimate
+Japan,Export,Scrap,2016,Nov,Na,South Korea,"4,07,51,415.34",5953.39,Estimate
+Japan,Export,Scrap,2016,Dec,Na,South Korea,"4,18,10,831.95",5515.06,Estimate
+Japan,Export,Scrap,2016,Jan,Na,Spain,"1,03,224.00",132.50,Actual
+Japan,Export,Scrap,2016,Feb,Na,Spain,"74,212.00",106.50,Actual
+Japan,Export,Scrap,2016,Mar,Na,Spain,"1,29,315.00",179.90,Actual
+Japan,Export,Scrap,2016,Apr,Na,Spain,"78,715.00",110.60,Actual
+Japan,Export,Scrap,2016,May,Na,Spain,"1,11,866.00",153.80,Actual
+Japan,Export,Scrap,2016,Jun,Na,Spain,"41,884.00",61.60,Actual
+Japan,Export,Scrap,2016,Jul,Na,Spain,"56,618.00",77.50,Actual
+Japan,Export,Scrap,2016,Sep,Na,Spain,"1,16,450.16",114.24,Estimate
+Japan,Export,Scrap,2016,Oct,Na,Spain,"1,15,856.99",115.27,Estimate
+Japan,Export,Scrap,2016,Nov,Na,Spain,"1,15,263.81",116.30,Estimate
+Japan,Export,Scrap,2016,Dec,Na,Spain,"1,14,670.63",117.32,Estimate
+Japan,Export,Scrap,2016,Jan,Na,Taiwan,"33,677.00",41.32,Actual
+Japan,Export,Scrap,2016,Feb,Na,Taiwan,"1,60,581.00",180.80,Actual
+Japan,Export,Scrap,2016,Mar,Na,Taiwan,"42,478.00",39.39,Actual
+Japan,Export,Scrap,2016,Apr,Na,Taiwan,"42,760.00",36.90,Actual
+Japan,Export,Scrap,2016,May,Na,Taiwan,"38,436.00",45.29,Actual
+Japan,Export,Scrap,2016,Jul,Na,Taiwan,"69,432.00",111.84,Actual
+Japan,Export,Scrap,2016,Sep,Na,Taiwan,"1,12,372.00",185.99,Actual
+Japan,Export,Scrap,2016,Nov,Na,Taiwan,"64,575.43",56.86,Estimate
+Japan,Export,Scrap,2016,Dec,Na,Taiwan,"64,958.19",57.73,Estimate
+Japan,Export,Scrap,2016,Nov,Na,Thailand,"55,776.72",39.40,Estimate
+Japan,Export,Scrap,2016,Dec,Na,Thailand,"51,670.06",36.50,Estimate
+Japan,Export,Scrap,2016,Aug,Na,United Arab Emirates,"10,892.00",19.56,Actual
+Japan,Export,Scrap,2016,Nov,Na,United Arab Emirates,"11,695.93",1.99,Estimate
+Japan,Export,Scrap,2016,Dec,Na,United Arab Emirates,"11,739.39",2.07,Estimate
+Japan,Export,Scrap,2016,Jan,Na,Viet Nam,"43,685.00",42.34,Actual
+Japan,Export,Scrap,2016,Feb,Na,Viet Nam,"1,84,259.00",140.30,Actual
+Japan,Export,Scrap,2016,Mar,Na,Viet Nam,"1,34,057.00",101.57,Actual
+Japan,Export,Scrap,2016,May,Na,Viet Nam,"60,910.00",50.33,Actual
+Japan,Export,Scrap,2016,Jun,Na,Viet Nam,"82,708.00",85.54,Actual
+Japan,Export,Scrap,2016,Jul,Na,Viet Nam,"3,01,380.00",239.53,Actual
+Japan,Export,Scrap,2016,Aug,Na,Viet Nam,"6,132.00",26.39,Actual
+Japan,Export,Scrap,2016,Sep,Na,Viet Nam,"1,67,960.00",142.56,Actual
+Japan,Export,Scrap,2016,Oct,Na,Viet Nam,"3,54,063.00",273.43,Actual
+Japan,Export,Scrap,2016,Nov,Na,Viet Nam,"1,98,038.29",118.98,Estimate
+Japan,Export,Scrap,2016,Dec,Na,Viet Nam,"2,02,854.29",122.77,Estimate
