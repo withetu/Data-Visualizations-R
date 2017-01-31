@@ -1,0 +1,367 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+##------http://sharpsightlabs.com/blog/shipping-analysis-r-data-wrangling/------
+##------part 1, data manipulation------
+
+
+
+######################################
+# PART I: GET THE DATA 
+# - We need to both get the data
+#   as well as "wrangle" it into shape
+######################################
+
+if(!require(tidyverse)){
+  install.packages("tidyverse")
+}
+library(tidyverse)
+
+if(!require(stringr)){
+  install.packages("stringr")
+}
+library(stringr)
+
+if(!require(forcats)){
+  install.packages("forcats")
+}
+library(forcats)
+
+if(!require(ggmap)){
+  install.packages("ggmap")
+}
+library(ggmap)
+
+if(!require(rvest)){
+  install.packages("rvest")
+}
+library(rvest)
+
+
+#==========================
+#SCRAPE DATA FROM WIKIPEDIA
+#==========================
+
+# SCRAPE
+html.world_ports<- read_html("https://en.wikipedia.org/wiki/List_of_busiest_container_ports")
+df.world_ports<- html_table(html_nodes(html.world_ports, "table")[[2]], fill = TRUE)
+
+# INSPECT DATA
+glimpse(df.world_ports)
+
+
+#==========================
+# RENAME VARIABLES: 
+# - transform to lower case
+#==========================
+
+#On the right-hand side of the expression, colnames() lists the column names and tolower() transforms them to lower case. Here, we’re using the pipe operator (%>%) to “pipe” the names into tolower().
+
+#-----------
+# LOWER CASE
+#-----------
+colnames(df.world_ports)<- colnames(df.world_ports) %>% tolower()
+# INSPECT
+colnames(df.world_ports)
+
+
+#===================================================
+# GEOCODE
+# - here, we're picking up lat/long from Google Maps
+#   using ggmaps::geocode()
+#===================================================
+
+#--------------------------
+# get data from google maps
+#--------------------------
+geocodes.world_ports<- geocode(df.world_ports$port)
+#We then need to merge the lat/lon data back onto df.world_ports. To do this, we’ll use cbind().
+#--------------------------------------------------------
+# COMBINE:
+# - bind the new lat/long data to df.world_ports data frame
+#--------------------------------------------------------
+df.world_ports<- cbind(df.world_ports, geocodes.world_ports)
+head(df.world_ports)
+
+
+#Manually code missing latitude/longitude data
+#=========================================================================================
+# RECODE lon and lat
+# - There are 4 lon/lat values that weren't found with geocode()
+# - We'll just hand code them
+# - The values can be obtained at http://www.latlong.net/convert-address-to-lat-long.html
+#
+#
+# Tanjung Pelepas, Johor Bahru: lon = 103.551035, lat = 1.362374
+# Yingkou:..................... lon = 122.108231, lat = 40.266062
+# Valencia, Spain:............. lon = -0.3762881, lat = 39.46991
+# Malta Freeport:.............. lon = 14.537637 , lat = 35.816287
+#
+#=========================================================================================
+
+df.world_ports<- df.world_ports %>% 
+  mutate(lon=case_when(.$port=="Tanjung Pelepas" ~ 103.551035
+                                                ,.$port == "Yingkou"        ~ 122.108231
+                                                ,.$port == "Valencia"       ~ -0.3762881
+                                                ,.$port == "Malta Freeport" ~ 14.537637
+                       ,TRUE ~ .$lon
+                       )
+         ,lat = case_when(.$port == "Tanjung Pelepas" ~ 1.362374
+                                                ,.$port == "Yingkou"        ~ 40.266062
+                                                ,.$port == "Valencia"       ~ 39.46991
+                                                ,.$port == "Malta Freeport" ~ 35.816287
+                                                ,TRUE ~ .$lat
+                                                )
+)
+# CHECK
+df.world_ports %>% filter(port == "Tanjung Pelepas") %>% select(lat,lon)
+df.world_ports %>% filter(port == "Yingkou") %>% select(lat,lon)
+df.world_ports %>% filter(port == "Valencia") %>% select(lat,lon)
+df.world_ports %>% filter(port == "Malta Freeport") %>% select(lat,lon)
+
+
+#=============================
+# convert variables to factors
+#=============================
+#mutate allows us to “mutate” or “change” variables that are contained inside of a data frame
+df.world_ports<- mutate(df.world_ports, economy=as.factor(str_trim(economy)), port=as.factor(port))
+
+
+#==============================================
+# CREATE 'LABEL' VARIABLE
+# - Several of the port names are too long when
+#   we use them as plot labels, so we'll make
+#   a new variable that has some abbreviated
+#   names
+#==============================================
+#To identify the port names that are too long, we’re going to list them out using levels(df.world_ports$port). When we do this, we can visually identify names that are long.After identifying long names, we’re using fct_recode() to recode those values into shorter versions.
+#--------------------------------------------
+# GET LEVELS
+# - this will let us identify which labels to
+#   modify
+#--------------------------------------------
+levels(df.world_ports$port)
+#--------------------------------------------
+# RECODE: 
+# - use fct_recode() to create new variable
+#--------------------------------------------
+df.world_ports<- mutate(df.world_ports, port_label=fct_recode(port,
+                                                              "Saigon" = "Ho Chi Minh City (Saigon)",
+                                                              "New York" = "New York and New Jersey",
+                                                              "Jakarta" = "Tanjung Priok (Jakarta)",
+                                                              "Bremen" = "Bremen/Bremerhaven",
+                                                              "Istanbul" = "Ambarli (Istanbul)",
+                                                              "Tangiers" = "Tanger-Med (Tangiers)",
+                                                              "Dubai" = "Jebel Ali (Dubai)",
+                                                              "Ningbo/Z-shan" = "Ningbo-Zhoushan"
+                                                              ))
+
+#=====================================
+# RESHAPE WIDE TO LONG
+# - this data is not in 'tidy' form
+# - we need to reshape it to a longer
+#   form using tidyr::gather()
+#=====================================
+
+# RESHAPE
+df.world_ports<- df.world_ports %>%
+  gather(year,volume, 4:14)
+
+# INSPECT
+head(df.world_ports)
+levels(as.factor(df.world_ports$year))
+levels(df.world_ports$economy)
+levels(df.world_ports$port)
+names(df.world_ports)
+
+
+#================================================
+# CAST YEAR AS FACTOR
+# - now that we have a 'year' variable after
+#   reshaping, we're going to cast it as a factor
+#================================================
+#Convert year to factor
+#We need to convert it to a factor variable. This is a straight forward use of as.factor() inside of mutate().
+df.world_ports<- mutate(df.world_ports, year=as.factor(year))
+
+
+#=============================================
+# RENAME FACTORS
+# - the levels of 'year' contain some info
+#   that we don't need (e.g., the '[11]') in
+#   '2004[11]'
+# - we'll recode manually to remove these
+#=============================================
+
+#-------------------------------------
+# GET LEVELS
+#  - get the levels of the year factor 
+#    so we know what we need to change
+#-------------------------------------
+levels(df.world_ports$year)
+#----------------------------------------
+# RECODE 'year'
+# use mutate to change the year variable
+# - here, we'll use forcats::fct_recode()
+#   to enumerate all of the mappings of
+#   new names from the old names
+#----------------------------------------
+df.world_ports<- mutate(df.world_ports, year=fct_recode(year,
+                                                        "2014" = "2014[1]"
+                                            ,"2013" = "2013[2]"
+                                            ,"2012" = "2012[3]"
+                                            ,"2011" = "2011[4]"
+                                            ,"2010" = "2010[5]"
+                                            ,"2009" = "2009[6]"
+                                            ,"2008" = "2008[7]"
+                                            ,"2007" = "2007[8]"
+                                            ,"2006" = "2006[9]"
+                                            ,"2005" = "2005[10]"
+                                            ,"2004" = "2004[11]"
+                                                        ))
+# INSPECT NEW LEVELS
+levels(df.world_ports$year)
+head(df.world_ports)
+
+#=========================================================
+# CHANGE 'volume' VARIABLE TO NUMERIC
+# - the 'volume' variable comes in as a char
+# - we need to transform it to a numeric
+# - to do this we first need to strip out the commas using 
+#   stringr::str_replace(), then re-cast the variable as 
+#   a numeric using as.numeric()
+#=========================================================
+
+# CAST 'volume' VARIABLE
+df.world_ports<- mutate(df.world_ports, volume= as.numeric(str_replace(volume, ",", "")))
+
+# INSPECT
+head(df.world_ports)
+glimpse(df.world_ports)
+
+
+#=======================================================
+# RANK BY YEAR
+# - here, we're going to create a rank of "busiest port"
+#   by year.  To do this, we need to group our data
+#=======================================================
+# DROP the old 'rank' variable
+df.world_ports<- select(df.world_ports, -rank)
+
+# INSPECT
+glimpse(df.world_ports)
+
+# RE-RANK
+df.world_ports<- df.world_ports %>%
+  group_by(year) %>%
+  mutate(rank = min_rank(desc(volume))) %>%
+  ungroup()
+
+# INSPECT AGAIN
+# - we now have new rankings
+glimpse(df.world_ports)
+
+
+#===========================================
+# ADD CONTINENT VARIABLE
+# - during analysis, it will be interesting
+#   to analyze the data by continent
+# - to do this, we'll create a new variable
+#===========================================
+
+#-----------------------------------------------------
+# LIST COUNTRIES
+# - these are the values that we'll have to 'collapse'
+#   into a new factor
+#-----------------------------------------------------
+levels(df.world_ports$economy)
+#----------------------------------------------------------
+# CREATE VARIABLE: 'continent'
+# - here we're using forcats::fct_collapse() to "collapse"
+#   our country values down into a 'continent' variable
+#----------------------------------------------------------
+df.world_ports<- df.world_ports %>%
+  mutate(continent = fct_collapse(economy, 
+                                  South_America = c("Brazil","Panama")
+                                                     ,North_America = c("Canada","United States")
+                                                     ,Asia = c("Japan","China","Hong Kong","India","Indonesia"
+                                                              ,"Malaysia","Oman","Philippines","Saudi Arabia"
+                                                              ,"Singapore","South Korea","Sri Lanka"
+                                                              ,"Taiwan","Thailand","United Arab Emirates","Vietnam")
+                                                     ,Europe = c("Belgium","Germany","Italy","Malta","Netherlands"
+                                                               ,"Spain","Turkey","United Kingdom")
+                                                     ,Africa = c("Egypt","Morocco")
+                                  ))
+# INSPECT
+glimpse(df.world_ports)
+head(df.world_ports)
+levels(df.world_ports$continent)
+#----------------------------------------------
+# CHECK GROUPINGS
+# - this is just a simple check to see that all
+#   of the countries have been coded into the
+#   correct continent
+#----------------------------------------------
+df.world_ports %>%
+  group_by(continent, economy) %>%
+  summarize(1) %>%
+  print.data.frame()
+
+
+#=========================================
+# REORDER THE VARIABLES
+# - the variables are not in an intuitive
+#   order in the data frame
+# - we'll re order them 
+#=========================================
+
+# CHECK the number of cols
+df.world_ports %>% ncol()
+# GET NAMES
+df.world_ports %>% names()
+#-----------------------------------
+# REORDER VARIABLES
+# we'll use dplyr::select to do this
+#-----------------------------------
+df.world_ports<- select(df.world_ports, rank, year, continent, economy, port, port_label, lon, lat, volume)
+# RE-CHECK the number of cols (just in case)
+df.world_ports %>% ncol()
+# INSPECT
+glimpse(df.world_ports)
+head(df.world_ports, n = 10)
+
+
+#Spot check a few values
+#================================================================
+# SPOT CHECK
+# - as a final test that everything is OK, we'll spot check some 
+#   numbers and compare against the original data
+# - ultimately, we just want to make sure that the original data 
+#   is intact after all of these transformations
+# - check the outputs against the original:
+#   https://en.wikipedia.org/wiki/List_of_busiest_container_ports
+#================================================================
+df.world_ports %>% filter(year == '2012', port == 'Guangzhou') %>% select(volume)
+df.world_ports %>% filter(year == '2007', port == 'Guangzhou') %>% select(volume)  
+df.world_ports %>% filter(year == '2005', port == 'Rotterdam') %>% select(volume)
+df.world_ports %>% filter(year == '2005', port == 'Yingkou') %>% select(volume)
+df.world_ports %>% filter(year == '2004', port == 'Yingkou') %>% select(volume) 
+df.world_ports %>% filter(year == '2007', port == 'Keelung') %>% select(volume)
+df.world_ports %>% filter(year == '2014', port == 'Seattle/Tacoma') %>% select(volume)
+df.world_ports %>% filter(year == '2009', port == 'Nagoya') %>% select(volume) 
+
+df.world_ports
+
+
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).

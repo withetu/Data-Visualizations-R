@@ -60,6 +60,15 @@ jTrain=japan[split==TRUE,]
 jTest=japan[split==FALSE,]
 jTrain
 jTest
+nrow(jTrain)
+nrow(jTest)
+library(rpart)
+library(rpart.plot)
+jdec=rpart(Export_Country~.,data = jTrain)
+jdec
+
+
+
 
 
 
