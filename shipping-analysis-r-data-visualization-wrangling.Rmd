@@ -399,13 +399,19 @@ glimpse(df.world_ports)
 #      smaller for the small multiples
 #=========================================
 
+library(extrafont)
+font_import()
+loadfonts()
+fonts()
+loadfonts(device="win")
+
 #----------------------------------------
 # GENERAL THEME
 # - we'll use this for most of our charts
 #   and build on it when we need to
 #----------------------------------------
 theme.porttheme <-  
-  theme(text = element_text(family = "times", color = "#444444")) +
+  theme(text = element_text(family = "Times New Roman", color = "#444444")) +
   theme(plot.title = element_text(size = 24)) +
   theme(plot.subtitle = element_text(size = 18)) +
   theme(axis.title = element_text(size = 14)) +
@@ -518,10 +524,24 @@ df.world_ports %>%
    labs(x = "Port", y = "Shipping\nVolume\n(1000 TEUs)")+
    theme.smallmult
 
-font_import()
-fonts()
-loadfonts(device = "win")
-loadfonts(device="win") 
+#Plot Shanghai volume change over time (line chart)
+#================================================
+# LINE CHART: Shanghai, Volume change over time
+#  - Shanghai volume has increased substantially
+#    so we want to show it visually
+#================================================
+df.world_ports %>%
+  mutate(port_highlight = ifelse(port == "Shanghai", "Shanghai", "Other")) %>%
+  ggplot(aes(x = year, y = volume, group = port)) +
+    geom_line(aes(color=port_highlight, alpha= port_highlight), size=1.5, na.rm = T)+
+    scale_color_manual(values = c("#999999", "dark red"))+
+    scale_alpha_manual(values = c(.3,1))+
+    labs(title="Shanghai's shipping volume increased\nsubstantially from 2004 to 2014")+
+    labs(x="Year", y="Shipping\nVolume\n(1000 TEUs)")  +
+    theme.porttheme
+
+
+ 
 
 ```
 
