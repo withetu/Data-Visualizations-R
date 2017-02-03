@@ -47,6 +47,12 @@ if(!require(rvest)){
 }
 library(rvest)
 
+if(!require(extrafont)){
+  install.packages("extrafont")
+}
+library(extrafont)
+font_import()
+
 
 #==========================
 #SCRAPE DATA FROM WIKIPEDIA
@@ -399,7 +405,7 @@ glimpse(df.world_ports)
 #   and build on it when we need to
 #----------------------------------------
 theme.porttheme <-  
-  theme(text = element_text(family = "Gill Sans", color = "#444444")) +
+  theme(text = element_text(family = "times", color = "#444444")) +
   theme(plot.title = element_text(size = 24)) +
   theme(plot.subtitle = element_text(size = 18)) +
   theme(axis.title = element_text(size = 14)) +
@@ -470,9 +476,52 @@ df.world_ports %>%
 
 
 
+#Drill down: highlight ports in China
+#==========================
+# BAR CHART: Ports in China
+#========================== 
+df.world_ports %>%
+  mutate(china_flag = ifelse(economy == "China", "China", "Not China")) %>%
+  filter(year == 2014) %>%
+  ggplot(aes(x = reorder(port_label, desc(volume)), y = volume))+
+    geom_bar(stat = "identity", aes(fill = china_flag))+
+    scale_y_continuous(labels = scales::comma_format())+
+    scale_fill_manual(values = c("dark red", "#999999"))  +
+    labs(title="Roughly 20% of busiest ports were\nin China in 2014")+
+    labs(x="Port", y="Shipping\nVolume\n(1000 TEUs)")+
+    theme.widebar
+#==========================
+# BAR CHART: Ports in Asia
+#========================== 
+df.world_ports %>% 
+  mutate(asia_flag = ifelse(continent == "Asia","Asia","Other")) %>%
+  filter(year == 2014) %>%
+  ggplot(aes(x = reorder(port_label, desc(volume)), y = volume)) +
+    geom_bar(stat = "identity", aes(fill = asia_flag)) +
+    scale_fill_manual(values = c("dark red","#999999")) +
+    labs(title = "More than half of the busiest ports were in Asia in 2014") +
+    labs(x = "Port", y = "Shipping\nVolume\n(1000 TEUs)") +
+    theme.widebar
 
+#Small multiple chart: plot change in shipping volume over time, by port
+#========================================================
+# SMALL MULTIPLE, LINE: All ports, shipping vol over time
+#  - This is useful for getting a new overview of the
+#    data
+#========================================================
+df.world_ports %>%
+  ggplot(aes(x = year, y = volume, group = port_label)) + 
+  geom_line(color = "dark red", size = 1, na.rm = T) + 
+   facet_wrap(~ port_label)+
+   labs(title="Strong growth in Shanghai, Singapore,\nShenzhen, Guangzhou")+
+   labs(subtitle = "2004 to 2014")+
+   labs(x = "Port", y = "Shipping\nVolume\n(1000 TEUs)")+
+   theme.smallmult
 
-
+font_import()
+fonts()
+loadfonts(device = "win")
+loadfonts(device="win") 
 
 ```
 
