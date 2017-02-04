@@ -540,7 +540,22 @@ df.world_ports %>%
     labs(x="Year", y="Shipping\nVolume\n(1000 TEUs)")  +
     theme.porttheme
 
+#Plot Singapore volume change over time (line chart)
+#===============
+# PLOT SINGAPORE
+#===============
+df.world_ports %>%
+  filter(port == "Singapore") %>%
+  ggplot(aes(x= year, y=volume, group =1))+
+    geom_line(color="dark red", size = 2)+
+    labs(title="Singapore volume also increased\nsubstantially from 2004 to 2014")+
+    labs(x= "Year", y="Shipping\nVolume\n(1000 TEUs)")+
+    scale_y_continuous(limits = c(0,NA))+
+    theme.porttheme
 
+#Plot rank changes of all ports with small multiple
+
+    
  
 
 ```
