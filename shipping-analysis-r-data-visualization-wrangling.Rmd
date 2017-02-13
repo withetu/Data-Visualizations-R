@@ -554,9 +554,59 @@ df.world_ports %>%
     theme.porttheme
 
 #Plot rank changes of all ports with small multiple
+#We’re going to plot the rank of each port over time. This is essentially a line chart of rank vs year, faceted on the port variable.
+#===================================
+# SMALL MULTIPLE: Rank over time
+# - We'll use this to show
+#   the rank changes of all of the
+#   ports
+# - Given the large number of ports
+#   the data will be much easier to
+#   read in a small multiple
+#===================================
+df.world_ports %>%
+  ggplot(aes(x = year, y = rank, group = port_label))+
+    geom_line(size = 1, color = "dark red", na.rm = T)+
+    scale_y_reverse()+
+    facet_wrap(~port_label)+
+    labs(title = "Ranking over time of world's busiest ports")+
+    labs(subtitle = "2004 to 2014")+
+    labs(x = "Year", y = "Rank")+
+    theme.smallmult
 
-    
- 
+#Plot rank changes for top Chinese ports with a bump chart
+#A bump chart is essentially a line chart, where rank is on the y-axis, and time is on the x-axis. Essentially, the bump chart allows us to track rank changes over time.
+#To limit the complexity of the chart (to stop it from getting messy, with too many lines), we’re going to limit this to the top 15 rankings. To do this, notice that I’ve created a parameter called param.rank_n = 15 that we subsequently use in the code. This essentially allows us to specify how many ranks we want to plot on the y-axis. We’ve set it to “15” in order to plot the “top 15”.
+#============================
+# BUMP CHART: CHINA
+# here, we'll highlight China
+#============================
+param.rank_n = 15
+
+df.world_ports %>%
+  filter(rank <= param.rank_n) %>%
+  mutate(china_flag = ifelse(economy == "China", T,F)) %>%
+  mutate(china_labels = ifelse(china_flag == T, port,"other")) %>%
+  ggplot(aes(x = year, y = rank, group = port_label)) +
+    geom_line(aes(color = china_labels, alpha = china_flag), size = 2) +
+    geom_point(aes(color = china_labels, alpha = china_flag), size = 2.3) +
+    geom_point(color = "#FFFFFF", alpha = .8, size = .3) +
+    geom_text(data = df.world_ports %>% filter(year == "2014", rank <= param.rank_n), aes(label = port_label, x = '2014') , hjust = -.05, color = "#888888", size = 4) +
+    geom_text(data = df.world_ports %>% filter(year == "2004", rank <= param.rank_n), aes(label = port_label, x = '2004') , hjust = 1.05, color = "#888888", size = 4) +
+    scale_x_discrete(expand = c(.3, .3)) +
+    scale_y_reverse(breaks = c(1,5,10,15)) +
+    scale_alpha_discrete(range = c(.4,.9)) +
+    labs(title = "Top Chinese ports increased rank\nsubstantially from 2004 to 2014") +
+    labs(subtitle = "(Port ranks, by volume)") +
+    labs(x = "Year", y = "Rank") +
+    theme.porttheme +
+    theme(panel.grid.major.x = element_line(color = "#F3F3F3")) +  
+    theme(panel.grid.major.y = element_blank()) +
+    theme(panel.grid.minor = element_blank()) +
+    theme(legend.position = "none") +
+    scale_color_manual(values = c("#4e79a5","#f18f3b","#af7a0a","#e0585b","#5aa155","#edc958","#77b7b2","#BBBBBB","#af7a0a"))
+
+
 
 ```
 
