@@ -52,7 +52,9 @@ if(!require(extrafont)){
 }
 library(extrafont)
 font_import()
-
+loadfonts()
+fonts()
+loadfonts(device="win")
 
 #==========================
 #SCRAPE DATA FROM WIKIPEDIA
@@ -399,11 +401,13 @@ glimpse(df.world_ports)
 #      smaller for the small multiples
 #=========================================
 
-library(extrafont)
-font_import()
-loadfonts()
-fonts()
-loadfonts(device="win")
+
+#Load this on begining (Must to load)
+#library(extrafont)
+#font_import()
+#loadfonts()
+#fonts()
+#loadfonts(device="win")
 
 #----------------------------------------
 # GENERAL THEME
@@ -604,7 +608,75 @@ df.world_ports %>%
     theme(panel.grid.major.y = element_blank()) +
     theme(panel.grid.minor = element_blank()) +
     theme(legend.position = "none") +
-    scale_color_manual(values = c("#4e79a5","#f18f3b","#af7a0a","#e0585b","#5aa155","#edc958","#77b7b2","#BBBBBB","#af7a0a"))
+    scale_color_manual(values = c("#4e79a5","#f18f3b","#af7a0a","#e0585b","#5aa155","#edc958","#77b7b2","#BBBBBB","#FF34B3"))
+
+
+
+#Map the data
+#Create basic dot distribution map
+#First, we’ll just get the map itself using map_data(). This will give us a world map that has outlines of the world’s countries.
+##########
+# PLOT MAP
+##########
+
+
+#=============
+# GET MAP DATA
+#=============
+map.world_ploygon <- map_data("world")
+head(map.world_ploygon)
+#We’ll plot the world map as one layer by using geom_polygon().
+#On top of the map, we’ll plot the ports as points by using geom_point().
+#=====================================
+# SIMPLE DOT DISTRIBUTION MAP
+#  - This will be useful just to see
+#    the data
+#  - It also serves as a good test
+#    for the more complex chart we're
+#    going to make next
+#=====================================
+df.world_ports %>%
+  filter(year == "2014") %>%
+  ggplot(aes(x = lon, y = lat))+
+    geom_polygon(data = map.world_ploygon, aes(x = long, y = lat, group = group))+
+    geom_point(color = "deepskyblue3")
+#=========================
+# BUBBLE DISTRIBUTION MAP
+#=========================
+# CREATE THEME
+theme.maptheeme <- 
+  theme(text = element_text(family = "Times New Roman", color = "#444444"))+
+  theme(plot.title = element_text(size = 30))+
+  theme(plot.subtitle = element_text(size = 18))+
+  theme(panel.background = element_rect(fill = "#FCFCFF"))+
+  theme(panel.grid = element_blank())+
+  theme(axis.text = element_blank())+
+  theme(axis.ticks = element_blank())+
+  theme(axis.title = element_blank())+
+  theme(legend.position = c(.17,.35))+
+  theme(legend.background = element_blank())+
+  theme(legend.key = element_blank())+
+  theme(legend.title = element_text(size = 16))+
+  theme(legend.text = element_text(size = 10))
+#==============================================
+# GEOSPATIAL BUBBLE
+# - This will give us a sense
+#   of the density of shipping in a particular
+#   geographic region
+#  
+#==============================================
+df.world_ports %>%
+  filter(year == "2014") %>%
+  ggplot(aes(x = lon, y = lat))+
+    geom_polygon(data = map.world_ploygon, aes(x = long, y = lat, group = group), fill = "#AAAAAA", colour = "#818181", size = .15)+
+    geom_point(aes(size = volume), color = "#DD0000", alpha = .15)+
+    geom_point(aes(size = volume), color = "#DD0000", alpha = .7, shape = 1)+
+    scale_size_continuous(range = c(.2,10), breaks = c(5000, 10000, 30000), name = "Shipping Volume\n(1000 TEUs)")+
+    #coord_proj("+proj=robin +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs") + # use robinson projection
+    labs(title= "High volume ports were highly clustered in\nChina and Asia in 2014")+
+    theme.maptheeme
+
+
 
 
 
