@@ -1,0 +1,112 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+
+######################################
+# How to create Beautiful, Interactive data visualizations using Plotly in R and Python? 
+# https://www.analyticsvidhya.com/blog/2017/01/beginners-guide-to-create-beautiful-interactive-data-visualizations-using-plotly-in-r-and-python/
+######################################
+
+#==========================
+#Sharing the plots can be done as:
+#==========================
+Sys.setenv("plotly_username"="sandippaul")
+Sys.setenv("ploty_api_key"="CTeeg0PAcUPMFRwPaYj8")
+#To post the plots online
+plotly_POST(x = Plotting_Object)
+#To plot the last plot you created, simply use this.
+plotly_POST(x = last_plot(), filename = "XYZ")
+
+
+#==========================
+#Setting up Data
+#==========================
+#Loading iris dataset
+data("iris")
+#Structure of Iris dataset
+str(iris)
+
+#Loading the data
+data("AirPassengers")
+#Structure of International Airline Passengers Time series Dataset
+str(AirPassengers)
+
+#Loading the data
+data("volcano")
+#Checking dimensions
+dim(volcano)
+
+
+#==========================
+#Basic Visualization
+#==========================
+
+
+if(!require(plotly)){
+  install.packages("plotly")
+}
+library(plotly)
+
+#attaching the variables
+attach(iris)
+
+#Histograms
+
+#plotting a histogram with Sepal.Length variable and storing it in hist
+hist<- plot_ly(x=Sepal.Length, type = 'histogram')
+#defining labels and title using layout()
+layout(hist, title = "Iris Dataset - Sepal.Length", 
+       xaxis = list(title="Sepal.Length"), 
+       yaxis = list(title="Count"))
+
+
+#Bar Charts
+
+#plotting a histogram with Species variable and storing it in bar_chart
+bar_chart<-plot_ly(x=Species, type='histogram')
+#defining labels and titile using layout()
+layout(bar_chart, title = "Iris Dataset - Species",
+       xaxis = list(title="Species"),
+       yaxis = list(title="Count"))
+
+
+#Box Plots
+
+#plotting a Boxplot with Sepal.Length variable and storing it in box_plot
+box_plot<-plot_ly(y=Sepal.Length, type = 'box', color = Species)
+#defining labels and title using layout()
+layout(box_plot, title="Iris Dataset - Sepal.Length Boxplot",
+       yaxis = list(title="Sepal.Length"))
+
+
+#Scatter Plots
+
+#plotting a Scatter Plot with Sepal.Length and Sepal.Width variables and storing it in scatter_plot1
+scatter_plot1<-plot_ly(x=Sepal.Length, y=Sepal.Width, type = 'scatter', mode='markers')
+#defining labels and titile using layout()
+layout(scatter_plot1, title="Iris Dataser - Sepal.Length vs Sepal.Width",
+       xaxis = list(title="Sepal.Length"),
+       yaxis = list(title="Sepal.Width"))
+#1. Let’s go a step further and add another dimension (Species) using color.
+#plotting a Scatter Plot with Sepal.Length and Sepal.Width variables with color representing the Species and storing it in scatter_plot12
+scatter_plot2<-plot_ly(x=Sepal.Length, y=Sepal.Width, type = 'scatter', mode='markers', color = Species)
+#defining labels and titile using layout()
+layout(scatter_plot2, title="Iris Dataset - Sepal.Length vs Sepal.Width",
+       xaxis = list(title="Sepal.Length"),
+       yaxis = list(title="Sepal.Width"))
+#2. We can add another dimension (Petal Length) to the plot by using the size of each data point in the plot.
+
+
+
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
