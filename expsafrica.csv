@@ -1,0 +1,913 @@
+Month,Import_Country,Import_Continent,US_Dollar_Value,Tonnes,Data_Type,Year
+Oct,Austria,Europe,"12,50,012.79",752.5251,Actual,2015
+Nov,Austria,Europe,"8,07,914.21",509.1749,Actual,2015
+Nov,Bangladesh,Asia,"14,01,996.00","1,004.09",Actual,2015
+Mar,Belgium,Europe,"4,27,815.52",200.6436,Actual,2015
+May,Belgium,Europe,"55,272.19",25.1429,Actual,2015
+Jun,Belgium,Europe,"1,37,379.17",74.9058,Actual,2015
+Aug,Belgium,Europe,"3,00,370.98",175.8006,Actual,2015
+Sep,Belgium,Europe,"1,26,779.48",75.5239,Actual,2015
+Oct,Belgium,Europe,"85,312.22",49.8809,Actual,2015
+Nov,Belgium,Europe,"5,01,365.44",300.9233,Actual,2015
+Jan,Botswana,Africa,"8,725.41",61.1798,Actual,2015
+Feb,Botswana,Africa,"7,271.14",50.5795,Actual,2015
+Mar,Botswana,Africa,"4,379.43",30.5001,Actual,2015
+Apr,Botswana,Africa,"6,936.54",50.6595,Actual,2015
+May,Botswana,Africa,"4,118.01",30.3904,Actual,2015
+Jun,Botswana,Africa,"6,277.62",45.6931,Actual,2015
+Jul,Botswana,Africa,"11,409.07",79.9353,Actual,2015
+Oct,Botswana,Africa,"75,975.28",20.355,Actual,2015
+Nov,Botswana,Africa,"5,152.49",40.6122,Actual,2015
+May,Brazil,Latin America,"41,32,786.66","1,934.91",Actual,2015
+Jun,Brazil,Latin America,"8,25,200.79",336.8852,Actual,2015
+Jul,Brazil,Latin America,"4,74,219.03",223.2038,Actual,2015
+Dec,Brazil,Latin America,"5,88,218.53",330.4395,Actual,2015
+Jan,China,Asia,"1,06,955.01",42.929,Actual,2015
+Feb,China,Asia,"28,740.81",8.5632,Actual,2015
+Apr,China,Asia,"32,013.29",9.6336,Actual,2015
+Jun,China,Asia,"10,253.67",8.5632,Actual,2015
+Jul,China,Asia,"27,743.22",8.5632,Actual,2015
+Aug,China,Asia,"28,399.77",9.3895,Actual,2015
+Sep,China,Asia,"8,651.05",8.5632,Actual,2015
+Oct,China,Asia,"29,517.10",8.9914,Actual,2015
+Nov,China,Asia,"6,169.08",4.4957,Actual,2015
+Jan,Czech Rep.,Europe,"2,27,314.00",97.032,Actual,2015
+Feb,Czech Rep.,Europe,"3,51,819.00",147.138,Actual,2015
+Apr,Czech Rep.,Europe,"1,09,042.00",50.311,Actual,2015
+Nov,Czech Rep.,Europe,"1,95,874.00",100.236,Actual,2015
+Jan,France,Europe,"1,71,497.55",78.3355,Actual,2015
+Feb,France,Europe,"1,30,422.61",68.5118,Actual,2015
+Apr,France,Europe,"88,255.65",42.9113,Actual,2015
+May,France,Europe,"1,55,586.28",69.2432,Actual,2015
+Jun,France,Europe,"34,09,240.90","1,693.41",Actual,2015
+Jul,France,Europe,"10,01,587.78",511.2784,Actual,2015
+Aug,France,Europe,"11,52,593.56",582.7159,Actual,2015
+Sep,France,Europe,"10,82,296.70",621.8481,Actual,2015
+Oct,France,Europe,"11,50,151.97",625.0177,Actual,2015
+Nov,France,Europe,"7,82,873.92",434.2148,Actual,2015
+Dec,France,Europe,"4,87,609.08",278.4358,Actual,2015
+Feb,Gabon,Africa,"41,854.40",11.4945,Actual,2015
+Mar,Gabon,Africa,"27,818.60",5.0755,Actual,2015
+Apr,Germany,Europe,"39,38,090.71","1,806.90",Actual,2015
+May,Germany,Europe,"31,46,591.74","1,499.43",Actual,2015
+Jun,Germany,Europe,"21,92,910.02","1,117.49",Actual,2015
+Jul,Germany,Europe,"55,95,770.27","2,694.53",Actual,2015
+Aug,Germany,Europe,"9,42,358.58",447.1034,Actual,2015
+Sep,Germany,Europe,"5,26,843.79",222.6501,Actual,2015
+Oct,Germany,Europe,"40,11,421.95","2,347.26",Actual,2015
+Nov,Germany,Europe,"34,75,453.95","1,939.74",Actual,2015
+Jan,Hong Kong,Asia,"24,73,868.33","1,052.38",Actual,2015
+Feb,Hong Kong,Asia,"34,94,222.68","1,477.26",Actual,2015
+Mar,Hong Kong,Asia,"52,57,993.82","2,423.63",Actual,2015
+Apr,Hong Kong,Asia,"30,41,156.78","1,473.81",Actual,2015
+May,Hong Kong,Asia,"9,86,411.05",526.8626,Actual,2015
+Jun,Hong Kong,Asia,"67,16,123.78","3,056.34",Actual,2015
+Jul,Hong Kong,Asia,"32,03,856.51","1,473.48",Actual,2015
+Aug,Hong Kong,Asia,"15,85,530.96",945.2338,Actual,2015
+Sep,Hong Kong,Asia,"32,79,816.95","2,002.03",Actual,2015
+Oct,Hong Kong,Asia,"8,51,571.63",526.3525,Actual,2015
+Nov,Hong Kong,Asia,"17,22,948.51","1,073.29",Actual,2015
+Oct,Hungary,Europe,"16,40,682.42",986.9225,Actual,2015
+Nov,Hungary,Europe,"32,90,654.58","1,995.75",Actual,2015
+Jan,India,Asia,"4,83,556.93",208.6966,Actual,2015
+Feb,India,Asia,"3,68,728.73",153.8304,Actual,2015
+Mar,India,Asia,"3,68,288.23",153.8304,Actual,2015
+Apr,India,Asia,"13,23,169.37",619.5008,Actual,2015
+May,India,Asia,"22,78,050.50","1,085.17",Actual,2015
+Jun,India,Asia,"29,59,161.38","1,335.25",Actual,2015
+Jul,India,Asia,"8,35,956.75",433.4901,Actual,2015
+Aug,India,Asia,"9,39,567.06",461.2585,Actual,2015
+Sep,India,Asia,"36,93,435.25","1,952.33",Actual,2015
+Oct,India,Asia,"19,15,666.81","1,057.33",Actual,2015
+Nov,India,Asia,"1,35,78,024.56","7,948.93",Actual,2015
+Dec,India,Asia,"1,14,26,006.45","6,635.22",Actual,2015
+Feb,Indonesia,Asia,"6,35,297.00",302.109,Actual,2015
+Mar,Indonesia,Asia,"11,68,669.00",590.848,Actual,2015
+Apr,Indonesia,Asia,"10,98,967.00",611.184,Actual,2015
+May,Indonesia,Asia,"5,05,100.00",301.333,Actual,2015
+Jun,Indonesia,Asia,"5,93,913.00",300.877,Actual,2015
+Jul,Indonesia,Asia,"11,67,413.00",599.69,Actual,2015
+Aug,Indonesia,Asia,"8,95,276.00",602.82,Actual,2015
+Sep,Indonesia,Asia,"11,76,773.00",801.613,Actual,2015
+Oct,Indonesia,Asia,"4,46,698.00",300.543,Actual,2015
+Nov,Indonesia,Asia,"8,52,487.00",600.812,Actual,2015
+Jan,Italy,Europe,"15,12,358.39",807.0098,Actual,2015
+Feb,Italy,Europe,"63,933.77",29.0538,Actual,2015
+Mar,Italy,Europe,"8,63,952.74",449.9966,Actual,2015
+Apr,Italy,Europe,"7,45,725.25",367.6542,Actual,2015
+Jun,Italy,Europe,"51,40,819.16","2,748.69",Actual,2015
+Jul,Italy,Europe,"41,58,291.04","2,378.66",Actual,2015
+Aug,Italy,Europe,"4,53,241.11",281.2358,Actual,2015
+Oct,Italy,Europe,"2,68,275.84",168.1987,Actual,2015
+Nov,Italy,Europe,"2,33,562.27",168.5677,Actual,2015
+Dec,Italy,Europe,"86,163.42",56.4996,Actual,2015
+Jan,Japan,Asia,"2,69,60,253.20","11,153.93",Actual,2015
+Feb,Japan,Asia,"3,84,73,357.50","16,200.53",Actual,2015
+Mar,Japan,Asia,"3,30,79,577.88","14,754.41",Actual,2015
+Apr,Japan,Asia,"1,97,54,416.49","8,853.03",Actual,2015
+May,Japan,Asia,"3,83,18,459.28","17,328.28",Actual,2015
+Jun,Japan,Asia,"5,28,64,718.88","24,601.26",Actual,2015
+Jul,Japan,Asia,"2,66,16,419.05","12,088.15",Actual,2015
+Aug,Japan,Asia,"57,29,212.82","2,772.50",Actual,2015
+Sep,Japan,Asia,"2,52,40,774.53","12,479.14",Actual,2015
+Oct,Japan,Asia,"84,28,429.56","4,843.17",Actual,2015
+Nov,Japan,Asia,"98,39,236.51","5,896.57",Actual,2015
+Dec,Japan,Asia,"1,49,12,422.31","9,251.53",Actual,2015
+Feb,Kenya,Africa,"18,34,295.72",688.4008,Actual,2015
+Apr,Kenya,Africa,"20,23,445.32",813.5646,Actual,2015
+May,Kenya,Africa,"9,61,843.88",376.3775,Actual,2015
+Jun,Kenya,Africa,"15,54,639.41",625.8189,Actual,2015
+Jul,Kenya,Africa,"12,52,242.95",500.6551,Actual,2015
+Aug,Kenya,Africa,"4,01,715.94",219.0366,Actual,2015
+Sep,Kenya,Africa,"7,27,734.81",375.4913,Actual,2015
+Oct,Kenya,Africa,"6,91,006.42",375.4913,Actual,2015
+Nov,Kenya,Africa,"2,31,334.55",125.1638,Actual,2015
+May,Madagascar,Africa,"4,901.00",1.5,Actual,2015
+Jan,Malaysia,Asia,"17,35,558.02",758.6291,Actual,2015
+Feb,Malaysia,Asia,"26,70,198.27","1,129.24",Actual,2015
+Mar,Malaysia,Asia,"7,47,554.42",337.7744,Actual,2015
+Apr,Malaysia,Asia,"20,34,984.54",849.1973,Actual,2015
+May,Malaysia,Asia,"24,87,198.42","1,125.50",Actual,2015
+Jun,Malaysia,Asia,"30,04,518.61","1,364.73",Actual,2015
+Jul,Malaysia,Asia,"12,64,810.09",563.3735,Actual,2015
+Aug,Malaysia,Asia,"21,08,446.17","1,032.32",Actual,2015
+Sep,Malaysia,Asia,"15,31,317.87",912.1028,Actual,2015
+Oct,Malaysia,Asia,"15,46,960.04",912.1028,Actual,2015
+Nov,Malaysia,Asia,"21,10,107.72","1,241.48",Actual,2015
+Dec,Malaysia,Asia,"27,58,578.82","1,689.56",Actual,2015
+Jan,Mexico,Latin America,"11,90,975.00",530.4777,Actual,2015
+Feb,Mexico,Latin America,"13,40,781.00",570.0566,Actual,2015
+Mar,Mexico,Latin America,"5,53,569.00",239.7958,Actual,2015
+Apr,Mexico,Latin America,"20,57,444.00",898.7819,Actual,2015
+May,Mexico,Latin America,"28,61,288.00","1,218.73",Actual,2015
+Jun,Mexico,Latin America,"24,84,383.00","1,151.82",Actual,2015
+Jul,Mexico,Latin America,"16,14,604.00",729.7652,Actual,2015
+Aug,Mexico,Latin America,"6,62,151.00",308.4081,Actual,2015
+Sep,Mexico,Latin America,"38,41,951.00","1,998.67",Actual,2015
+Oct,Mexico,Latin America,"44,99,746.00","2,377.95",Actual,2015
+Nov,Mexico,Latin America,"6,09,275.00",308.2366,Actual,2015
+Mar,Mozambique,Africa,"1,078.35",0.783,Actual,2015
+Sep,Mozambique,Africa,769.6464,1.117,Actual,2015
+Jan,Namibia,Africa,"41,257.00",18.241,Actual,2015
+Jan,Netherlands,Europe,"23,06,824.18","1,458.60",Actual,2015
+Feb,Netherlands,Europe,"5,77,007.33",359,Actual,2015
+Mar,Netherlands,Europe,"40,20,304.52","2,317.10",Actual,2015
+Apr,Netherlands,Europe,"52,01,250.04","2,885.20",Actual,2015
+May,Netherlands,Europe,"45,93,724.43","2,738.00",Actual,2015
+Jun,Netherlands,Europe,"64,39,540.47","4,438.90",Actual,2015
+Jul,Netherlands,Europe,"48,62,223.00","3,221.70",Actual,2015
+Aug,Netherlands,Europe,"29,03,875.79","1,900.10",Actual,2015
+Sep,Netherlands,Europe,"71,88,633.50","5,181.30",Actual,2015
+Oct,Netherlands,Europe,"32,78,181.87","2,445.80",Actual,2015
+Nov,Netherlands,Europe,"48,03,680.90","3,616.60",Actual,2015
+Dec,Netherlands,Europe,"11,02,761.06",827.1,Actual,2015
+Aug,Nigeria,Africa,"96,408.91",1.6669,Actual,2015
+Sep,Nigeria,Africa,"12,835.15",0.3509,Actual,2015
+Nov,Nigeria,Africa,"3,43,334.94",43.9822,Actual,2015
+Jan,Norway,Europe,"42,30,707.32","1,847.63",Actual,2015
+Feb,Norway,Europe,"4,53,615.82",200.478,Actual,2015
+Mar,Norway,Europe,"16,13,210.54",734.869,Actual,2015
+May,Norway,Europe,"12,04,576.39",607.889,Actual,2015
+Jun,Norway,Europe,"21,09,007.46","1,112.07",Actual,2015
+Jul,Norway,Europe,"15,80,996.18",832.156,Actual,2015
+Aug,Norway,Europe,"93,694.71",50.052,Actual,2015
+Sep,Norway,Europe,"13,96,696.73",773.836,Actual,2015
+Oct,Norway,Europe,"8,47,240.35",511.087,Actual,2015
+Nov,Norway,Europe,"68,68,210.43","4,091.61",Actual,2015
+Dec,Norway,Europe,"12,36,568.05",726.443,Actual,2015
+Jun,Pakistan,Asia,"99,666.02",333.3042,Actual,2015
+Aug,Pakistan,Asia,"45,179.89",166.2914,Actual,2015
+Oct,Pakistan,Asia,"86,856.05",358.0461,Actual,2015
+Nov,Pakistan,Asia,"43,395.04",182.3583,Actual,2015
+Apr,Papua New Guinea,Oceania,"25,707.61",17.4129,Actual,2015
+May,Papua New Guinea,Oceania,"23,122.68",17.4129,Actual,2015
+Jun,Papua New Guinea,Oceania,"71,742.42",50.4975,Actual,2015
+Jul,Papua New Guinea,Oceania,"33,422.40",24.204,Actual,2015
+Aug,Papua New Guinea,Oceania,"20,398.67",17.4129,Actual,2015
+Sep,Papua New Guinea,Oceania,"14,967.22",13.0597,Actual,2015
+Jul,Poland,Europe,"45,292.00",23.845,Actual,2015
+Aug,Poland,Europe,"46,087.00",25.059,Actual,2015
+Sep,Poland,Europe,"46,501.00",24.936,Actual,2015
+Oct,Poland,Europe,"89,382.00",50.036,Actual,2015
+Jun,Portugal,Europe,"5,57,597.79",265.54,Actual,2015
+Jul,Portugal,Europe,"2,50,068.21",120.86,Actual,2015
+Aug,Portugal,Europe,"2,56,304.00",120.7,Actual,2015
+Jan,Singapore,Asia,"51,916.11",9.4291,Actual,2015
+Apr,Singapore,Asia,"19,252.10",9.4291,Actual,2015
+May,Singapore,Asia,"36,050.03",18.8582,Actual,2015
+Jun,Singapore,Asia,"51,742.09",9.4366,Actual,2015
+Aug,Singapore,Asia,"19,407.52",10.372,Actual,2015
+Sep,Singapore,Asia,"17,505.95",9.4291,Actual,2015
+Oct,Singapore,Asia,"63,316.20",18.8582,Actual,2015
+Nov,Singapore,Asia,"92,642.01",38.1878,Actual,2015
+Jul,Slovenia,Europe,"2,38,211.00",125.268,Actual,2015
+Oct,Slovenia,Europe,"3,59,093.00",200.753,Actual,2015
+Nov,Slovenia,Europe,"5,12,417.00",300.977,Actual,2015
+Jul,South Africa,Africa,"8,439.64",4.8387,Actual,2015
+Nov,South Africa,Africa,"33,106.36",20.1613,Actual,2015
+Jan,South Korea,Asia,"48,66,920.02","3,008.05",Estimate,2015
+Feb,South Korea,Asia,"51,10,728.74","2,840.34",Estimate,2015
+Mar,South Korea,Asia,"53,54,537.47","2,954.07",Estimate,2015
+Apr,South Korea,Asia,"55,98,346.19","3,045.50",Estimate,2015
+May,South Korea,Asia,"58,42,154.91","3,057.62",Estimate,2015
+Jun,South Korea,Asia,"60,85,963.64","3,206.09",Estimate,2015
+Jul,South Korea,Asia,"63,29,772.36","3,186.70",Estimate,2015
+Aug,South Korea,Asia,"65,73,581.09","2,869.65",Estimate,2015
+Sep,South Korea,Asia,"68,17,389.81","3,084.89",Estimate,2015
+Oct,South Korea,Asia,"70,61,198.53","3,327.77",Estimate,2015
+Nov,South Korea,Asia,"73,05,007.26","2,892.20",Estimate,2015
+Dec,South Korea,Asia,"75,48,815.98","2,669.25",Estimate,2015
+Jan,Spain,Europe,"6,98,491.82",313.7958,Actual,2015
+Feb,Spain,Europe,"4,46,108.84",192.7974,Actual,2015
+Mar,Spain,Europe,"2,80,160.66",120.9984,Actual,2015
+Apr,Spain,Europe,"2,22,233.49",96.4987,Actual,2015
+May,Spain,Europe,"11,54,251.86",531.1928,Actual,2015
+Jun,Spain,Europe,"13,17,137.29",675.2909,Actual,2015
+Jul,Spain,Europe,"14,41,213.95",699.6905,Actual,2015
+Aug,Spain,Europe,"21,10,809.18",868.4882,Actual,2015
+Oct,Spain,Europe,"5,99,337.08",383.4948,Actual,2015
+Nov,Spain,Europe,"19,98,607.52","1,248.69",Actual,2015
+Dec,Spain,Europe,"5,48,546.31",336.2954,Actual,2015
+Jan,Switzerland,Europe,"52,21,700.51","2,186.31",Actual,2015
+Feb,Switzerland,Europe,"1,06,53,999.85","4,512.18",Actual,2015
+Apr,Switzerland,Europe,"1,07,07,051.98","4,880.25",Actual,2015
+May,Switzerland,Europe,"1,44,10,037.66","6,582.31",Actual,2015
+Jun,Switzerland,Europe,"87,74,106.55","4,370.17",Actual,2015
+Jul,Switzerland,Europe,"40,15,478.62","2,183.84",Actual,2015
+Aug,Switzerland,Europe,"62,31,504.80","3,585.81",Actual,2015
+Sep,Switzerland,Europe,"86,73,849.35","4,782.42",Actual,2015
+Oct,Switzerland,Europe,"1,36,26,713.83","7,883.28",Actual,2015
+Nov,Switzerland,Europe,"86,49,716.30","5,141.26",Actual,2015
+Dec,Switzerland,Europe,"57,27,331.55","3,300.35",Actual,2015
+Mar,Taiwan,Asia,"56,22,258.54","2,686.88",Actual,2015
+Jun,Taiwan,Asia,"6,87,037.01",335.7073,Actual,2015
+Jul,Taiwan,Asia,"5,38,623.85",266.8712,Actual,2015
+Aug,Taiwan,Asia,"54,424.37",28.8144,Actual,2015
+Nov,Taiwan,Asia,"3,21,846.23",216.6082,Actual,2015
+Jan,Thailand,Asia,"42,91,929.91","3,587.91",Actual,2015
+Feb,Thailand,Asia,"40,71,707.22","3,602.22",Actual,2015
+Mar,Thailand,Asia,"57,05,243.19","2,530.15",Estimate,2015
+Apr,Thailand,Asia,"58,51,610.86","2,608.46",Estimate,2015
+May,Thailand,Asia,"59,97,978.52","2,618.84",Estimate,2015
+Jun,Thailand,Asia,"61,44,346.19","2,746.01",Estimate,2015
+Jul,Thailand,Asia,"62,90,713.85","2,729.40",Estimate,2015
+Aug,Thailand,Asia,"64,37,081.52","2,457.85",Estimate,2015
+Sep,Thailand,Asia,"65,83,449.19","2,642.20",Estimate,2015
+Oct,Thailand,Asia,"67,29,816.85","2,850.23",Estimate,2015
+Nov,Thailand,Asia,"68,76,184.52","2,477.17",Estimate,2015
+Dec,Thailand,Asia,"70,22,552.18","2,286.20",Estimate,2015
+Jan,Turkey,Asia,"81,62,306.63","3,581.72",Actual,2015
+Feb,Turkey,Asia,"94,96,107.43","4,202.84",Actual,2015
+Mar,Turkey,Asia,"91,58,416.80","4,173.24",Actual,2015
+Apr,Turkey,Asia,"99,01,463.68","4,599.51",Actual,2015
+May,Turkey,Asia,"52,02,818.77","2,528.59",Actual,2015
+Jun,Turkey,Asia,"1,27,03,283.91","6,610.18",Actual,2015
+Jul,Turkey,Asia,"1,79,87,911.17","9,364.51",Actual,2015
+Aug,Turkey,Asia,"2,31,25,962.57","12,357.36",Actual,2015
+Sep,Turkey,Asia,"1,03,396.04",60.2934,Actual,2015
+Mar,Ukraine,Europe,"7,633.22",3.0498,Estimate,2015
+Apr,Ukraine,Europe,"7,869.46",3.1441,Estimate,2015
+May,Ukraine,Europe,"7,900.78",3.1567,Estimate,2015
+Jun,Ukraine,Europe,"8,284.42",3.3099,Estimate,2015
+Jul,Ukraine,Europe,"8,234.34",3.2899,Estimate,2015
+Aug,Ukraine,Europe,"7,415.07",2.9626,Estimate,2015
+Sep,Ukraine,Europe,"7,971.26",3.1848,Estimate,2015
+Oct,Ukraine,Europe,"8,598.86",3.4356,Estimate,2015
+Nov,Ukraine,Europe,"7,473.35",2.9859,Estimate,2015
+Dec,Ukraine,Europe,"6,897.24",2.7557,Estimate,2015
+Jan,United Kingdom,Europe,"64,04,383.11","2,562.58",Actual,2015
+Mar,United Kingdom,Europe,"46,94,917.49","2,025.35",Actual,2015
+Apr,United Kingdom,Europe,"92,12,179.89","4,005.36",Actual,2015
+Jun,United Kingdom,Europe,"17,57,674.86",974.3817,Actual,2015
+Sep,United Kingdom,Europe,"31,49,541.66","1,969.37",Actual,2015
+Feb,Viet Nam,Asia,"10,31,994.82",498.7624,Actual,2015
+Mar,Viet Nam,Asia,"10,89,692.57",592.4271,Actual,2015
+Apr,Viet Nam,Asia,"2,07,983.47",125.4235,Actual,2015
+May,Viet Nam,Asia,"10,36,583.16",628.6667,Actual,2015
+Jun,Viet Nam,Asia,"13,29,097.86",690.599,Actual,2015
+Jul,Viet Nam,Asia,"19,01,776.16","1,001.99",Actual,2015
+Aug,Viet Nam,Asia,"11,69,672.04",816.9021,Actual,2015
+Sep,Viet Nam,Asia,"26,22,225.81","1,880.51",Actual,2015
+Nov,Viet Nam,Asia,"25,89,601.10","1,882.88",Actual,2015
+Jan,Zambia,Africa,"6,243.84",2.9621,Actual,2015
+Feb,Zambia,Africa,"21,680.06",5.869,Actual,2015
+Jun,Zambia,Africa,"57,852.01",29.6974,Actual,2015
+Aug,Zambia,Africa,"55,445.09",32.5835,Actual,2015
+Jan,Austria,Europe,"8,14,956.00",499.1,Actual,2016
+Apr,Austria,Europe,"12,54,071.00",771.8,Actual,2016
+Jun,Austria,Europe,"8,27,106.00",500.9,Actual,2016
+Sep,Austria,Europe,"8,82,810.09",158.7249,Estimate,2016
+Oct,Austria,Europe,"8,67,510.73",154.5978,Estimate,2016
+Nov,Austria,Europe,"8,52,211.37",150.4706,Estimate,2016
+Dec,Austria,Europe,"8,36,912.01",146.3435,Estimate,2016
+Sep,Bahrain,Asia,"35,751.00",25.34,Actual,2016
+Oct,Bahrain,Asia,"29,657.00",20,Actual,2016
+Nov,Bangladesh,Asia,"14,45,391.11",58.9704,Estimate,2016
+Dec,Bangladesh,Asia,"14,47,736.80",60.6503,Estimate,2016
+Mar,Belgium,Europe,"2,78,543.00",181.2,Actual,2016
+Apr,Belgium,Europe,"8,97,294.00",500,Actual,2016
+May,Belgium,Europe,"17,44,434.00","1,012.53",Actual,2016
+Jun,Belgium,Europe,"21,43,792.00","1,265.09",Actual,2016
+Jul,Belgium,Europe,"18,12,040.00","1,052.26",Actual,2016
+Aug,Belgium,Europe,"1,29,668.00",75.499,Actual,2016
+Sep,Belgium,Europe,"7,19,965.58",209.4174,Estimate,2016
+Oct,Belgium,Europe,"6,97,602.26",202.1858,Estimate,2016
+Nov,Belgium,Europe,"6,75,238.93",194.9542,Estimate,2016
+Dec,Belgium,Europe,"6,52,875.61",187.7226,Estimate,2016
+Mar,Botswana,Africa,"14,462.00",61.184,Actual,2016
+Aug,Botswana,Africa,"2,912.00",6.69,Actual,2016
+Nov,Botswana,Africa,"65,069.05",21.0821,Estimate,2016
+Dec,Botswana,Africa,"63,969.28",14.0972,Estimate,2016
+Feb,Brazil,Latin America,"1,62,472.00",100.64,Actual,2016
+Apr,Brazil,Latin America,"1,84,369.00",100.022,Actual,2016
+Aug,Brazil,Latin America,"5,48,765.00",301.011,Actual,2016
+Sep,Brazil,Latin America,"6,61,247.00",376.934,Actual,2016
+Oct,Brazil,Latin America,"9,49,472.76",191.6087,Estimate,2016
+Nov,Brazil,Latin America,"9,59,151.43",196.8484,Estimate,2016
+Dec,Brazil,Latin America,"9,68,830.11",202.088,Estimate,2016
+Mar,Canada,North America,"37,950.00",19.173,Actual,2016
+Mar,China,Asia,"85,996.00",40,Actual,2016
+Apr,China,Asia,"2,62,917.00",100.001,Actual,2016
+May,China,Asia,"52,169.00",20,Actual,2016
+Jul,China,Asia,"7,86,992.00",501.937,Actual,2016
+Sep,China,Asia,"1,23,738.00",50,Actual,2016
+Oct,China,Asia,"50,196.00",20,Actual,2016
+Apr,Czech Rep.,Europe,"21,078.00",12.175,Actual,2016
+Aug,Czech Rep.,Europe,"13,81,147.00",751.533,Actual,2016
+Nov,Czech Rep.,Europe,"4,10,939.47",88.199,Estimate,2016
+Dec,Czech Rep.,Europe,"4,16,065.97",91.0812,Estimate,2016
+Jan,France,Europe,"17,88,631.00","1,032.60",Actual,2016
+Feb,France,Europe,"18,91,534.00","1,075.10",Actual,2016
+Mar,France,Europe,"7,86,979.00",443.6,Actual,2016
+Apr,France,Europe,"4,62,042.00",258.2,Actual,2016
+May,France,Europe,"17,11,105.00",953.6,Actual,2016
+Jun,France,Europe,"14,89,280.00",867.1,Actual,2016
+Jul,France,Europe,"6,49,905.00",351,Actual,2016
+Aug,France,Europe,"13,23,072.00",754.7,Actual,2016
+Sep,France,Europe,"3,65,495.59",271.1758,Estimate,2016
+Oct,France,Europe,"2,84,118.87",239.5094,Estimate,2016
+Nov,France,Europe,"2,02,742.15",207.843,Estimate,2016
+Dec,France,Europe,"1,21,365.43",176.1766,Estimate,2016
+Jan,Germany,Europe,"23,49,287.00","1,424.01",Actual,2016
+Feb,Germany,Europe,"18,56,902.00","1,111.90",Actual,2016
+Mar,Germany,Europe,"44,72,512.00","2,581.60",Actual,2016
+Apr,Germany,Europe,"16,08,687.00","1,012.80",Actual,2016
+May,Germany,Europe,"67,35,015.00","4,109.11",Actual,2016
+Jun,Germany,Europe,"6,51,569.00",382.671,Actual,2016
+Jul,Germany,Europe,"84,678.00",50.3,Actual,2016
+Aug,Germany,Europe,"19,32,713.00","1,109.40",Actual,2016
+Sep,Germany,Europe,"33,16,066.88","1,528.87",Estimate,2016
+Oct,Germany,Europe,"34,03,896.51","1,581.30",Estimate,2016
+Nov,Germany,Europe,"34,91,726.13","1,633.72",Estimate,2016
+Dec,Germany,Europe,"35,79,555.76","1,686.14",Estimate,2016
+Jan,Hong Kong,Asia,,"1,582.54",Actual,2016
+Feb,Hong Kong,Asia,"23,24,381.00","1,662.86",Actual,2016
+Mar,Hong Kong,Asia,"23,39,169.00","1,502.22",Actual,2016
+Apr,Hong Kong,Asia,"43,89,287.00","2,781.84",Actual,2016
+May,Hong Kong,Asia,"27,36,638.00","1,746.32",Actual,2016
+Jun,Hong Kong,Asia,"27,71,009.00","1,765.98",Actual,2016
+Jul,Hong Kong,Asia,"23,10,199.00","1,445.27",Actual,2016
+Aug,Hong Kong,Asia,"26,44,909.00","1,468.80",Actual,2016
+Sep,Hong Kong,Asia,"24,79,742.00","1,441.32",Actual,2016
+Oct,Hong Kong,Asia,"15,69,460.00","1,001.58",Actual,2016
+Nov,Hong Kong,Asia,"24,10,480.03","1,556.05",Estimate,2016
+Dec,Hong Kong,Asia,"24,03,893.88","1,566.42",Estimate,2016
+Jan,Hungary,Europe,"13,67,156.80",981.1,Actual,2016
+Jan,India,Asia,"1,90,57,917.00","12,047.00",Actual,2016
+Feb,India,Asia,"20,30,662.00","1,252.00",Actual,2016
+Mar,India,Asia,"14,46,283.00",900,Actual,2016
+Apr,India,Asia,"30,19,995.00","1,826.60",Actual,2016
+May,India,Asia,"5,99,176.00",351,Actual,2016
+Jun,India,Asia,"19,64,697.00","1,181.00",Actual,2016
+Jul,India,Asia,"16,67,384.00","1,003.00",Actual,2016
+Aug,India,Asia,"16,76,560.00",953,Actual,2016
+Sep,India,Asia,"1,84,548.00",100,Actual,2016
+Oct,India,Asia,"36,89,593.21","2,317.29",Estimate,2016
+Nov,India,Asia,"37,40,735.36","2,359.51",Estimate,2016
+Dec,India,Asia,"37,91,877.52","2,401.73",Estimate,2016
+Jan,Indonesia,Asia,,550.079,Actual,2016
+Feb,Indonesia,Asia,"6,83,428.00",500.408,Actual,2016
+Mar,Indonesia,Asia,"9,33,898.00",599.75,Actual,2016
+Apr,Indonesia,Asia,"9,46,446.00",599.838,Actual,2016
+May,Indonesia,Asia,"9,28,139.00",600.799,Actual,2016
+Jun,Indonesia,Asia,"6,29,505.00",399.663,Actual,2016
+Jul,Indonesia,Asia,"9,41,760.00",600.647,Actual,2016
+Aug,Indonesia,Asia,"5,35,051.00",301.202,Actual,2016
+Sep,Indonesia,Asia,"8,70,967.00",499.472,Actual,2016
+Oct,Indonesia,Asia,"9,41,693.00",600.959,Actual,2016
+Nov,Indonesia,Asia,"6,51,124.97",334.2523,Estimate,2016
+Dec,Indonesia,Asia,"6,22,899.09",323.5873,Estimate,2016
+Mar,Italy,Europe,"58,25,558.00","3,938.70",Actual,2016
+Apr,Italy,Europe,"2,41,915.00",144.058,Actual,2016
+Jan,Japan,Asia,"1,82,43,003.00","11,510.57",Actual,2016
+Feb,Japan,Asia,"2,17,91,795.00","13,552.30",Actual,2016
+Mar,Japan,Asia,"62,24,549.00","3,867.19",Actual,2016
+Apr,Japan,Asia,"63,34,435.00","3,846.25",Actual,2016
+May,Japan,Asia,"69,87,548.00","3,832.39",Actual,2016
+Jun,Japan,Asia,"1,81,91,496.00","10,634.52",Actual,2016
+Jul,Japan,Asia,"33,96,828.00","1,968.66",Actual,2016
+Aug,Japan,Asia,"1,85,43,028.00","10,586.74",Actual,2016
+Sep,Japan,Asia,"1,64,70,302.00","9,448.49",Actual,2016
+Oct,Japan,Asia,"1,34,24,109.00","7,651.42",Actual,2016
+Nov,Japan,Asia,"1,30,91,728.88","7,342.70",Estimate,2016
+Dec,Japan,Asia,"1,26,25,918.49","7,143.57",Estimate,2016
+Jan,Kenya,Africa,,425,Actual,2016
+Feb,Kenya,Africa,"3,65,998.00",200,Actual,2016
+Mar,Kenya,Africa,"12,51,371.00",650,Actual,2016
+Apr,Kenya,Africa,"17,88,770.00","1,050.00",Actual,2016
+May,Kenya,Africa,"15,63,603.00",900,Actual,2016
+Jun,Kenya,Africa,"18,10,306.00","1,000.00",Actual,2016
+Jul,Kenya,Africa,"11,27,481.00",600,Actual,2016
+Aug,Kenya,Africa,"7,35,057.00",400,Actual,2016
+Sep,Kenya,Africa,"10,62,347.00",600,Actual,2016
+Oct,Kenya,Africa,"12,40,529.00",700,Actual,2016
+Nov,Kenya,Africa,"10,26,501.14",547.7184,Estimate,2016
+Dec,Kenya,Africa,"10,27,167.00",554.0432,Estimate,2016
+Jan,Malaysia,Asia,"32,27,275.00","2,016.98",Actual,2016
+Feb,Malaysia,Asia,"11,38,545.00",701.246,Actual,2016
+Mar,Malaysia,Asia,"10,25,769.00",601.405,Actual,2016
+Apr,Malaysia,Asia,"11,86,274.00",671.483,Actual,2016
+May,Malaysia,Asia,"10,90,141.00",652.819,Actual,2016
+Jun,Malaysia,Asia,"11,77,896.46",704.6566,Estimate,2016
+Jul,Malaysia,Asia,"10,56,163.11",652.9292,Estimate,2016
+Aug,Malaysia,Asia,"9,34,429.76",601.2018,Estimate,2016
+Sep,Malaysia,Asia,"8,12,696.41",549.4744,Estimate,2016
+Oct,Malaysia,Asia,"6,90,963.06",497.7469,Estimate,2016
+Nov,Malaysia,Asia,"5,69,229.72",446.0195,Estimate,2016
+Dec,Malaysia,Asia,"4,47,496.37",394.2921,Estimate,2016
+May,Mexico,Latin America,"7,53,966.00",432.154,Actual,2016
+Jun,Mexico,Latin America,"1,88,01,258.00","11,641.47",Actual,2016
+Jul,Mexico,Latin America,"73,68,469.00","4,032.15",Actual,2016
+Aug,Mexico,Latin America,"72,026.00",41.331,Actual,2016
+Oct,Mexico,Latin America,"29,41,614.10","1,476.20",Estimate,2016
+Nov,Mexico,Latin America,"29,26,771.48","1,483.55",Estimate,2016
+Dec,Mexico,Latin America,"29,11,928.86","1,490.91",Estimate,2016
+Jun,Mozambique,Africa,"28,805.00",6.664,Actual,2016
+Jul,Mozambique,Africa,"7,43,580.00",400.02,Actual,2016
+Nov,Mozambique,Africa,"99,000.35",39.4574,Estimate,2016
+Dec,Mozambique,Africa,"1,01,873.30",40.9733,Estimate,2016
+Aug,Namibia,Africa,"4,191.00",2.768,Actual,2016
+May,Nigeria,Africa,"3,778.00",7.416,Actual,2016
+Jan,Norway,Europe,"44,624.00",24.992,Actual,2016
+Feb,Norway,Europe,"26,36,770.00","1,557.42",Actual,2016
+Mar,Norway,Europe,"35,43,926.00","2,093.19",Actual,2016
+Apr,Norway,Europe,"22,67,462.00","1,293.74",Actual,2016
+Jun,Norway,Europe,"46,65,130.00","2,668.00",Actual,2016
+Jul,Norway,Europe,"73,43,145.00","4,277.31",Actual,2016
+Sep,Norway,Europe,"16,95,974.00","1,008.16",Actual,2016
+Oct,Norway,Europe,"52,30,855.00","2,982.01",Actual,2016
+Nov,Norway,Europe,"17,16,512.58",873.0671,Estimate,2016
+Dec,Norway,Europe,"15,99,926.06",828.5591,Estimate,2016
+Jan,Papua New Guinea,Oceania,,36,Actual,2016
+Feb,Papua New Guinea,Oceania,"54,477.00",51,Actual,2016
+Mar,Papua New Guinea,Oceania,"22,874.00",21,Actual,2016
+May,Papua New Guinea,Oceania,"57,192.00",44,Actual,2016
+Sep,Papua New Guinea,Oceania,"2,16,248.00",180,Actual,2016
+Oct,Papua New Guinea,Oceania,"98,645.00",80,Actual,2016
+Nov,Papua New Guinea,Oceania,"1,17,231.05",51.4206,Estimate,2016
+Dec,Papua New Guinea,Oceania,"1,19,171.74",53.0986,Estimate,2016
+Feb,Poland,Europe,"39,728.00",24.031,Actual,2016
+Mar,Romania,Europe,"76,612.00",45.1,Actual,2016
+Apr,Romania,Europe,"43,553.00",24.1,Actual,2016
+May,Romania,Europe,"43,321.00",24,Actual,2016
+Jun,Romania,Europe,"42,928.00",24.1,Actual,2016
+Jul,Romania,Europe,"43,047.00",24.1,Actual,2016
+Jul,Saint Helena,Africa,"7,444.00",1.301,Actual,2016
+Mar,Singapore,Asia,"25,996.00",22,Actual,2016
+May,Singapore,Asia,"21,891.00",20,Actual,2016
+Jun,Singapore,Asia,"1,06,677.00",80,Actual,2016
+Jul,Singapore,Asia,"27,288.00",20,Actual,2016
+Sep,Singapore,Asia,"52,161.00",40,Actual,2016
+Nov,Singapore,Asia,"66,575.90",27.1027,Estimate,2016
+Dec,Singapore,Asia,"66,921.35",27.7444,Estimate,2016
+Jun,Slovenia,Europe,"48,801.00",28.2,Actual,2016
+Sep,Slovenia,Europe,"6,64,342.51",26.9298,Estimate,2016
+Oct,Slovenia,Europe,"6,60,123.61",25.6995,Estimate,2016
+Nov,Slovenia,Europe,"6,55,904.72",24.4692,Estimate,2016
+Dec,Slovenia,Europe,"6,51,685.82",23.239,Estimate,2016
+Mar,South Africa,Africa,"4,47,309.00",248.317,Actual,2016
+Jan,South Korea,Asia,"3,01,32,367.88","2,772.00",Estimate,2016
+Feb,South Korea,Asia,"3,10,75,122.65","2,617.45",Estimate,2016
+Mar,South Korea,Asia,"3,20,17,877.43","2,722.25",Estimate,2016
+Apr,South Korea,Asia,"3,29,60,632.21","2,806.50",Estimate,2016
+May,South Korea,Asia,"3,39,03,386.98","2,817.68",Estimate,2016
+Jun,South Korea,Asia,"3,48,46,141.76","2,954.49",Estimate,2016
+Jul,South Korea,Asia,"3,57,88,896.53","2,936.63",Estimate,2016
+Aug,South Korea,Asia,"3,67,31,651.31","2,644.45",Estimate,2016
+Sep,South Korea,Asia,"3,76,74,406.08","2,842.81",Estimate,2016
+Oct,South Korea,Asia,"3,86,17,160.86","3,066.63",Estimate,2016
+Nov,South Korea,Asia,"3,95,59,915.64","2,892.20",Estimate,2016
+Dec,South Korea,Asia,"4,05,02,670.41","2,669.25",Estimate,2016
+Jan,Spain,Europe,"17,04,075.00",806.5,Actual,2016
+Feb,Spain,Europe,"17,31,052.00",940.1,Actual,2016
+Mar,Spain,Europe,"4,39,560.00",249.1,Actual,2016
+Apr,Spain,Europe,"15,09,176.00",900.6,Actual,2016
+May,Spain,Europe,"11,21,712.00",652.8,Actual,2016
+Jun,Spain,Europe,"11,70,410.00",716.1,Actual,2016
+Jul,Spain,Europe,"5,03,164.00",289.3,Actual,2016
+Aug,Spain,Europe,"14,20,998.00",819.3,Actual,2016
+Sep,Spain,Europe,"18,66,211.24",803.9826,Estimate,2016
+Oct,Spain,Europe,"19,12,973.64",830.5116,Estimate,2016
+Nov,Spain,Europe,"19,59,736.05",857.0407,Estimate,2016
+Dec,Spain,Europe,"20,06,498.45",883.5698,Estimate,2016
+Feb,Sri Lanka,Asia,"10,891.00",10,Actual,2016
+Jul,Sri Lanka,Asia,"51,300.00",40,Actual,2016
+Sep,Sri Lanka,Asia,"55,071.00",40,Actual,2016
+Nov,Sri Lanka,Asia,"47,449.17",8.8571,Estimate,2016
+Dec,Sri Lanka,Asia,"47,901.16",9.2008,Estimate,2016
+Jan,Swaziland,Africa,,1.583,Actual,2016
+Mar,Swaziland,Africa,"10,547.00",3.111,Actual,2016
+May,Swaziland,Africa,"18,727.00",4.53,Actual,2016
+Jun,Swaziland,Africa,"38,791.00",13.545,Actual,2016
+Nov,Swaziland,Africa,"6,087.06",2.0692,Estimate,2016
+Dec,Swaziland,Africa,"6,261.27",2.1429,Estimate,2016
+Jan,Switzerland,Europe,"98,38,315.00","5,739.67",Actual,2016
+Feb,Switzerland,Europe,"1,45,52,606.00","8,480.61",Actual,2016
+Mar,Switzerland,Europe,"1,81,03,870.00","10,270.48",Actual,2016
+Apr,Switzerland,Europe,"1,34,99,993.00","7,866.32",Actual,2016
+May,Switzerland,Europe,"85,05,179.00","4,717.35",Actual,2016
+Jun,Switzerland,Europe,"1,00,53,907.00","5,805.99",Actual,2016
+Jul,Switzerland,Europe,"1,19,87,175.00","6,815.43",Actual,2016
+Aug,Switzerland,Europe,"1,12,48,624.19","6,453.44",Estimate,2016
+Sep,Switzerland,Europe,"1,14,16,148.96","6,588.57",Estimate,2016
+Oct,Switzerland,Europe,"1,15,83,673.73","6,723.69",Estimate,2016
+Nov,Switzerland,Europe,"1,17,51,198.50","6,858.82",Estimate,2016
+Dec,Switzerland,Europe,"1,19,18,723.27","6,993.94",Estimate,2016
+Mar,Taiwan,Asia,"3,12,159.00",200.469,Actual,2016
+Apr,Taiwan,Asia,"1,58,374.00",100.374,Actual,2016
+May,Taiwan,Asia,"1,55,448.00",100.623,Actual,2016
+Jun,Taiwan,Asia,"3,09,831.00",200.432,Actual,2016
+Jul,Taiwan,Asia,"1,57,493.00",100.448,Actual,2016
+Jan,Thailand,Asia,"1,52,69,235.19","4,231.17",Estimate,2016
+Feb,Thailand,Asia,"1,55,80,986.80","3,995.27",Estimate,2016
+Mar,Thailand,Asia,"1,58,92,738.42","4,155.24",Estimate,2016
+Apr,Thailand,Asia,"1,62,04,490.03","4,283.84",Estimate,2016
+May,Thailand,Asia,"1,65,16,241.64","4,300.89",Estimate,2016
+Jun,Thailand,Asia,"1,68,27,993.25","4,509.73",Estimate,2016
+Jul,Thailand,Asia,"1,71,39,744.86","4,482.46",Estimate,2016
+Aug,Thailand,Asia,"1,74,51,496.48","4,036.48",Estimate,2016
+Sep,Thailand,Asia,"1,77,63,248.09","4,339.25",Estimate,2016
+Oct,Thailand,Asia,"1,80,74,999.70","4,680.89",Estimate,2016
+Nov,Thailand,Asia,"1,83,86,751.31","2,651.69",Estimate,2016
+Dec,Thailand,Asia,"1,86,98,502.92","2,447.28",Estimate,2016
+Jan,Turkey,Asia,"37,58,158.00","2,195.05",Actual,2016
+Feb,Turkey,Asia,"82,23,761.00","5,087.15",Actual,2016
+Mar,Turkey,Asia,"2,39,15,930.00","14,695.37",Actual,2016
+Apr,Turkey,Asia,"35,28,238.00","2,098.64",Actual,2016
+May,Turkey,Asia,"12,93,991.00",717.665,Actual,2016
+Jun,Turkey,Asia,"2,39,70,322.00","14,398.91",Actual,2016
+Jul,Turkey,Asia,"86,57,773.00","5,286.97",Actual,2016
+Aug,Turkey,Asia,"72,33,065.00","4,256.63",Actual,2016
+Sep,Turkey,Asia,"23,06,372.00","1,336.61",Actual,2016
+Oct,Turkey,Asia,"1,12,60,516.00","6,644.84",Actual,2016
+Nov,Turkey,Asia,"88,85,558.61","4,970.47",Estimate,2016
+Dec,Turkey,Asia,"89,30,619.91","5,031.97",Estimate,2016
+Jan,Ukraine,Europe,"8,183.11",3.3489,Estimate,2016
+Feb,Ukraine,Europe,"7,726.87",3.1621,Estimate,2016
+Mar,Ukraine,Europe,"8,036.25",3.2888,Estimate,2016
+Apr,Ukraine,Europe,"8,284.97",3.3905,Estimate,2016
+May,Ukraine,Europe,"8,317.95",3.404,Estimate,2016
+Jun,Ukraine,Europe,"8,721.84",3.5693,Estimate,2016
+Jul,Ukraine,Europe,"8,669.11",3.5477,Estimate,2016
+Aug,Ukraine,Europe,"7,806.58",3.1948,Estimate,2016
+Sep,Ukraine,Europe,"8,392.14",3.4344,Estimate,2016
+Oct,Ukraine,Europe,"9,052.88",3.7048,Estimate,2016
+Nov,Ukraine,Europe,"6,264.04",2.5027,Estimate,2016
+Dec,Ukraine,Europe,"5,781.16",2.3098,Estimate,2016
+May,United Kingdom,Europe,"11,71,862.00","1,010.68",Actual,2016
+Jun,United Kingdom,Europe,"11,60,533.00","1,011.39",Actual,2016
+Aug,United Kingdom,Europe,"12,82,283.00","1,010.18",Actual,2016
+Oct,United Kingdom,Europe,"26,70,170.00","2,023.33",Actual,2016
+Nov,United Kingdom,Europe,"20,16,922.44",587.9825,Estimate,2016
+Dec,United Kingdom,Europe,"20,04,358.72",579.5641,Estimate,2016
+Apr,USA,North America,"1,58,56,353.00","10,117.61",Actual,2016
+May,USA,North America,"93,63,709.00","6,061.28",Actual,2016
+Jun,USA,North America,"1,81,99,629.00","12,000.54",Actual,2016
+Sep,USA,North America,"79,01,418.00","5,058.63",Actual,2016
+Oct,USA,North America,"1,36,31,271.00","8,087.30",Actual,2016
+Nov,USA,North America,"1,34,26,171.16","2,857.33",Estimate,2016
+Dec,USA,North America,"1,34,35,676.34","2,890.18",Estimate,2016
+Jan,Viet Nam,Asia,,176.0125,Actual,2016
+Feb,Viet Nam,Asia,"3,43,729.00",251.679,Actual,2016
+Mar,Viet Nam,Asia,"1,56,253.00",100.346,Actual,2016
+May,Viet Nam,Asia,"1,54,673.00",100.122,Actual,2016
+Jun,Viet Nam,Asia,"3,03,477.00",200.108,Actual,2016
+Jul,Viet Nam,Asia,"2,74,938.00",175.353,Actual,2016
+Aug,Viet Nam,Asia,"2,67,206.00",150.421,Actual,2016
+Sep,Viet Nam,Asia,"4,20,787.00",250.45,Actual,2016
+Oct,Viet Nam,Asia,"3,53,687.00",225.712,Actual,2016
+Nov,Viet Nam,Asia,"4,15,389.80",144.5728,Estimate,2016
+Dec,Viet Nam,Asia,"3,74,002.27",125.673,Estimate,2016
+Feb,Zambia,Africa,"6,026.00",4,Actual,2016
+May,Zambia,Africa,"26,263.00",14.957,Actual,2016
+Jul,Zambia,Africa,"18,908.00",9.98,Actual,2016
+Oct,Zambia,Africa,"43,206.00",24.991,Actual,2016
+Nov,Zambia,Africa,"23,249.08",5.7747,Estimate,2016
+Dec,Zambia,Africa,"22,924.02",5.7194,Estimate,2016
+Jan,Austria,Europe,"8,21,612.65",142.2163,Estimate,2017
+Feb,Austria,Europe,"8,06,313.29",138.0892,Estimate,2017
+Mar,Austria,Europe,"7,91,013.93",133.9621,Estimate,2017
+Apr,Austria,Europe,"7,75,714.57",129.8349,Estimate,2017
+May,Austria,Europe,"7,60,415.21",125.7078,Estimate,2017
+Jun,Austria,Europe,"7,45,115.85",121.5807,Estimate,2017
+Jul,Austria,Europe,"7,29,816.49",117.4535,Estimate,2017
+Aug,Austria,Europe,"7,14,517.13",113.3264,Estimate,2017
+Sep,Austria,Europe,"6,99,217.77",109.1993,Estimate,2017
+Oct,Austria,Europe,"6,83,918.41",105.0721,Estimate,2017
+Jan,Bangladesh,Asia,"14,50,082.48",62.3303,Estimate,2017
+Feb,Bangladesh,Asia,"14,52,428.16",64.0102,Estimate,2017
+Mar,Bangladesh,Asia,"14,54,773.84",65.6901,Estimate,2017
+Apr,Bangladesh,Asia,"14,57,119.52",67.3701,Estimate,2017
+May,Bangladesh,Asia,"14,59,465.21",69.05,Estimate,2017
+Jun,Bangladesh,Asia,"14,61,810.89",70.73,Estimate,2017
+Jul,Bangladesh,Asia,"14,64,156.57",72.4099,Estimate,2017
+Aug,Bangladesh,Asia,"14,66,502.25",74.0899,Estimate,2017
+Sep,Bangladesh,Asia,"14,68,847.93",75.7698,Estimate,2017
+Oct,Bangladesh,Asia,"14,71,193.61",77.4498,Estimate,2017
+Jan,Belgium,Europe,"6,30,512.29",180.4909,Estimate,2017
+Feb,Belgium,Europe,"6,08,148.97",173.2593,Estimate,2017
+Mar,Belgium,Europe,"5,85,785.65",166.0277,Estimate,2017
+Apr,Belgium,Europe,"5,63,422.33",158.796,Estimate,2017
+May,Belgium,Europe,"5,41,059.01",151.5644,Estimate,2017
+Jun,Belgium,Europe,"5,18,695.69",144.3328,Estimate,2017
+Jul,Belgium,Europe,"4,96,332.36",137.1011,Estimate,2017
+Aug,Belgium,Europe,"4,73,969.04",129.8695,Estimate,2017
+Sep,Belgium,Europe,"4,51,605.72",122.6379,Estimate,2017
+Oct,Belgium,Europe,"4,29,242.40",115.4063,Estimate,2017
+Jan,Botswana,Africa,"62,869.50",7.1123,Estimate,2017
+Jan,Brazil,Latin America,"9,78,508.78",207.3277,Estimate,2017
+Feb,Brazil,Latin America,"9,88,187.45",212.5673,Estimate,2017
+Mar,Brazil,Latin America,"9,97,866.12",217.807,Estimate,2017
+Apr,Brazil,Latin America,"10,07,544.79",223.0466,Estimate,2017
+May,Brazil,Latin America,"10,17,223.47",228.2863,Estimate,2017
+Jun,Brazil,Latin America,"10,26,902.14",233.526,Estimate,2017
+Jul,Brazil,Latin America,"10,36,580.81",238.7656,Estimate,2017
+Aug,Brazil,Latin America,"10,46,259.48",244.0053,Estimate,2017
+Sep,Brazil,Latin America,"10,55,938.15",249.2449,Estimate,2017
+Oct,Brazil,Latin America,"10,65,616.83",254.4846,Estimate,2017
+Jan,Czech Rep.,Europe,"4,21,192.47",93.9635,Estimate,2017
+Feb,Czech Rep.,Europe,"4,26,318.96",96.8457,Estimate,2017
+Mar,Czech Rep.,Europe,"4,31,445.46",99.7279,Estimate,2017
+Apr,Czech Rep.,Europe,"4,36,571.96",102.6101,Estimate,2017
+May,Czech Rep.,Europe,"4,41,698.46",105.4924,Estimate,2017
+Jun,Czech Rep.,Europe,"4,46,824.96",108.3746,Estimate,2017
+Jul,Czech Rep.,Europe,"4,51,951.46",111.2568,Estimate,2017
+Aug,Czech Rep.,Europe,"4,57,077.95",114.139,Estimate,2017
+Sep,Czech Rep.,Europe,"4,62,204.45",117.0212,Estimate,2017
+Oct,Czech Rep.,Europe,"4,67,330.95",119.9035,Estimate,2017
+Jan,France,Europe,"39,988.71",144.5102,Estimate,2017
+Feb,France,Europe,"-41,388.01",112.8438,Estimate,2017
+Mar,France,Europe,"-1,22,764.73",81.1773,Estimate,2017
+Apr,France,Europe,"-2,04,141.45",49.5109,Estimate,2017
+May,France,Europe,"-2,85,518.17",17.8445,Estimate,2017
+Jun,France,Europe,"8,52,669.15",444.0642,Estimate,2017
+Jul,France,Europe,"8,47,514.05",441.3795,Estimate,2017
+Aug,France,Europe,"7,63,191.32",397.4648,Estimate,2017
+Sep,France,Europe,"8,20,436.82",427.2779,Estimate,2017
+Oct,France,Europe,"8,85,032.31",460.9187,Estimate,2017
+Jan,Germany,Europe,"36,67,385.38","1,738.56",Estimate,2017
+Feb,Germany,Europe,"37,55,215.01","1,790.99",Estimate,2017
+Mar,Germany,Europe,"38,43,044.64","1,843.41",Estimate,2017
+Apr,Germany,Europe,"39,30,874.26","1,895.83",Estimate,2017
+May,Germany,Europe,"40,18,703.89","1,948.25",Estimate,2017
+Jun,Germany,Europe,"41,06,533.51","2,000.68",Estimate,2017
+Jul,Germany,Europe,"41,94,363.14","2,053.10",Estimate,2017
+Aug,Germany,Europe,"42,82,192.76","2,105.52",Estimate,2017
+Sep,Germany,Europe,"43,70,022.39","2,157.94",Estimate,2017
+Oct,Germany,Europe,"44,57,852.01","2,210.37",Estimate,2017
+Jan,Hong Kong,Asia,"23,97,307.73","1,576.79",Estimate,2017
+Feb,Hong Kong,Asia,"23,90,721.58","1,587.16",Estimate,2017
+Mar,Hong Kong,Asia,"23,84,135.43","1,597.53",Estimate,2017
+Apr,Hong Kong,Asia,"23,77,549.29","1,607.90",Estimate,2017
+May,Hong Kong,Asia,"23,70,963.14","1,618.27",Estimate,2017
+Jun,Hong Kong,Asia,"23,64,376.99","1,628.64",Estimate,2017
+Jul,Hong Kong,Asia,"23,57,790.84","1,639.01",Estimate,2017
+Aug,Hong Kong,Asia,"23,51,204.69","1,649.38",Estimate,2017
+Sep,Hong Kong,Asia,"23,44,618.54","1,659.75",Estimate,2017
+Oct,Hong Kong,Asia,"23,38,032.39","1,670.12",Estimate,2017
+Jan,India,Asia,"38,43,019.68","2,443.95",Estimate,2017
+Feb,India,Asia,"38,94,161.83","2,486.17",Estimate,2017
+Mar,India,Asia,"39,45,303.99","2,528.39",Estimate,2017
+Apr,India,Asia,"39,96,446.15","2,570.61",Estimate,2017
+May,India,Asia,"40,47,588.31","2,612.83",Estimate,2017
+Jun,India,Asia,"40,98,730.46","2,655.05",Estimate,2017
+Jul,India,Asia,"41,49,872.62","2,697.27",Estimate,2017
+Aug,India,Asia,"42,01,014.78","2,739.49",Estimate,2017
+Sep,India,Asia,"42,52,156.94","2,781.70",Estimate,2017
+Oct,India,Asia,"43,03,299.09","2,823.92",Estimate,2017
+Jan,Indonesia,Asia,"5,94,673.22",312.9223,Estimate,2017
+Feb,Indonesia,Asia,"5,66,447.35",302.2574,Estimate,2017
+Mar,Indonesia,Asia,"5,38,221.48",291.5924,Estimate,2017
+Apr,Indonesia,Asia,"5,09,995.60",280.9274,Estimate,2017
+May,Indonesia,Asia,"4,81,769.73",270.2624,Estimate,2017
+Jun,Indonesia,Asia,"4,53,543.86",259.5974,Estimate,2017
+Jul,Indonesia,Asia,"4,25,317.99",248.9324,Estimate,2017
+Aug,Indonesia,Asia,"3,97,092.11",238.2674,Estimate,2017
+Sep,Indonesia,Asia,"3,68,866.24",227.6024,Estimate,2017
+Oct,Indonesia,Asia,"3,40,640.37",216.9374,Estimate,2017
+Jan,Japan,Asia,"1,21,60,108.09","6,944.43",Estimate,2017
+Feb,Japan,Asia,"1,16,94,297.70","6,745.30",Estimate,2017
+Mar,Japan,Asia,"1,12,28,487.31","6,546.16",Estimate,2017
+Apr,Japan,Asia,"1,07,62,676.91","6,347.03",Estimate,2017
+May,Japan,Asia,"1,02,96,866.52","6,147.90",Estimate,2017
+Jun,Japan,Asia,"98,31,056.12","5,948.76",Estimate,2017
+Jul,Japan,Asia,"93,65,245.73","5,749.63",Estimate,2017
+Aug,Japan,Asia,"88,99,435.34","5,550.49",Estimate,2017
+Sep,Japan,Asia,"84,33,624.94","5,351.36",Estimate,2017
+Oct,Japan,Asia,"79,67,814.55","5,152.23",Estimate,2017
+Jan,Kenya,Africa,"10,27,832.86",560.3681,Estimate,2017
+Feb,Kenya,Africa,"10,28,498.72",566.6929,Estimate,2017
+Mar,Kenya,Africa,"10,29,164.58",573.0178,Estimate,2017
+Apr,Kenya,Africa,"10,29,830.45",579.3426,Estimate,2017
+May,Kenya,Africa,"10,30,496.31",585.6675,Estimate,2017
+Jun,Kenya,Africa,"10,31,162.17",591.9923,Estimate,2017
+Jul,Kenya,Africa,"10,31,828.03",598.3172,Estimate,2017
+Aug,Kenya,Africa,"10,32,493.89",604.642,Estimate,2017
+Sep,Kenya,Africa,"10,33,159.75",610.9668,Estimate,2017
+Oct,Kenya,Africa,"10,33,825.61",617.2917,Estimate,2017
+Jan,Malaysia,Asia,"3,25,763.02",342.5647,Estimate,2017
+Feb,Malaysia,Asia,"2,04,029.67",290.8373,Estimate,2017
+Mar,Malaysia,Asia,"82,296.32",239.1098,Estimate,2017
+Apr,Malaysia,Asia,"-39,437.03",187.3824,Estimate,2017
+May,Malaysia,Asia,"-1,61,170.37",135.655,Estimate,2017
+Jun,Malaysia,Asia,"-2,82,903.72",83.9276,Estimate,2017
+Jul,Malaysia,Asia,"-4,04,637.07",32.2002,Estimate,2017
+Aug,Malaysia,Asia,"19,05,591.80",946.1163,Estimate,2017
+Sep,Malaysia,Asia,"20,48,526.55","1,017.08",Estimate,2017
+Oct,Malaysia,Asia,"22,09,813.28","1,097.16",Estimate,2017
+Jan,Mexico,Latin America,"28,97,086.24","1,498.26",Estimate,2017
+Feb,Mexico,Latin America,"28,82,243.62","1,505.61",Estimate,2017
+Mar,Mexico,Latin America,"28,67,401.00","1,512.96",Estimate,2017
+Apr,Mexico,Latin America,"28,52,558.38","1,520.32",Estimate,2017
+May,Mexico,Latin America,"28,37,715.77","1,527.67",Estimate,2017
+Jun,Mexico,Latin America,"28,22,873.15","1,535.02",Estimate,2017
+Jul,Mexico,Latin America,"28,08,030.53","1,542.38",Estimate,2017
+Aug,Mexico,Latin America,"27,93,187.91","1,549.73",Estimate,2017
+Sep,Mexico,Latin America,"27,78,345.29","1,557.08",Estimate,2017
+Oct,Mexico,Latin America,"27,63,502.67","1,564.44",Estimate,2017
+Jan,Mozambique,Africa,"1,04,746.25",42.4891,Estimate,2017
+Feb,Mozambique,Africa,"1,07,619.20",44.005,Estimate,2017
+Mar,Mozambique,Africa,"1,10,492.16",45.5208,Estimate,2017
+Apr,Mozambique,Africa,"1,13,365.11",47.0367,Estimate,2017
+May,Mozambique,Africa,"1,16,238.06",48.5525,Estimate,2017
+Jun,Mozambique,Africa,"1,19,111.01",50.0684,Estimate,2017
+Jul,Mozambique,Africa,"1,21,983.96",51.5842,Estimate,2017
+Aug,Mozambique,Africa,"1,24,856.91",53.1001,Estimate,2017
+Sep,Mozambique,Africa,"1,27,729.86",54.6159,Estimate,2017
+Oct,Mozambique,Africa,"1,30,602.81",56.1318,Estimate,2017
+Jan,Norway,Europe,"14,83,339.53",784.0511,Estimate,2017
+Feb,Norway,Europe,"13,66,753.01",739.5432,Estimate,2017
+Mar,Norway,Europe,"12,50,166.49",695.0352,Estimate,2017
+Apr,Norway,Europe,"11,33,579.96",650.5273,Estimate,2017
+May,Norway,Europe,"10,16,993.44",606.0193,Estimate,2017
+Jun,Norway,Europe,"9,00,406.92",561.5114,Estimate,2017
+Jul,Norway,Europe,"7,83,820.39",517.0034,Estimate,2017
+Aug,Norway,Europe,"6,67,233.87",472.4955,Estimate,2017
+Sep,Norway,Europe,"5,50,647.35",427.9875,Estimate,2017
+Oct,Norway,Europe,"4,34,060.82",383.4796,Estimate,2017
+Jan,Papua New Guinea,Oceania,"1,21,112.43",54.7766,Estimate,2017
+Feb,Papua New Guinea,Oceania,"1,23,053.11",56.4546,Estimate,2017
+Mar,Papua New Guinea,Oceania,"1,24,993.80",58.1326,Estimate,2017
+Apr,Papua New Guinea,Oceania,"1,26,934.48",59.8106,Estimate,2017
+May,Papua New Guinea,Oceania,"1,28,875.17",61.4886,Estimate,2017
+Jun,Papua New Guinea,Oceania,"1,30,815.86",63.1666,Estimate,2017
+Jul,Papua New Guinea,Oceania,"1,32,756.54",64.8446,Estimate,2017
+Aug,Papua New Guinea,Oceania,"1,34,697.23",66.5226,Estimate,2017
+Sep,Papua New Guinea,Oceania,"1,36,637.91",68.2006,Estimate,2017
+Oct,Papua New Guinea,Oceania,"1,38,578.60",69.8785,Estimate,2017
+Jan,Singapore,Asia,"67,266.80",28.386,Estimate,2017
+Feb,Singapore,Asia,"67,612.25",29.0277,Estimate,2017
+Mar,Singapore,Asia,"67,957.70",29.6693,Estimate,2017
+Apr,Singapore,Asia,"68,303.15",30.311,Estimate,2017
+May,Singapore,Asia,"68,648.61",30.9526,Estimate,2017
+Jun,Singapore,Asia,"68,994.06",31.5943,Estimate,2017
+Jul,Singapore,Asia,"69,339.51",32.236,Estimate,2017
+Aug,Singapore,Asia,"69,684.96",32.8776,Estimate,2017
+Sep,Singapore,Asia,"70,030.41",33.5193,Estimate,2017
+Oct,Singapore,Asia,"70,375.86",34.1609,Estimate,2017
+Jan,Slovenia,Europe,"6,47,466.92",22.0087,Estimate,2017
+Feb,Slovenia,Europe,"6,43,248.03",20.7784,Estimate,2017
+Mar,Slovenia,Europe,"6,39,029.13",19.5481,Estimate,2017
+Apr,Slovenia,Europe,"6,34,810.23",18.3179,Estimate,2017
+May,Slovenia,Europe,"6,30,591.34",17.0876,Estimate,2017
+Jun,Slovenia,Europe,"6,26,372.44",15.8573,Estimate,2017
+Jul,Slovenia,Europe,"6,22,153.54",14.627,Estimate,2017
+Aug,Slovenia,Europe,"6,17,934.65",13.3968,Estimate,2017
+Sep,Slovenia,Europe,"6,13,715.75",12.1665,Estimate,2017
+Oct,Slovenia,Europe,"6,09,496.85",10.9362,Estimate,2017
+Jan,South Korea,Asia,"4,14,45,425.19","3,008.05",Estimate,2017
+Feb,South Korea,Asia,"4,23,88,179.96","2,840.34",Estimate,2017
+Mar,South Korea,Asia,"4,33,30,934.74","2,954.07",Estimate,2017
+Apr,South Korea,Asia,"4,42,73,689.52","3,045.50",Estimate,2017
+May,South Korea,Asia,"4,52,16,444.29","3,057.62",Estimate,2017
+Jun,South Korea,Asia,"4,61,59,199.07","3,206.09",Estimate,2017
+Jul,South Korea,Asia,"4,71,01,953.84","3,186.70",Estimate,2017
+Aug,South Korea,Asia,"4,80,44,708.62","2,869.65",Estimate,2017
+Sep,South Korea,Asia,"4,89,87,463.39","3,084.89",Estimate,2017
+Oct,South Korea,Asia,"4,99,30,218.17","3,327.77",Estimate,2017
+Jan,Spain,Europe,"20,53,260.85",910.0989,Estimate,2017
+Feb,Spain,Europe,"21,00,023.26",936.628,Estimate,2017
+Mar,Spain,Europe,"21,46,785.66",963.1571,Estimate,2017
+Apr,Spain,Europe,"21,93,548.06",989.6861,Estimate,2017
+May,Spain,Europe,"22,40,310.46","1,016.22",Estimate,2017
+Jun,Spain,Europe,"22,87,072.87","1,042.74",Estimate,2017
+Jul,Spain,Europe,"23,33,835.27","1,069.27",Estimate,2017
+Aug,Spain,Europe,"23,80,597.67","1,095.80",Estimate,2017
+Sep,Spain,Europe,"24,27,360.08","1,122.33",Estimate,2017
+Oct,Spain,Europe,"24,74,122.48","1,148.86",Estimate,2017
+Jan,Sri Lanka,Asia,"48,353.15",9.5444,Estimate,2017
+Feb,Sri Lanka,Asia,"48,805.15",9.888,Estimate,2017
+Mar,Sri Lanka,Asia,"49,257.14",10.2317,Estimate,2017
+Apr,Sri Lanka,Asia,"49,709.13",10.5753,Estimate,2017
+May,Sri Lanka,Asia,"50,161.12",10.9189,Estimate,2017
+Jun,Sri Lanka,Asia,"50,613.11",11.2625,Estimate,2017
+Jul,Sri Lanka,Asia,"51,065.10",11.6062,Estimate,2017
+Aug,Sri Lanka,Asia,"51,517.09",11.9498,Estimate,2017
+Sep,Sri Lanka,Asia,"51,969.08",12.2934,Estimate,2017
+Oct,Sri Lanka,Asia,"52,421.08",12.6371,Estimate,2017
+Jan,Swaziland,Africa,"6,435.47",2.2165,Estimate,2017
+Feb,Swaziland,Africa,"6,609.68",2.2901,Estimate,2017
+Mar,Swaziland,Africa,"6,783.88",2.3637,Estimate,2017
+Apr,Swaziland,Africa,"6,958.08",2.4373,Estimate,2017
+May,Swaziland,Africa,"7,132.29",2.5109,Estimate,2017
+Jun,Swaziland,Africa,"7,306.49",2.5846,Estimate,2017
+Jul,Swaziland,Africa,"7,480.70",2.6582,Estimate,2017
+Aug,Swaziland,Africa,"7,654.90",2.7318,Estimate,2017
+Sep,Swaziland,Africa,"7,829.10",2.8054,Estimate,2017
+Oct,Swaziland,Africa,"8,003.31",2.879,Estimate,2017
+Jan,Switzerland,Europe,"1,20,86,248.04","7,129.07",Estimate,2017
+Feb,Switzerland,Europe,"1,22,53,772.81","7,264.19",Estimate,2017
+Mar,Switzerland,Europe,"1,24,21,297.57","7,399.32",Estimate,2017
+Apr,Switzerland,Europe,"1,25,88,822.34","7,534.44",Estimate,2017
+May,Switzerland,Europe,"1,27,56,347.11","7,669.57",Estimate,2017
+Jun,Switzerland,Europe,"1,29,23,871.88","7,804.69",Estimate,2017
+Jul,Switzerland,Europe,"1,30,91,396.65","7,939.82",Estimate,2017
+Aug,Switzerland,Europe,"1,32,58,921.42","8,074.94",Estimate,2017
+Sep,Switzerland,Europe,"1,34,26,446.19","8,210.07",Estimate,2017
+Oct,Switzerland,Europe,"1,35,93,970.96","8,345.19",Estimate,2017
+Jan,Thailand,Asia,"1,90,10,254.53","2,757.91",Estimate,2017
+Feb,Thailand,Asia,"1,93,22,006.15","2,604.15",Estimate,2017
+Mar,Thailand,Asia,"1,96,33,757.76","2,708.42",Estimate,2017
+Apr,Thailand,Asia,"1,99,45,509.37","2,792.24",Estimate,2017
+May,Thailand,Asia,"2,02,57,260.98","2,803.35",Estimate,2017
+Jun,Thailand,Asia,"2,05,69,012.59","2,939.48",Estimate,2017
+Jul,Thailand,Asia,"2,08,80,764.20","2,921.71",Estimate,2017
+Aug,Thailand,Asia,"2,11,92,515.82","2,631.01",Estimate,2017
+Sep,Thailand,Asia,"2,15,04,267.43","2,828.36",Estimate,2017
+Oct,Thailand,Asia,"2,18,16,019.04","3,051.05",Estimate,2017
+Jan,Turkey,Asia,"89,75,681.21","5,093.48",Estimate,2017
+Feb,Turkey,Asia,"90,20,742.50","5,154.98",Estimate,2017
+Mar,Turkey,Asia,"90,65,803.80","5,216.49",Estimate,2017
+Apr,Turkey,Asia,"91,10,865.10","5,277.99",Estimate,2017
+May,Turkey,Asia,"91,55,926.39","5,339.50",Estimate,2017
+Jun,Turkey,Asia,"92,00,987.69","5,401.00",Estimate,2017
+Jul,Turkey,Asia,"92,46,048.98","5,462.51",Estimate,2017
+Aug,Turkey,Asia,"92,91,110.28","5,524.01",Estimate,2017
+Sep,Turkey,Asia,"93,36,171.58","5,585.52",Estimate,2017
+Oct,Turkey,Asia,"93,81,232.87","5,647.02",Estimate,2017
+Jan,Ukraine,Europe,"6,514.96",2.603,Estimate,2017
+Feb,Ukraine,Europe,"6,151.72",2.4578,Estimate,2017
+Mar,Ukraine,Europe,"6,398.04",2.5563,Estimate,2017
+Apr,Ukraine,Europe,"6,596.05",2.6354,Estimate,2017
+May,Ukraine,Europe,"6,622.30",2.6459,Estimate,2017
+Jun,Ukraine,Europe,"6,943.87",2.7743,Estimate,2017
+Jul,Ukraine,Europe,"6,901.88",2.7576,Estimate,2017
+Aug,Ukraine,Europe,"6,215.19",2.4832,Estimate,2017
+Sep,Ukraine,Europe,"6,681.38",2.6695,Estimate,2017
+Oct,Ukraine,Europe,"7,207.42",2.8796,Estimate,2017
+Jan,United Kingdom,Europe,"19,91,794.99",571.1457,Estimate,2017
+Feb,United Kingdom,Europe,"19,79,231.26",562.7272,Estimate,2017
+Mar,United Kingdom,Europe,"19,66,667.54",554.3088,Estimate,2017
+Apr,United Kingdom,Europe,"19,54,103.81",545.8904,Estimate,2017
+May,United Kingdom,Europe,"19,41,540.08",537.4719,Estimate,2017
+Jun,United Kingdom,Europe,"19,28,976.36",529.0535,Estimate,2017
+Jul,United Kingdom,Europe,"19,16,412.63",520.6351,Estimate,2017
+Aug,United Kingdom,Europe,"19,03,848.91",512.2166,Estimate,2017
+Sep,United Kingdom,Europe,"18,91,285.18",503.7982,Estimate,2017
+Oct,United Kingdom,Europe,"18,78,721.45",495.3798,Estimate,2017
+Jan,USA,North America,"1,34,45,181.52","2,923.02",Estimate,2017
+Feb,USA,North America,"1,34,54,686.70","2,955.86",Estimate,2017
+Mar,USA,North America,"1,34,64,191.88","2,988.71",Estimate,2017
+Apr,USA,North America,"1,34,73,697.06","3,021.55",Estimate,2017
+May,USA,North America,"1,34,83,202.24","3,054.40",Estimate,2017
+Jun,USA,North America,"1,34,92,707.42","3,087.24",Estimate,2017
+Jul,USA,North America,"1,35,02,212.60","3,120.08",Estimate,2017
+Aug,USA,North America,"1,35,11,717.78","3,152.93",Estimate,2017
+Sep,USA,North America,"1,35,21,222.96","3,185.77",Estimate,2017
+Oct,USA,North America,"1,35,30,728.14","3,218.62",Estimate,2017
+Jan,Viet Nam,Asia,"3,32,614.74",106.7733,Estimate,2017
+Feb,Viet Nam,Asia,"2,91,227.21",87.8735,Estimate,2017
+Mar,Viet Nam,Asia,"2,49,839.67",68.9738,Estimate,2017
+Apr,Viet Nam,Asia,"2,08,452.14",50.0741,Estimate,2017
+May,Viet Nam,Asia,"1,67,064.61",31.1743,Estimate,2017
+Jun,Viet Nam,Asia,"1,25,677.08",12.2746,Estimate,2017
+Jan,Zambia,Africa,"22,598.96",5.6641,Estimate,2017
+Feb,Zambia,Africa,"22,273.90",5.6088,Estimate,2017
+Mar,Zambia,Africa,"21,948.84",5.5535,Estimate,2017
+Apr,Zambia,Africa,"21,623.79",5.4982,Estimate,2017
+May,Zambia,Africa,"21,298.73",5.4429,Estimate,2017
+Jun,Zambia,Africa,"20,973.67",5.3876,Estimate,2017
+Jul,Zambia,Africa,"20,648.61",5.3323,Estimate,2017
+Aug,Zambia,Africa,"20,323.55",5.277,Estimate,2017
+Sep,Zambia,Africa,"19,998.49",5.2217,Estimate,2017
+Oct,Zambia,Africa,"19,673.43",5.1664,Estimate,2017

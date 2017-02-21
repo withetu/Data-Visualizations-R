@@ -9,9 +9,79 @@ Try executing this chunk by clicking the *Run* button within the chunk or by pla
 
 ```{r}
 library(ggplot2)
+library(plotly)
+library(ggmap)
 train5<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\data.csv")
 usdv<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\usd.csv")
 japan<- read.csv("C:\\Users\\user\\Documents\\GitHub\\Data Visualizations R\\japan.csv")
+
+#==========================
+#Plotly Visualization
+#==========================
+library(plotly)
+library(ggmap)
+attach(expsafrica)
+str(expsafrica)
+
+#plotting a histogram with US_Dollar_Value variable and storing it in hist
+hist1<- plot_ly(x=US_Dollar_Value, type = 'histogram')
+layout(hist, title="Export South Africa Dataset - Value in US Dollar",
+       xaxis = list(title="US_Dollar_Value"),
+       yaxis = list(title="Count"))
+
+#plotting a histogram with Data_Type variable and storing it in bar_chart
+bar_chart1<- plot_ly(x=Data_Type, type='histogram')
+layout(bar_chart1, title = "Export South Africa Dataset - Data Type",
+       xaxis = list(title = "Data Type"),
+       yaxis = list(title = "Count"))
+
+#plotting a histogram with Year variable and storing it in bar_chart
+bar_chart2<- plot_ly(x=Year, type='histogram')
+layout(bar_chart2, title = "Export South Africa Dataset - Year",
+       xaxis = list(title = "Year"),
+       yaxis = list(title = "Count")) 
+
+#plotting a Boxplot with Tonnes variable and storing it in box_plot
+box_plot1<- plot_ly(y=Tonnes, type = 'box', color = Data_Type)
+layout(box_plot1, title = "Export South Africa Dataset - Tonnes Boxplot",
+       yaxis = list(title = "Tonnes"))
+
+#plotting a Boxplot with Tonnes variable and storing it in box_plot
+box_plot1<- plot_ly(y=Tonnes, type = 'box', color = Import_Continent)
+layout(box_plot1, title = "Export South Africa Dataset - Tonnes Boxplot",
+       yaxis = list(title = "Tonnes"))
+
+#plotting a Boxplot with US_Dollar_Value variable and storing it in box_plot
+box_plot1<- plot_ly(y=US_Dollar_Value, type = 'box', color = Import_Continent)
+layout(box_plot1, title = "Export South Africa Dataset - US_Dollar_Value Boxplot",
+       yaxis = list(title = "US_Dollar_Value"))
+
+#plotting a Scatter Plot with US_Dollar_Value and Tonnes variables and storing it in scatter_plot11
+scatter_plot11<- plot_ly(x=US_Dollar_Value, y=Tonnes, type = 'scatter', mode = 'markers')
+layout(scatter_plot11, title = "Export South Africa Dataset - US Dollar Value vs Tonnes",
+       xaxis = list(title = "US Dollar Value"),
+       yaxis = list(title = "Tonnes"))
+#1. Let’s go a step further and add another dimension (Import_Continent) using color.
+#plotting a Scatter Plot with US_Dollar_Value and Tonnes variables with color representing the Import_Continent and storing it in scatter_plot12
+scatter_plot12<- plot_ly(x=US_Dollar_Value, y=Tonnes, type = 'scatter', mode = 'markers', color = Import_Continent)
+layout(scatter_plot12, title = "Export South Africa Dataset - US Dollar Value vs Tonnes",
+       xaxis = list(title = "US Dollar Value"),
+       yaxis = list(title = "Tonnes"))
+
+plot_ly(x=US_Dollar_Value, y=Tonnes, z=Year, type='scatter3d', mode = 'markers', color = Import_Continent)
+plot_ly(z=~US_Dollar_Value, type = "surface") #need to work/evaluate in further
+
+library(ggmap)
+IMP_CONT<- c("Africa", "Asia", "Europe", "Latin America", "North America", "Oceania")
+continent<- geocode(IMP_CONT)
+mahadesh.x<- continent$lon
+mahadesh.y<- continent$lat
+mapcontinent<- borders("world", colour = "beige", fill = "mediumspringgreen")
+m<- ggplot()+mapcontinent+geom_point(aes(x=mahadesh.x, y=mahadesh.y), color = "yellow", size = 3)
+ggplotly(m)
+#==========================
+#End of Plotly Visualization
+#==========================
 
 summary(train5$US_Dollar_Value)
 boxplot(train5$US_Dollar_Value~train5$Tonnes, col="purple")
