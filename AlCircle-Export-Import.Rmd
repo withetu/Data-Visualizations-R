@@ -177,13 +177,139 @@ expsa %>%
   labs(title = "More than half of the busiest ports were in Asia in 2017")+
   labs(x = "Country", y = "Export Volume\nin US Dollar Value")+
   theme.widebar1
+#Small multiple chart: plot change in shipping volume over time, by port
+#========================================================
+# SMALL MULTIPLE, LINE: All ports, shipping vol over time
+#  - This is useful for getting a new overview of the
+#    data
+#========================================================
+expsa %>%
+  ggplot(aes(x=Year, y=Tonnes, group = Import_Country))+
+  geom_line(color="deepskyblue", size= 1, na.rm = T)+
+  facet_wrap(~Import_Country)+
+  labs(title="Strong growth in South Korea, Thailand,\nShenzhen, Guangzhou")+
+  labs(subtitle = "2015 to 2017")+
+  labs(x="Import_Country" , y="Import\nVolume\n(Tonnes)")+
+  theme.smallmult1
+#Plot Japan volume change over time (line chart)
+#================================================
+# LINE CHART: Japan, Volume change over time
+#  - Japan volume has increased substantially
+#    so we want to show it visually
+#================================================
+expsa %>%
+  mutate(port_highlight = ifelse(Import_Country == "Japan", "Japan", "Other")) %>%
+  ggplot(aes(x = Year, y = Tonnes, group = Import_Country)) +
+    geom_line(aes(color=port_highlight, alpha= port_highlight), size=1.5, na.rm = T)+
+    scale_color_manual(values = c("#999999", "dark red"))+
+    scale_alpha_manual(values = c(.3,1))+
+    labs(title="Japan's Alu import volume increased\nsubstantially from 2015 to 2017")+
+    labs(x="Year", y="Import\nVolume\n(Tonnes)")  +
+    theme.porttheme1
+#Plot Singapore volume change over time (line chart)
+#===============
+# PLOT SINGAPORE
+#===============
+expsa %>%
+  filter(Import_Country == "South Korea") %>%
+  ggplot(aes(x = Year, y = Tonnes, group = 1))+
+  geom_line(color = "deepskyblue2", size = 2)+
+  labs(title = "South Korea import volume also increased\nsubstantially from 2015 to 2017")+
+  labs(x = "Year", y = "Import\nVolume\n(Tonnes)")+
+  scale_y_continuous(limits = c(0,NA))+
+  theme.porttheme1
 
 
 
 
-  
+#==============
+# Exp Aus
+#==============
 
+attach(expaus)
+str(expaus)
+View(expaus)
+glimpse(expaus)
 
+geocodes.world_ports2<- geocode(expaus$Import_Country)
+expaus<- cbind(expaus, geocodes.world_ports2)
+head(expaus)
+
+expaus<- mutate(expaus, Import_Country=as.factor(str_trim(Import_Country)), Import_Continent=as.factor(Import_Continent))
+head(expaus)
+
+expaus<- expaus %>%
+  group_by(Year) %>%
+  mutate(rank = min_rank(desc(Tonnes))) %>%
+  ungroup()
+glimpse(expaus)
+
+expaus %>% ncol()
+expaus %>% names()
+
+expaus<- select(expaus, rank, Year, Import_Country, Import_Continent, US_Dollar_Value, Tonnes, lon, lat, Data_Type, Month)
+expaus %>% ncol()
+glimpse(expaus)
+head(expaus, n =10)
+View(expaus)
+
+theme.porttheme2 <-  
+  theme(text = element_text(family = "Times New Roman", color = "#444444")) +
+  theme(plot.title = element_text(size = 24)) +
+  theme(plot.subtitle = element_text(size = 18)) +
+  theme(axis.title = element_text(size = 14)) +
+  theme(axis.title.y = element_text(angle = 0, vjust = .5, margin = margin(r = 15))) +
+  theme(axis.text = element_text(size = 10)) +
+  theme(axis.title.x = element_text(margin = margin(t = 20))) +
+  theme(legend.title = element_blank())
+theme.widebar2 <-
+  theme.porttheme2 +
+  theme(plot.title = element_text(size = 30)) +
+  theme(plot.subtitle = element_text(size = 20)) +
+  theme(legend.title = element_blank(), legend.background = element_blank()) +
+  theme(legend.text = element_text(size = 12)) +
+  theme(legend.position = c(.9,.55)) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = .4))
+theme.smallmult2 <- 
+  theme.porttheme2 +
+  theme(axis.text = element_text(size = 6)) +
+  theme(axis.text.x = element_text(angle = 90))
+
+expaus %>%
+  filter(Year == 2016) %>%
+  ggplot(aes(x=reorder(Import_Country, desc(Tonnes)), y=Tonnes))+
+  geom_bar(stat = "identity", fill = "cyan2")+
+  labs(title="Top Importing Countries")+
+  labs(subtitle='2016, in Tonnes')+
+  labs(x = "Country", y = "\nTonnes")+
+  scale_y_continuous(labels = scales::comma_format())+
+  theme.widebar2
+ggsave("histogram.png", width=11, height=7)
+ggsave("histogram.jpeg", width=11, height=7)
+expaus %>%
+  filter(Year == 2016, rank<=40) %>%
+  ggplot(aes(x=reorder(Import_Country, desc(Tonnes)), y=Tonnes))+
+  geom_bar(stat = "identity", fill = "springgreen2")+
+  labs(title="Top Importing Countries")+
+  labs(subtitle='2016, in Tonnes')+
+  labs(x = "Country", y = "\nTonnes")+
+  scale_y_continuous(labels = scales::comma_format())+
+  theme.widebar2
+ggsave("histogramtop5.png", width=11, height=7)
+ggsave("histogramtop5.jpeg", width=11, height=7)
+expaus %>%
+  filter(Year == 2016) %>%
+  ggplot(aes(x=reorder(Import_Country, Tonnes), y=Tonnes))+
+  geom_bar(stat = "identity", fill = "cyan2")+
+  geom_text(aes(label=Tonnes), hjust = 1:1, color="#000000")+
+  scale_y_continuous(labels = scales::comma_format())+
+  coord_flip()+
+  labs(title="Japan, South Korea had much higher volume\nthan other high-volume countries in 2016")+
+  labs(x = "Country", y = "Import Volume\nin Tonnes")+
+  theme.porttheme2
+#==============
+# End of Exp Aus
+#==============
 
 
 

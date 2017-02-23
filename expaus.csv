@@ -1,0 +1,297 @@
+Month,Import_Country,Import_Continent,US_Dollar_Value,Tonnes,Data_Type,Year
+Nov,Algeria,Africa,"30,086.25",12.1888,Estimate,2016
+Dec,Algeria,Africa,"27,766.95",11.2492,Estimate,2016
+May,Australia,Oceania,"15,63,954.00",979.28,Actual,2016
+Oct,Australia,Oceania,"21,88,793.50",65.3871,Estimate,2016
+Nov,Australia,Oceania,"21,78,512.37",61.8372,Estimate,2016
+Dec,Australia,Oceania,"21,68,231.25",58.2873,Estimate,2016
+Jun,Austria,Europe,"48,015.00",20,Actual,2016
+Aug,Austria,Europe,"49,759.00",20,Actual,2016
+Sep,Austria,Europe,"78,917.12",6.4171,Estimate,2016
+Oct,Austria,Europe,"79,496.84",6.6494,Estimate,2016
+Nov,Austria,Europe,"80,076.57",6.8816,Estimate,2016
+Dec,Austria,Europe,"80,656.29",7.1138,Estimate,2016
+Feb,Bangladesh,Asia,"1,69,807.00",107.699,Actual,2016
+Apr,Bangladesh,Asia,"6,10,031.00",377.73,Actual,2016
+Oct,Bangladesh,Asia,"4,80,837.75",65.5976,Estimate,2016
+Nov,Bangladesh,Asia,"4,84,365.85",67.7177,Estimate,2016
+Dec,Bangladesh,Asia,"4,87,893.94",69.8377,Estimate,2016
+Jan,Brazil,Latin America,"87,587.00",47.62,Actual,2016
+Feb,Brazil,Latin America,"4,97,557.00",281.376,Actual,2016
+Mar,Brazil,Latin America,"4,34,838.00",253.482,Actual,2016
+Apr,Brazil,Latin America,"4,57,191.00",279.279,Actual,2016
+May,Brazil,Latin America,"5,57,019.00",331.73,Actual,2016
+Jun,Brazil,Latin America,"3,84,758.00",232.167,Actual,2016
+Jul,Brazil,Latin America,"4,83,357.00",284.981,Actual,2016
+Aug,Brazil,Latin America,"9,99,849.00",540.423,Actual,2016
+Sep,Brazil,Latin America,"5,91,704.00",336.115,Actual,2016
+Oct,Brazil,Latin America,"6,89,462.34",340.0918,Estimate,2016
+Nov,Brazil,Latin America,"6,71,557.63",335.6551,Estimate,2016
+Dec,Brazil,Latin America,"6,53,652.92",331.2183,Estimate,2016
+May,Canada,North America,"1,99,852.00",101.588,Actual,2016
+Jul,Canada,North America,"3,79,864.00",200.212,Actual,2016
+Nov,Canada,North America,"2,96,659.03",24.5482,Estimate,2016
+Dec,Canada,North America,"2,97,876.49",25.2695,Estimate,2016
+Jan,China,Asia,"12,30,187.00",739.122,Actual,2016
+Feb,China,Asia,,495.684,Actual,2016
+Mar,China,Asia,"4,30,864.00",252.246,Actual,2016
+Apr,China,Asia,"12,55,918.00",753.436,Actual,2016
+May,China,Asia,"13,96,187.00",804.506,Actual,2016
+Jun,China,Asia,"90,26,484.00","5,517.99",Actual,2016
+Jul,China,Asia,"21,68,021.00","1,249.16",Actual,2016
+Aug,China,Asia,"34,58,185.00","1,973.06",Actual,2016
+Sep,China,Asia,"19,84,192.00","1,129.64",Actual,2016
+Jan,Colombia,Latin America,"5,16,399.00",300,Actual,2016
+Feb,Colombia,Latin America,,300.638,Actual,2016
+Mar,Colombia,Latin America,"4,84,238.00",301.276,Actual,2016
+Apr,Colombia,Latin America,"5,15,396.00",300,Actual,2016
+May,Colombia,Latin America,"1,58,096.00",100,Actual,2016
+Jun,Colombia,Latin America,"3,11,837.00",200,Actual,2016
+Jul,Colombia,Latin America,"6,27,759.00",400,Actual,2016
+Aug,Colombia,Latin America,"6,23,626.00",400,Actual,2016
+Sep,Colombia,Latin America,"6,30,577.00",400,Actual,2016
+Oct,Colombia,Latin America,"11,04,543.29",269.1219,Estimate,2016
+Nov,Colombia,Latin America,"11,11,294.39",275.8375,Estimate,2016
+Dec,Colombia,Latin America,"11,18,045.48",282.5531,Estimate,2016
+Jan,Costa Rica,Latin America,"2,14,044.00",119.35,Actual,2016
+Feb,Costa Rica,Latin America,,123.6125,Actual,2016
+Mar,Costa Rica,Latin America,"2,19,723.00",127.875,Actual,2016
+Apr,Costa Rica,Latin America,"2,21,241.00",127.875,Actual,2016
+May,Costa Rica,Latin America,"90,439.00",50.814,Actual,2016
+Jun,Costa Rica,Latin America,"4,59,735.00",255.75,Actual,2016
+Jul,Costa Rica,Latin America,"4,58,573.00",253.36,Actual,2016
+Aug,Costa Rica,Latin America,"2,18,696.00",119.35,Actual,2016
+Sep,Costa Rica,Latin America,"2,26,361.00",119.35,Actual,2016
+Oct,Costa Rica,Latin America,"3,90,837.31",126.7676,Estimate,2016
+Nov,Costa Rica,Latin America,"3,99,079.38",131.6861,Estimate,2016
+Dec,Costa Rica,Latin America,"4,07,321.44",136.6045,Estimate,2016
+May,El Salvador,Latin America,"4,33,284.00",203.662,Actual,2016
+Nov,El Salvador,Latin America,"3,73,021.89",12.8845,Estimate,2016
+Dec,El Salvador,Latin America,"3,66,891.97",10.7176,Estimate,2016
+Jan,Hong Kong,Asia,"23,76,071.00","1,393.30",Actual,2016
+Feb,Hong Kong,Asia,,745.37,Actual,2016
+Mar,Hong Kong,Asia,"1,56,227.00",97.44,Actual,2016
+Apr,Hong Kong,Asia,"4,88,977.00",310.5,Actual,2016
+May,Hong Kong,Asia,"4,61,117.00",291.452,Actual,2016
+Jun,Hong Kong,Asia,"1,58,840.00",97.44,Actual,2016
+Aug,Hong Kong,Asia,"6,80,876.00",407.723,Actual,2016
+Oct,Hong Kong,Asia,"2,42,497.45",138.6881,Estimate,2016
+Nov,Hong Kong,Asia,"1,30,701.06",100.1575,Estimate,2016
+Dec,Hong Kong,Asia,"18,904.68",61.6269,Estimate,2016
+Jan,India,Asia,"2,62,921.00",151.866,Actual,2016
+Feb,India,Asia,"4,41,426.00",275,Actual,2016
+Apr,India,Asia,"22,88,983.00","1,264.76",Actual,2016
+May,India,Asia,"31,78,931.00","1,866.46",Actual,2016
+Jul,India,Asia,"27,26,258.00","1,502.45",Actual,2016
+Aug,India,Asia,"19,57,989.00","1,008.00",Actual,2016
+Oct,India,Asia,"19,48,773.51",802.0144,Estimate,2016
+Nov,India,Asia,"19,61,653.46",813.6024,Estimate,2016
+Dec,India,Asia,"19,74,533.41",825.1905,Estimate,2016
+Jan,Indonesia,Asia,"42,63,066.00","2,593.03",Actual,2016
+Feb,Indonesia,Asia,,"3,131.83",Actual,2016
+Mar,Indonesia,Asia,"60,87,397.00","3,670.64",Actual,2016
+Apr,Indonesia,Asia,"68,09,123.00","4,054.71",Actual,2016
+May,Indonesia,Asia,"36,13,248.00","2,059.75",Actual,2016
+Jun,Indonesia,Asia,"38,82,966.00","2,286.83",Actual,2016
+Jul,Indonesia,Asia,"85,82,585.00","5,040.88",Actual,2016
+Aug,Indonesia,Asia,"94,52,670.00","5,451.76",Actual,2016
+Sep,Indonesia,Asia,"1,18,96,032.00","6,958.92",Actual,2016
+Oct,Indonesia,Asia,"47,17,444.66","3,162.53",Estimate,2016
+Nov,Indonesia,Asia,"44,73,920.33","3,092.93",Estimate,2016
+Dec,Indonesia,Asia,"42,30,396.00","3,023.33",Estimate,2016
+Jan,Israel,Asia,"54,97,301.14",117.1747,Estimate,2016
+Feb,Israel,Asia,"56,89,906.91",110.6418,Estimate,2016
+Mar,Israel,Asia,"58,82,512.69",115.0719,Estimate,2016
+Apr,Israel,Asia,"60,75,118.47",118.6332,Estimate,2016
+May,Israel,Asia,"62,67,724.25",119.1054,Estimate,2016
+Jun,Israel,Asia,"64,60,330.03",124.8889,Estimate,2016
+Jul,Israel,Asia,"66,52,935.81",124.1338,Estimate,2016
+Aug,Israel,Asia,"68,45,541.59",111.7832,Estimate,2016
+Sep,Israel,Asia,"70,38,147.37",120.1678,Estimate,2016
+Oct,Israel,Asia,"72,30,753.15",129.629,Estimate,2016
+May,Italy,Europe,"2,10,428.00",88.11,Actual,2016
+Sep,Italy,Europe,"6,09,169.83",81.5416,Estimate,2016
+Oct,Italy,Europe,"6,03,275.74",78.7538,Estimate,2016
+Nov,Italy,Europe,"5,97,381.66",75.966,Estimate,2016
+Dec,Italy,Europe,"5,91,487.58",73.1782,Estimate,2016
+Jan,Japan,Asia,"4,79,69,921.00","29,186.75",Actual,2016
+Feb,Japan,Asia,"3,15,99,895.00","18,746.61",Actual,2016
+Mar,Japan,Asia,"4,56,62,271.00","26,573.62",Actual,2016
+Apr,Japan,Asia,"5,14,58,563.00","30,085.88",Actual,2016
+May,Japan,Asia,"5,62,39,749.00","33,003.10",Actual,2016
+Jun,Japan,Asia,"4,77,52,309.00","27,439.76",Actual,2016
+Jul,Japan,Asia,"6,65,12,385.00","39,055.75",Actual,2016
+Aug,Japan,Asia,"5,26,15,373.00","29,690.54",Actual,2016
+Sep,Japan,Asia,"6,80,66,829.00","39,064.64",Actual,2016
+Oct,Japan,Asia,"7,26,75,203.00","42,633.68",Actual,2016
+Nov,Japan,Asia,"5,37,93,026.23","30,516.92",Estimate,2016
+Dec,Japan,Asia,"5,26,91,132.16","30,130.41",Estimate,2016
+Feb,Kenya,Africa,"6,14,224.00",353.91,Actual,2016
+Mar,Kenya,Africa,"1,32,753.00",75.546,Actual,2016
+Jun,Kenya,Africa,"1,32,847.00",75.546,Actual,2016
+Aug,Kenya,Africa,"3,17,705.00",176.847,Actual,2016
+Sep,Kenya,Africa,"6,44,905.00",352.532,Actual,2016
+Oct,Kenya,Africa,"6,11,918.48",215.8206,Estimate,2016
+Nov,Kenya,Africa,"6,22,164.52",221.6879,Estimate,2016
+Dec,Kenya,Africa,"6,32,410.56",227.5552,Estimate,2016
+Jan,Malaysia,Asia,"91,30,806.00","5,996.35",Actual,2016
+Feb,Malaysia,Asia,"1,29,22,194.00","8,222.17",Actual,2016
+Mar,Malaysia,Asia,"91,55,926.00","5,470.86",Actual,2016
+Apr,Malaysia,Asia,"26,06,765.00","1,518.78",Actual,2016
+May,Malaysia,Asia,"52,75,054.00","3,232.21",Actual,2016
+Jun,Malaysia,Asia,"82,42,316.51","5,220.47",Estimate,2016
+Jul,Malaysia,Asia,"81,16,609.21","5,216.60",Estimate,2016
+Aug,Malaysia,Asia,"79,90,901.91","5,212.74",Estimate,2016
+Sep,Malaysia,Asia,"78,65,194.61","5,208.87",Estimate,2016
+Oct,Malaysia,Asia,"77,39,487.32","5,205.01",Estimate,2016
+Nov,Malaysia,Asia,"76,13,780.02","5,201.14",Estimate,2016
+Dec,Malaysia,Asia,"74,88,072.72","5,197.27",Estimate,2016
+Jan,Mexico,Latin America,"9,29,626.00",500.693,Actual,2016
+Feb,Mexico,Latin America,"9,36,115.00",497.476,Actual,2016
+Mar,Mexico,Latin America,"13,32,780.00",695.796,Actual,2016
+Apr,Mexico,Latin America,"12,97,534.00",707.977,Actual,2016
+May,Mexico,Latin America,"13,73,603.00",711.933,Actual,2016
+Jun,Mexico,Latin America,"8,68,256.00",450.402,Actual,2016
+Jul,Mexico,Latin America,"9,07,938.00",467.332,Actual,2016
+Aug,Mexico,Latin America,"24,39,631.00","1,193.15",Actual,2016
+Sep,Mexico,Latin America,"48,999.00",23.902,Actual,2016
+Oct,Mexico,Latin America,"29,39,042.04","1,076.61",Estimate,2016
+Nov,Mexico,Latin America,"29,73,759.51","1,095.75",Estimate,2016
+Dec,Mexico,Latin America,"30,08,476.98","1,114.90",Estimate,2016
+Jan,New Zealand,Oceania,"14,854.00",6.065,Actual,2016
+Feb,New Zealand,Oceania,"1,68,115.00",87.273,Actual,2016
+Mar,New Zealand,Oceania,"47,632.00",23.033,Actual,2016
+May,New Zealand,Oceania,"47,086.00",23.352,Actual,2016
+Jun,New Zealand,Oceania,"18,987.00",7.519,Actual,2016
+Jul,New Zealand,Oceania,"52,714.00",24.969,Actual,2016
+Aug,New Zealand,Oceania,"2,46,461.00",116.398,Actual,2016
+Nov,New Zealand,Oceania,"74,210.38",31.3912,Estimate,2016
+Dec,New Zealand,Oceania,"68,489.62",28.9713,Estimate,2016
+Jan,Norway,Europe,"51,435.00",20,Actual,2016
+Oct,Norway,Europe,"3,36,604.00",225.165,Actual,2016
+Nov,Norway,Europe,"84,756.50",28.0342,Estimate,2016
+Dec,Norway,Europe,"83,252.69",27.9352,Estimate,2016
+Jan,Oman,Asia,"13,15,405.00",761.1,Actual,2016
+Feb,Oman,Asia,,811.079,Actual,2016
+Mar,Oman,Asia,"14,96,769.00",861.058,Actual,2016
+Apr,Oman,Asia,"15,76,429.00",914.988,Actual,2016
+May,Oman,Asia,"14,02,189.00",761.36,Actual,2016
+Jun,Oman,Asia,"4,49,472.00",255.31,Actual,2016
+Jul,Oman,Asia,"4,44,810.00",249.94,Actual,2016
+Aug,Oman,Asia,"13,54,327.00",741.659,Actual,2016
+Sep,Oman,Asia,"13,95,461.00",754.842,Actual,2016
+Oct,Oman,Asia,"16,85,334.91",566.7369,Estimate,2016
+Nov,Oman,Asia,"17,20,099.46",588.4412,Estimate,2016
+Dec,Oman,Asia,"17,54,864.00",610.1455,Estimate,2016
+May,Pakistan,Asia,"1,74,468.00",99.342,Actual,2016
+Jun,Pakistan,Asia,"7,98,300.00",492.397,Actual,2016
+Jul,Pakistan,Asia,"8,03,110.00",495.195,Actual,2016
+Aug,Pakistan,Asia,"10,30,404.32",143.5523,Estimate,2016
+Sep,Pakistan,Asia,"10,36,626.52",147.6459,Estimate,2016
+Oct,Pakistan,Asia,"10,42,848.73",151.7394,Estimate,2016
+Nov,Pakistan,Asia,"10,49,070.94",155.8329,Estimate,2016
+Dec,Pakistan,Asia,"10,55,293.14",159.9265,Estimate,2016
+Jan,Peru,Latin America,"1,91,285.00",104.738,Actual,2016
+Feb,Peru,Latin America,,107.503,Actual,2016
+Mar,Peru,Latin America,"1,96,440.00",110.268,Actual,2016
+Apr,Peru,Latin America,"2,26,219.00",126.66,Actual,2016
+Jun,Peru,Latin America,"2,84,683.00",152.03,Actual,2016
+Jul,Peru,Latin America,"3,34,416.00",177.618,Actual,2016
+Aug,Peru,Latin America,"1,94,390.00",102.095,Actual,2016
+Sep,Peru,Latin America,"1,94,673.00",101.394,Actual,2016
+Oct,Peru,Latin America,"2,65,001.72",105.9374,Estimate,2016
+Nov,Peru,Latin America,"2,71,083.89",109.5956,Estimate,2016
+Dec,Peru,Latin America,"2,77,166.06",113.2538,Estimate,2016
+Jul,Philippines,Asia,"45,201.00",19.925,Actual,2016
+Sep,Philippines,Asia,"3,56,802.00",179.256,Actual,2016
+Oct,Philippines,Asia,"1,07,936.89",18.3221,Estimate,2016
+Nov,Philippines,Asia,"1,08,577.38",18.7072,Estimate,2016
+Dec,Philippines,Asia,"1,09,217.87",19.0924,Estimate,2016
+Jan,Singapore,Asia,"13,06,449.00",815.5,Actual,2016
+Feb,Singapore,Asia,,545.2215,Actual,2016
+Mar,Singapore,Asia,"4,48,312.00",274.943,Actual,2016
+Apr,Singapore,Asia,"43,926.00",25,Actual,2016
+May,Singapore,Asia,"11,66,012.00",735.518,Actual,2016
+Jun,Singapore,Asia,"79,638.00",50,Actual,2016
+Jul,Singapore,Asia,"2,51,545.00",151.504,Actual,2016
+Aug,Singapore,Asia,"80,538.00",50,Actual,2016
+Oct,Singapore,Asia,"35,47,836.43","2,081.49",Estimate,2016
+Nov,Singapore,Asia,"36,17,864.37","2,127.64",Estimate,2016
+Dec,Singapore,Asia,"36,87,892.32","2,173.80",Estimate,2016
+Sep,South Africa,Africa,"97,932.00",50.329,Actual,2016
+Nov,South Africa,Africa,"2,07,063.37",9.3814,Estimate,2016
+Dec,South Africa,Africa,"2,03,569.92",7.8137,Estimate,2016
+Jan,South Korea,Asia,"2,78,70,165.73","26,847.65",Estimate,2016
+Feb,South Korea,Asia,"2,68,28,699.00","25,350.79",Estimate,2016
+Mar,South Korea,Asia,"2,57,87,232.27","26,365.83",Estimate,2016
+Apr,South Korea,Asia,"2,47,45,765.53","27,181.83",Estimate,2016
+May,South Korea,Asia,"2,37,04,298.80","27,290.02",Estimate,2016
+Jun,South Korea,Asia,"2,26,62,832.07","28,615.15",Estimate,2016
+Jul,South Korea,Asia,"2,16,21,365.33","28,442.15",Estimate,2016
+Aug,South Korea,Asia,"2,05,79,898.60","25,612.32",Estimate,2016
+Sep,South Korea,Asia,"1,95,38,431.87","27,533.45",Estimate,2016
+Oct,South Korea,Asia,"1,84,96,965.13","29,701.24",Estimate,2016
+Nov,South Korea,Asia,"1,74,55,498.40","28,062.78",Estimate,2016
+Dec,South Korea,Asia,"1,64,14,031.67","25,899.46",Estimate,2016
+Jan,Spain,Europe,"1,31,515.00",67.3,Actual,2016
+Feb,Spain,Europe,"2,79,843.00",122.2,Actual,2016
+Mar,Spain,Europe,"1,55,078.00",80.2,Actual,2016
+Jun,Spain,Europe,"42,098.00",22.4,Actual,2016
+Jul,Spain,Europe,"8,55,014.00",371.7,Actual,2016
+Aug,Spain,Europe,"48,537.00",18.7,Actual,2016
+Sep,Spain,Europe,"3,84,591.25",105.7329,Estimate,2016
+Oct,Spain,Europe,"3,93,389.58",109.5228,Estimate,2016
+Nov,Spain,Europe,"4,02,187.92",113.3128,Estimate,2016
+Dec,Spain,Europe,"4,10,986.25",117.1028,Estimate,2016
+Jan,Taiwan,Asia,"1,93,24,843.00","12,436.08",Actual,2016
+Feb,Taiwan,Asia,,"13,974.20",Actual,2016
+Mar,Taiwan,Asia,"2,44,41,484.00","15,512.32",Actual,2016
+Apr,Taiwan,Asia,"1,54,35,709.00","9,481.49",Actual,2016
+May,Taiwan,Asia,"1,97,21,799.00","12,361.82",Actual,2016
+Jun,Taiwan,Asia,"2,61,38,110.00","15,864.61",Actual,2016
+Jul,Taiwan,Asia,"3,22,86,547.00","19,600.38",Actual,2016
+Aug,Taiwan,Asia,"97,77,628.00","5,785.63",Actual,2016
+Sep,Taiwan,Asia,"1,86,00,551.00","11,102.48",Actual,2016
+Oct,Taiwan,Asia,"1,63,10,549.51","11,068.76",Estimate,2016
+Nov,Taiwan,Asia,"1,55,79,160.43","10,868.03",Estimate,2016
+Dec,Taiwan,Asia,"1,48,47,771.35","10,667.31",Estimate,2016
+Feb,Tanzania,Africa,"3,96,747.00",227.31,Actual,2016
+Jun,Tanzania,Africa,"3,60,505.00",202.623,Actual,2016
+Aug,Tanzania,Africa,"3,67,625.00",202.365,Actual,2016
+Sep,Tanzania,Africa,"3,60,171.00",201.879,Actual,2016
+Oct,Tanzania,Africa,"3,38,500.49",51.5251,Estimate,2016
+Nov,Tanzania,Africa,"3,38,962.81",49.2947,Estimate,2016
+Dec,Tanzania,Africa,"3,39,425.13",47.0644,Estimate,2016
+Jan,Thailand,Asia,"2,17,04,747.56","9,654.35",Estimate,2016
+Feb,Thailand,Asia,"2,16,26,650.53","9,116.08",Estimate,2016
+Mar,Thailand,Asia,"2,15,48,553.49","9,481.08",Estimate,2016
+Apr,Thailand,Asia,"2,14,70,456.46","9,774.52",Estimate,2016
+May,Thailand,Asia,"2,13,92,359.43","9,813.42",Estimate,2016
+Jun,Thailand,Asia,"2,13,14,262.39","10,289.93",Estimate,2016
+Jul,Thailand,Asia,"2,12,36,165.36","10,227.72",Estimate,2016
+Aug,Thailand,Asia,"2,11,58,068.33","9,210.12",Estimate,2016
+Sep,Thailand,Asia,"2,10,79,971.29","9,900.96",Estimate,2016
+Oct,Thailand,Asia,"2,10,01,874.26","10,680.49",Estimate,2016
+Nov,Thailand,Asia,"2,09,23,777.22","8,774.26",Estimate,2016
+Dec,Thailand,Asia,"2,08,45,680.19","8,097.87",Estimate,2016
+Jan,Turkey,Asia,"48,821.00",25.628,Actual,2016
+Feb,Turkey,Asia,"4,69,138.00",230.69,Actual,2016
+Apr,Turkey,Asia,"2,41,815.00",128.08,Actual,2016
+Jul,United Arab Emirates,Asia,"94,480.00",4.61,Actual,2016
+Feb,USA,North America,"9,10,800.00",459.738,Actual,2016
+May,USA,North America,"4,00,734.00",225.425,Actual,2016
+Jun,USA,North America,"12,96,951.00",739.108,Actual,2016
+Aug,USA,North America,"4,08,747.00",225.425,Actual,2016
+Sep,USA,North America,"7,88,426.00",500,Actual,2016
+Jan,Viet Nam,Asia,"1,40,79,281.00","8,603.58",Actual,2016
+Feb,Viet Nam,Asia,,"8,246.35",Actual,2016
+Mar,Viet Nam,Asia,"1,24,44,876.00","7,889.11",Actual,2016
+Apr,Viet Nam,Asia,"1,69,55,287.00","10,555.20",Actual,2016
+May,Viet Nam,Asia,"1,51,23,205.00","9,267.21",Actual,2016
+Jun,Viet Nam,Asia,"1,91,01,128.00","11,637.96",Actual,2016
+Jul,Viet Nam,Asia,"1,49,53,056.00","8,928.98",Actual,2016
+Aug,Viet Nam,Asia,"2,17,76,416.00","12,943.93",Actual,2016
+Sep,Viet Nam,Asia,"1,67,36,974.00","10,089.05",Actual,2016
+Oct,Viet Nam,Asia,"1,87,14,340.90","12,037.09",Estimate,2016
+Nov,Viet Nam,Asia,"1,88,49,547.20","12,249.57",Estimate,2016
+Dec,Viet Nam,Asia,"1,89,84,753.50","12,462.05",Estimate,2016
