@@ -218,9 +218,126 @@ expsa %>%
   labs(x = "Year", y = "Import\nVolume\n(Tonnes)")+
   scale_y_continuous(limits = c(0,NA))+
   theme.porttheme1
-
-
-
+#Plot rank changes of all Import_Country with small multiple
+#We’re going to plot the rank of each Import_Country over time. This is essentially a line chart of rank vs year, faceted on the Import_Country variable.
+#===================================
+# SMALL MULTIPLE: Rank over time
+# - We'll use this to show
+#   the rank changes of all of the
+#   Import_Country
+# - Given the large number of Import_Country
+#   the data will be much easier to
+#   read in a small multiple
+#===================================
+expsa %>%
+  ggplot(aes(x = Year, y = rank, group = Import_Country))+
+  geom_line(size = 1, color = "dark red", na.rm = T)+
+  scale_y_reverse()+
+  facet_wrap(~Import_Country)+
+  labs(title = "Ranking over time of Sout Africa's busiest Import Country")+
+  labs(subtitle = "2015 to 2017")+
+  labs(x = "Year", y = "Rank")+
+  theme.smallmult1
+expsa %>%
+  ggplot(aes(x = Year, y = rank, group = Import_Continent))+
+  geom_line(size = 1, color = "dark red", na.rm = T)+
+  scale_y_reverse()+
+  facet_wrap(~Import_Continent)+
+  labs(title = "Ranking over time of Sout Africa's busiest Import Continent")+
+  labs(subtitle = "2015 to 2017")+
+  labs(x = "Year", y = "Rank")+
+  theme.smallmult1
+#Plot rank changes for top Asia countries with a bump chart
+#A bump chart is essentially a line chart, where rank is on the y-axis, and time is on the x-axis. Essentially, the bump chart allows us to track rank changes over time.
+#To limit the complexity of the chart (to stop it from getting messy, with too many lines), we’re going to limit this to the top 15 rankings. To do this, notice that I’ve created a parameter called param.rank_n = 15 that we subsequently use in the code. This essentially allows us to specify how many ranks we want to plot on the y-axis. We’ve set it to “15” in order to plot the “top 15”
+#============================
+# BUMP CHART: ASIA
+# here, we'll highlight ASIA
+#============================
+param.rank_n = 25
+expsa %>%
+  filter(rank <= param.rank_n)%>%
+  mutate(asia_flag = ifelse(Import_Country == "Asia", T,F))%>%
+  mutate(asia_labels = ifelse(asia_flag == T, Import_Country, "Other"))%>%
+  ggplot(aes(x = Year, y = rank, group = Import_Country))+
+  geom_line(aes(color = asia_labels, alpha = asia_flag), size = 2)+
+  geom_point(aes(color = asia_labels, alpha = asia_flag), size = 2.3)+
+  geom_point(color = "#FFFFFF", alpha = .8, size = .3)+
+  geom_text(data = expsa %>% filter(Year == "2017", rank <= param.rank_n), aes(label = Import_Country, x = '2017'), hjust = -.05, color = "#888888", size = 4)+
+  geom_text(data = expsa %>% filter(Year == "2015", rank <= param.rank_n), aes(label = Import_Country, x = '2015'), hjust = 1.5, color = "#888888", size = 4)+
+  scale_x_discrete(expand = c(.3, .3))+
+  scale_y_reverse(breaks = c(1,5,10,15,20,25))+
+  scale_alpha_discrete(range = c(.4, .9))+
+  labs(title = "Top Asian countries increased rank\nsubstantially from 2015 to 2017")+
+  labs(subtitle = "(Country ranks, by volume)")+
+  labs(x = "Year", y = "Rank")+
+  theme.porttheme1+
+  theme(panel.grid.major.x = element_line(color = "#F3F3F3"))+
+  theme(panel.grid.major.y = element_blank())+
+  theme(panel.grid.major = element_blank())+
+  theme(legend.position = "none")+
+  scale_color_manual(values = c("#4e79a5","#f18f3b","#af7a0a","#e0585b","#5aa155","#edc958","#77b7b2","#BBBBBB","#FF34B3"))
+#Map the data
+#Create basic dot distribution map
+#First, we’ll just get the map itself using map_data(). This will give us a world map that has outlines of the world’s countries.
+##########
+# PLOT MAP
+##########
+#=============
+# GET MAP DATA
+#=============  
+map.world_ploygon1 <- map_data("world")
+head(map.world_ploygon1)
+#We’ll plot the world map as one layer by using geom_polygon().
+#On top of the map, we’ll plot the Import Country as points by using geom_point().
+#=====================================
+# SIMPLE DOT DISTRIBUTION MAP
+#  - This will be useful just to see
+#    the data
+#  - It also serves as a good test
+#    for the more complex chart we're
+#    going to make next
+#=====================================
+expsa %>%
+  filter(Year == "2015")%>%
+  ggplot(aes(x = lon, y = lat))+
+  geom_polygon(data = map.world_ploygon1, aes(x = long, y = lat, group = group))+
+  geom_point(color = "deepskyblue3")
+#=========================
+# BUBBLE DISTRIBUTION MAP
+#=========================
+# CREATE THEME
+theme.maptheeme1 <- 
+  theme(text = element_text(family = "Times New Roman", color = "#444444"))+
+  theme(plot.title = element_text(size = 30))+
+  theme(plot.subtitle = element_text(size = 18))+
+  theme(panel.background = element_rect(fill = "#FCFCFF"))+
+  theme(panel.grid = element_blank())+
+  theme(axis.text = element_blank())+
+  theme(axis.ticks = element_blank())+
+  theme(axis.title = element_blank())+
+  theme(legend.position = c(.17, .35))+
+  theme(legend.background = element_blank())+
+  theme(legend.key = element_blank())+
+  theme(legend.title = element_text(size = 16))+
+  theme(legend.text = element_text(size = 10))
+#==============================================
+# GEOSPATIAL BUBBLE
+# - This will give us a sense
+#   of the density of shipping in a particular
+#   geographic region
+#  
+#==============================================
+expsa %>%
+  filter(Year == "2015")%>%
+  ggplot(aes(x = lon, y = lat))+
+  geom_polygon(data = map.world_ploygon1, aes(x = long, y = lat, group = group), fill = "#AAAAAA", colour = "#818181", size = .15)+
+  geom_point(aes(size = Tonnes), color = "#ADFF2F", alpha = .15)+
+  geom_point(aes(size = Tonnes), color = "#00FFFF", alpha = .7, shape = 1)+
+  scale_size_continuous(range = c(.2, 10), breaks = c(500, 5000, 10000, 18000, 25000), name = "Import Volume\n(Tonnes)")+
+  labs(title = "High volume import countries were highly clustered in\nFrance and Europe in 2015")+
+  theme.maptheeme1
+ggsave("map.jpeg", width=11, height=7)
 
 #==============
 # Exp Aus
@@ -253,28 +370,6 @@ glimpse(expaus)
 head(expaus, n =10)
 View(expaus)
 
-theme.porttheme2 <-  
-  theme(text = element_text(family = "Times New Roman", color = "#444444")) +
-  theme(plot.title = element_text(size = 24)) +
-  theme(plot.subtitle = element_text(size = 18)) +
-  theme(axis.title = element_text(size = 14)) +
-  theme(axis.title.y = element_text(angle = 0, vjust = .5, margin = margin(r = 15))) +
-  theme(axis.text = element_text(size = 10)) +
-  theme(axis.title.x = element_text(margin = margin(t = 20))) +
-  theme(legend.title = element_blank())
-theme.widebar2 <-
-  theme.porttheme2 +
-  theme(plot.title = element_text(size = 30)) +
-  theme(plot.subtitle = element_text(size = 20)) +
-  theme(legend.title = element_blank(), legend.background = element_blank()) +
-  theme(legend.text = element_text(size = 12)) +
-  theme(legend.position = c(.9,.55)) +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = .4))
-theme.smallmult2 <- 
-  theme.porttheme2 +
-  theme(axis.text = element_text(size = 6)) +
-  theme(axis.text.x = element_text(angle = 90))
-
 expaus %>%
   filter(Year == 2016) %>%
   ggplot(aes(x=reorder(Import_Country, desc(Tonnes)), y=Tonnes))+
@@ -283,7 +378,7 @@ expaus %>%
   labs(subtitle='2016, in Tonnes')+
   labs(x = "Country", y = "\nTonnes")+
   scale_y_continuous(labels = scales::comma_format())+
-  theme.widebar2
+  theme.widebar1
 ggsave("histogram.png", width=11, height=7)
 ggsave("histogram.jpeg", width=11, height=7)
 expaus %>%
@@ -294,7 +389,7 @@ expaus %>%
   labs(subtitle='2016, in Tonnes')+
   labs(x = "Country", y = "\nTonnes")+
   scale_y_continuous(labels = scales::comma_format())+
-  theme.widebar2
+  theme.widebar1
 ggsave("histogramtop5.png", width=11, height=7)
 ggsave("histogramtop5.jpeg", width=11, height=7)
 expaus %>%
@@ -306,16 +401,10 @@ expaus %>%
   coord_flip()+
   labs(title="Japan, South Korea had much higher volume\nthan other high-volume countries in 2016")+
   labs(x = "Country", y = "Import Volume\nin Tonnes")+
-  theme.porttheme2
+  theme.porttheme1
 #==============
 # End of Exp Aus
 #==============
-
-
-
-
-
-
 
 #===============================
 #End of Data visualization and analysis
