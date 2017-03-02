@@ -1,0 +1,63 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+#########################################################################################################
+### https://www.r-bloggers.com/r-for-beginners-some-simple-code-to-produce-informative-graphs-part-one/
+### R for Beginners: Some Simple Code to Produce Informative Graphs, Part One
+########################################################################################################
+
+
+if(!require(MASS)){
+  install.packages("MASS")
+}
+library(MASS)
+
+attach(UScrime)
+
+## plot the two dimensional scatterplot and add appropriate #labels
+plot(GDP, y, main = "Basic Scatterplot of Crime Rate vs. GDP", xlab = "GDP", ylab = "Crime Rate")
+
+## add a regression line to the scatter plot by using simple bivariate #linear model
+## lm generates the coefficients for the regression model.extract
+## col sets color; lwd sets line width; lty sets line type
+abline(lm(y ~ GDP), col="red", lwd=2, lty=1) 
+
+## create a 3d graph using the variables y, GDP, and Ineq
+if(!require(scatterplot3d)){
+  install.packages("scatterplot3d")
+}
+library(scatterplot3d) ##load scatterplot3d function
+require(MASS)
+attach(UScrime)  ## use data from UScrime dataset
+scatterplot3d(y, GDP, Ineq, main = "Basic 3D Scatterplot") ## graph 3 variables, y
+
+#We can add straight lines from the plane of the graph to each of the data points by setting the graph type option as ‘type=”h”
+require(MASS)
+library(scatterplot3d)
+attach(UScrime)
+model <- scatterplot3d(y, GDP, Ineq, type = "h", main = "3D Scatterplot with Vertical Lines") ## type = "h" add vertical lines from plane with this option
+
+require(MASS)
+library(scatterplot3d)
+attach(UScrime)
+model <- scatterplot3d(GDP, Ineq, y,
+type="h",   ## add vertical line from plane to data points with this #option
+main="3D Scatterplot with Vertical Lines")
+## now calculate and add the linear regression data
+model1 <- lm(y ~ GDP + Ineq)   #
+model$plane3d(model1)   ## link the 3d scatterplot in ‘model’ to the ‘plane3d’ option with ‘model1’ regression information
+
+
+
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
