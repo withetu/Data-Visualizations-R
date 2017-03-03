@@ -1,0 +1,47 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+#########################################################################################################
+### https://www.r-bloggers.com/r-for-beginners-basic-graphics-code-to-produce-informative-graphs-part-two-working-with-big-data/
+### R For Beginners: Basic Graphics Code to Produce Informative Graphs, Part Two, Working With Big Data
+########################################################################################################
+
+
+## make sure package LSD is loaded
+if(!require(LSD)){
+  install.packages("LSD")
+}
+library(LSD)
+
+x <- rnorm(50000, mean = 10, sd = 15) # generates x values #stores results in variable x
+y <- rnorm(50000, mean = 7, sd = 3) # generates y values #stores results in variable y
+
+## plot randomly generated x and y values
+plot(x,y, main = "Scatterplot of 50,000 points")
+
+## show histogram of x and y distribution
+hist(x) ## histogram for x mean=10; sd=15; n=50,000
+hist(y) ## histogram for y mean=7; sd=3; n-50,000
+
+## use smoothScatter function to visualize the scatterplot of #50,000 x ## and y values
+## the x and y values should still be in the workspace as #created  above with the rnorm() function
+smoothScatter(x,y, main = "Smoothed Color Density Representation of 50,000 (x,y) Coordinates")
+
+## produce a heatscatter plot of x and y
+heatscatter(x,y, main = "Heat Color Density Representation of 50,000 (x, y) Coordinates") ## function heatscatter() with #n=50,000
+
+
+
+
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
