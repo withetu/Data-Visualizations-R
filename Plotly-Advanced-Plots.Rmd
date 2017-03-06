@@ -1,0 +1,42 @@
+```{r}
+#===========================================================================
+#http://r-exercises.com/2017/01/19/plotly-advanced-plots-and-features/
+#Plotly : Advanced plots and features
+#===========================================================================
+
+library(ggplot2)
+library(plotly)
+attach(iris)
+
+#Generate separate histograms for the first four columns of iris dataset and save the plots in objects p1, p2, p3 and p4.
+#HINT: Use plot_ly() function with x argument and type="histogram". Use name argument to give appropriate name for the trace.
+p1 <- plot_ly(x = iris[,1], type = "histogram", name = names(iris)[1])
+p2 <- plot_ly(x = iris[,1], type = "histogram", name = names(iris)[2])
+p3 <- plot_ly(x = iris[,1], type = "histogram", name = names(iris)[3])
+p4 <- plot_ly(x = iris[,1], type = "histogram", name = names(iris)[4])
+
+#a. Use subplot() function to generate a plot with all the plot objects from previous exercise as the arguments.
+#b. Use the nrows argument to arrange 2 plots per row.
+subplot(p1, p2, p3, p4, nrows = 2)
+
+#a. Generate a scatter plot for the iris dataset with first column on the x-axis and second column on the y-axis. Save the plot object.
+#b. Generate a 2d histogram using the add_histogram2d() function.Save the plot object.
+#HINT: Use the function plot_ly() with the same x and y arguments and pass the plot object to the 2-d histogram function.
+p <- plot_ly(x = iris[,1], y = iris[,2], mode = "markars", type = "scatter")
+q <- add_histogram2d(plot_ly(x = iris[,1], y = iris[,2]))
+
+#Generate a subplot with the scatter plot and the 2-d histogram created in the previous exercise.
+#Notice how the scatter plot can be represented in a more interesting way. Cells in the 2-d histogram are binned and represented with the color on the scale based on the cell population/density.
+subplot(p,q)
+
+
+
+
+
+
+
+
+
+```
+
+
