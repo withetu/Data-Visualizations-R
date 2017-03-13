@@ -1,0 +1,75 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+#===================================================================
+#https://www.r-bloggers.com/animated-barplot-and-google-map-with-r/
+#Animated barplot and google map with R
+#===================================================================
+
+
+
+# dataset
+d <- data.frame(val=c(2,3,4,3,4,3,4,3,2,1), year = c(2015,2016,2017,2015,2016,2015,2015,2016,2017,2015))
+
+library(ggplot2)
+library(dplyr)
+
+plot.bar.2 <- function(df_plot, xvar, yvar, fill)
+{
+  require(ggplot2)
+  require(dplyr)
+  attach(df_plot)
+  #number of steps - based on values in X-axis
+  x_unique <- unique(df_plot$xvar)   #xvar = year
+  nof_steps <- as.integer(length(df_plot$x_unique))
+
+  for (i in 1:nof_steps) 
+  {
+    x <- as.integer(x_unique[i])
+    
+    d1 <- df_plot %>%
+          arrange(xvar) %>%
+          filter(xvar<=x) %>%
+          mutate(new_val = val) %>%
+          select(xvar, new_val)
+    
+    d2 <- df_plot %>%
+          arrange(xvar) %>%
+          filter(xvar>x) %>%
+          mutate(new_val = 0) %>%
+          select(xvar,new_val)
+    
+    dfinal <- union_all(d1, d2)
+    dfinal <- data.frame(dfinal)
+    colnames(dfinal)[1] <- "x"
+    colnames(dfinal)[2] <- "y"
+    
+    name <- paste('barplot00',i,'.png',sep="")
+    png(name)
+    ggplot(data=dfinal, aes(x=x, y=y, fill=x)) + geom_bar(stat="identity") + 
+        guides(fill=FALSE)
+    dev.off()
+    rm(d1,d2,x,dfinal) 
+  }
+
+  system("magick -delay 150 -loop 0 *.png GeomBar_plot.gif")
+  file.remove(list.files(pattern=".png"))
+  rm(x_unique, nof_steps)   
+  detach(df_plot)
+}
+
+plot.bar.2(d, d$year, d$val, d$year)
+
+
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
