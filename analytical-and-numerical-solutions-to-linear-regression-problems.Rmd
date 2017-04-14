@@ -1,0 +1,174 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+# ==============================================================================================
+# Analytical and Numerical Solutions to Linear Regression Problems
+# https://datascienceplus.com/analytical-and-numerical-solutions-to-linear-regression-problems/
+# ==============================================================================================
+
+
+
+
+
+library(ggplot2)
+library(data.table)
+library(magrittr)
+library(caret)
+library(fields)
+library(plot3D)
+
+
+#Load the data and display first 6 observations
+ex1data1 <- fread("ex1data1.txt", col.names = c("population","profit"))
+head(ex1data1)
+
+#Plotting the Data
+ex1data1 %>%
+  ggplot(aes(x=population, y=profit))+
+  geom_point(color = "blue", size = 4 ,alpha=0.5)+
+  ylab('Profit in $10,000s')+
+  xlab('Population of City in 10,000s')+
+  ggtitle('Figure 1: Scatter plot of training data')+
+  theme(plot.title = element_text(size = 16, colour = "red"))
+
+
+#Gradient Descent
+#Computing the cost J(θ)
+x=cbind(1, ex1data1$population)
+y=ex1data1$profit
+head(x)
+#The function below calcuates cost based on the equation
+computeCost=function(x,y, theta){
+  z=((x%*%theta)-y)^2
+  return(sum(z)/(2*nrow(x)))
+}
+#Now, we can calculate the initial cost by initilizating the initial parameters to 0
+theta=matrix(rep(0,ncol(x)))
+round(computeCost(x,y, theta),2)
+#Gradient descent
+gradientDescent=function(x,y, theta, alpha, iters){
+  gd=list()
+  cost=rep(0, iters)
+  for(k in 1:iters){
+    z=rep(0, ncol(x))
+  for(i in 1:ncol(x)){
+    for(j in 1:nrow(x)){
+      z[i]=z[i]+(((x[j,]%*%theta)-y[j])*x[j,i])
+    }
+  }
+  theta = theta-((alpha/nrow(x))*z)
+  cost[k] = computeCost(x,y,theta)
+}
+
+  gd$theta=theta
+  gd$cost=cost
+  gd
+}
+
+iterations = 1500
+alpha = 0.01
+theta= matrix(rep(0, ncol(x)))
+gradientDescent_results=gradientDescent(x,y,theta,alpha,iterations)
+theta=gradientDescent_results$theta
+theta
+
+
+#Ploting the cost function as a function of the number of iterations
+data.frame(Cost=gradientDescent_results$cost,Iterations=1:iterations)%>%
+ggplot(aes(x=Iterations,y=Cost))+geom_line(color="blue")+
+ggtitle("Cost as a function of number of iteration")+
+theme(plot.title = element_text(size = 16,colour="red"))
+
+#Plot the linear fit
+ex1data1%>%ggplot(aes(x=population, y=profit))+
+geom_point(color="blue",size=3,alpha=0.5)+
+ylab('Profit in $10,000s')+          
+xlab('Population of City in 10,000s')+
+ggtitle ('Figure 1: Scatter plot of training data') +
+geom_abline(intercept = theta[1], slope = theta[2],col="red",show.legend=TRUE)+
+theme(plot.title = element_text(size = 16,colour="red"))+
+annotate("text", x = 12, y = 20, label = paste0("Profit = ",round(theta[1],4),"+",round(theta[2],4)," * Population"))
+
+
+#Visualizing J(θ)
+Intercept=seq(from=-10,to=10,length=100)
+Slope=seq(from=-1,to=4,length=100)
+# initialize cost values to a matrix of 0's
+Cost = matrix(0,length(Intercept), length(Slope));
+for(i in 1:length(Intercept)){
+    for(j in 1:length(Slope)){
+        t = c(Intercept[i],Slope[j])
+        Cost[i,j]= computeCost(x, y, t)
+    }
+}
+persp3D(Intercept,Slope,Cost,theta=-45, phi=25, expand=0.75,lighting = TRUE,
+        ticktype="detailed", xlab="Intercept", ylab="Slope",
+        zlab="",axes=TRUE, main="Surface")
+image.plot(Intercept,Slope,Cost, main="Contour, showing minimum")
+contour(Intercept,Slope,Cost, add = TRUE,n=30,labels='')
+points(theta[1],theta[2],col='red',pch=4,lwd=6)
+
+
+#Normal Equation
+theta2=solve((t(x)%*%x))%*%t(x)%*%y
+theta2
+
+iterations = 15000
+alpha = 0.01
+theta= matrix(rep(0, ncol(x)))
+gradientDescent_results=gradientDescent(x,y,theta,alpha,iterations)
+theta=gradientDescent_results$theta
+theta
+
+
+#Using caret package
+my_lm <- train(profit~population, data=ex1data1,method = "lm")
+my_lm$finalModel$coefficients
+
+
+
+#Linear regression with multiple variables
+ex1data2 <- fread("ex1data2.txt",col.names=c("size","bedrooms","price"))    
+head(ex1data2)
+
+#Feature Normalization
+ex1data2=as.data.frame(ex1data2)
+for(i in 1:(ncol(ex1data2)-1)){
+    ex1data2[,i]=(ex1data2[,i]-mean(ex1data2[,i]))/sd(ex1data2[,i])
+}
+
+#Gradient Descent
+X=cbind(1,ex1data2$size,ex1data2$bedrooms)
+y=ex1data2$price
+head(X)
+
+iterations = 6000
+alpha = 0.01
+theta= matrix(rep(0, ncol(X)))
+gradientDescent_results=gradientDescent(X,y,theta,alpha,iterations)
+theta=gradientDescent_results$theta
+theta
+
+#Normal Equation
+theta2=solve((t(X)%*%X))%*%t(X)%*%y
+theta2
+
+#Using caret package
+ex1data2 <- fread("ex1data2.txt",col.names=c("size","bedrooms","price"))    
+my_lm <- train(price~size+bedrooms, data=ex1data2,method = "lm", 
+               preProcess = c("center","scale"))
+my_lm$finalModel$coefficients
+
+
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
